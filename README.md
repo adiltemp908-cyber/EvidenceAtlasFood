@@ -2,8 +2,8 @@
 
 **Scientific literature retrieval for everyday food and nutrition questions**
 
-🎥 **[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
-📄 **[Read Final Report](https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/EvidenceAtlasFood-Report-Final.pdf)**
+**[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
+**[Read Final Report](https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/EvidenceAtlasFood-Report-Final.pdf)**
 
 EvidenceAtlas Food is a local information-retrieval and study-comparison system developed for **CSD358 — Track T6**.
 
