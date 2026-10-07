@@ -2,6 +2,9 @@
 
 **Scientific literature retrieval for everyday food and nutrition questions**
 
+Video link - https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link
+Report Redirect - https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/EvidenceAtlasFood-Report-Final.pdf
+
 EvidenceAtlas Food is a local information-retrieval and study-comparison system developed for **CSD358 — Track T6**.
 
 It turns everyday food and nutrition questions into searches across scientific literature and helps users inspect the evidence behind the retrieved results rather than only returning paper titles.
