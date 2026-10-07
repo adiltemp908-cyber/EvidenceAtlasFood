@@ -1,0 +1,1171 @@
+{
+  "elapsed_seconds": 100.51878270006273,
+  "network_bytes": 7889250,
+  "requests": 54,
+  "new_full_texts": 42,
+  "parse_seconds": [
+    0.01202040002681315,
+    0.004953499999828637,
+    0.0036995999980717897,
+    0.02653420006390661,
+    0.007696300046518445,
+    0.003805600106716156,
+    0.00411440001334995,
+    0.0055880999425426126,
+    0.006395000033080578,
+    0.007396499975584447,
+    0.006284200004301965,
+    0.004268700024113059,
+    0.007175999926403165,
+    0.006085300003178418,
+    0.00465209991671145,
+    0.009910000022500753,
+    0.01440880005247891,
+    0.008160799974575639,
+    0.008577900007367134,
+    0.008158799959346652,
+    0.004717700066976249,
+    0.007065400015562773,
+    0.012182299979031086,
+    0.005220700055360794,
+    0.007092699990607798,
+    0.005702399997971952,
+    0.006662899977527559,
+    0.008396500023081899,
+    0.007384500000625849,
+    0.006552600068971515,
+    0.0034909999230876565,
+    0.002480100025422871,
+    0.006528400001116097,
+    0.02288009994663298,
+    0.016210800036787987,
+    0.010152300004847348,
+    0.005290199886076152,
+    0.00671589991543442,
+    0.014021400013007224,
+    0.009700700058601797,
+    0.011387699982151389,
+    0.005364599986933172
+  ],
+  "pages": [
+    {
+      "topic": "caffeine_sleep",
+      "mode": "mesh",
+      "returned": 10,
+      "hits": 958
+    },
+    {
+      "topic": "caffeine_sleep",
+      "mode": "title_abstract",
+      "returned": 10,
+      "hits": 2544
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "mesh",
+      "returned": 10,
+      "hits": 1672
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "title_abstract",
+      "returned": 10,
+      "hits": 3656
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "mesh",
+      "returned": 10,
+      "hits": 3611
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "title_abstract",
+      "returned": 10,
+      "hits": 8024
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "mesh",
+      "returned": 10,
+      "hits": 660
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "title_abstract",
+      "returned": 10,
+      "hits": 2258
+    }
+  ],
+  "counts": {
+    "papers": 77,
+    "passages": 3629,
+    "availability": {
+      "abstract-only": 35,
+      "full-text": 42
+    },
+    "screening": {
+      "accepted": 79,
+      "needs_review": 1
+    },
+    "topics": [
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 19
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 19
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 18
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 20
+      }
+    ],
+    "failures": 0
+  },
+  "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+  "completed_at": "2026-10-06T14:49:54.871898+00:00",
+  "persistent": true,
+  "index": {
+    "version": "positional-lexical-1",
+    "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+    "built_seconds": 3.886073299916461,
+    "weights": {
+      "title": 1.4,
+      "abstract": 1.0,
+      "methods": 0.85,
+      "results": 1.25,
+      "discussion": 1.0,
+      "conclusion": 1.1,
+      "limitations": 1.05,
+      "background": 0.6,
+      "table": 1.0,
+      "body": 1.0
+    },
+    "weights_status": "hypothesis; not tuned or validated"
+  },
+  "retrieval_experiments": [
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 41,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 7.503999979235232,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:40923914",
+          "title": "Patterns of Caffeine Use in Adolescents and Their Association with Sleep Quality: A Latent Class Analysis.",
+          "score": 0.18821554946606578,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:40923914:s00001:p1:ed9a26389680",
+            "MED:40923914:s00001:p0:ba8ab9ae4f12",
+            "MED:40923914:s00000:p0:5a6db9eea949"
+          ]
+        },
+        {
+          "id": "MED:42155313",
+          "title": "Characterizing poor sleep hygiene in chronic insomnia: Implications of addressable and non-addressable factors for sleep hygiene education.",
+          "score": 0.1663634629274676,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42155313:s00001:p0:40ccfd3cf36f",
+            "MED:42155313:s00000:p0:f88425e7240a",
+            "MED:42155313:s00001:p1:8cb7562d932c"
+          ]
+        },
+        {
+          "id": "MED:42171170",
+          "title": "Effects of live and heat-treated <i>Limosilactobacillus fermentum</i> PS150 on circadian rhythms and GABAergic signaling in a caffeine-induced insomnia mouse model.",
+          "score": 0.15285310887626308,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42171170:s00001:p1:2bdf65916e8b",
+            "MED:42171170:s00001:p0:6c24a1f6bfda",
+            "MED:42171170:s00000:p0:ec6123fbc575"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 41,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 11.755599989555776,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42796929",
+          "title": "Energy Drink Use and Adolescent Sleep Debt: Implications for Obesity, Cognition, and Physical Activity.",
+          "score": 9.524045508142766,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796929:s00017:p0:d5b99e5a2959",
+            "MED:42796929:s00056:p0:98bf6a0f058f",
+            "MED:42796929:s00001:p1:85ee293e4949"
+          ]
+        },
+        {
+          "id": "MED:42739104",
+          "title": "Beverage Co-Consumption Profiles, Sleep, and Fatigue in Professional Army Personnel.",
+          "score": 9.459310361299218,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42739104:s00042:p0:ca3566b408a7",
+            "MED:42739104:s00036:p0:b01d910d2f44",
+            "MED:42739104:s00032:p0:66f9037f72e5"
+          ]
+        },
+        {
+          "id": "MED:41978115",
+          "title": "Coffee and Caffeine in Depression: Symptom-Level Modulation and Challenges in Nutripsychiatric Interpretation.",
+          "score": 8.855899376560824,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:41978115:s00030:p0:5e6a5272f9d5",
+            "MED:41978115:s00047:p0:101001e2aa41",
+            "MED:41978115:s00001:p0:3f603a155e05"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 1226,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 26.647199993021786,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42796929",
+          "title": "Energy Drink Use and Adolescent Sleep Debt: Implications for Obesity, Cognition, and Physical Activity.",
+          "score": 11.845351352009246,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796929:s00017:p0:d5b99e5a2959",
+            "MED:42796929:s00056:p0:98bf6a0f058f",
+            "MED:42796929:s00001:p1:85ee293e4949"
+          ]
+        },
+        {
+          "id": "MED:42026645",
+          "title": "Caffeine intake from different dietary sources and its association with sleep quality in employed adults.",
+          "score": 10.831882176943129,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42026645:s00025:p0:785bee48279d",
+            "MED:42026645:s00034:p0:f62c6c4e12fc",
+            "MED:42026645:s00001:p1:afd95bbaa0b7"
+          ]
+        },
+        {
+          "id": "MED:42739104",
+          "title": "Beverage Co-Consumption Profiles, Sleep, and Fatigue in Professional Army Personnel.",
+          "score": 10.306691088261053,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42739104:s00036:p0:b01d910d2f44",
+            "MED:42739104:s00042:p0:ca3566b408a7",
+            "MED:42739104:s00032:p0:66f9037f72e5"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 65,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 4.448299994692206,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41894612",
+          "title": "Association Between Dietary Protein Intake and Kidney Function in Community-Dwelling Older Adults: A Systematic Review.",
+          "score": 0.25148641947606243,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41894612:s00001:p0:108e6d67445f",
+            "MED:41894612:s00001:p1:c8227789da0a",
+            "MED:41894612:s00000:p0:47376bb583a8"
+          ]
+        },
+        {
+          "id": "MED:41878915",
+          "title": "Unfavorable lifestyle, hypertriglyceridemia and smoking are risk factors for chronic kidney disease in people with type 2 diabetes.",
+          "score": 0.24096342594718556,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41878915:s00001:p1:625d30b6430f",
+            "MED:41878915:s00001:p0:29c9fede3e0b",
+            "MED:41878915:s00000:p0:a12c04380579"
+          ]
+        },
+        {
+          "id": "MED:41268866",
+          "title": "Dietary Patterns and Kidney Health: An Umbrella Review of Systematic Reviews and Meta-Analyses.",
+          "score": 0.19665623978544053,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41268866:s00001:p0:d21145b512a1",
+            "MED:41268866:s00001:p1:41da1a78006b",
+            "MED:41268866:s00000:p0:4f710999c85c"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 65,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 4.080799990333617,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42123996",
+          "title": "Plant-Based Proteins and Renal Protection in Acute Kidney Injury: Nutritional and Metabolic Perspectives.",
+          "score": 5.213980929633891,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42123996:s00001:p0:f56ffe3b5e71",
+            "MED:42123996:s00049:p0:aa59cbef3bc6",
+            "MED:42123996:s00046:p0:10aed59c51c6"
+          ]
+        },
+        {
+          "id": "MED:41894612",
+          "title": "Association Between Dietary Protein Intake and Kidney Function in Community-Dwelling Older Adults: A Systematic Review.",
+          "score": 5.15940261466098,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41894612:s00001:p0:108e6d67445f",
+            "MED:41894612:s00001:p1:c8227789da0a",
+            "MED:41894612:s00000:p0:47376bb583a8"
+          ]
+        },
+        {
+          "id": "MED:41878915",
+          "title": "Unfavorable lifestyle, hypertriglyceridemia and smoking are risk factors for chronic kidney disease in people with type 2 diabetes.",
+          "score": 5.02870801080972,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41878915:s00001:p1:625d30b6430f",
+            "MED:41878915:s00001:p0:29c9fede3e0b",
+            "MED:41878915:s00000:p0:a12c04380579"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 968,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 12.48989999294281,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41894612",
+          "title": "Association Between Dietary Protein Intake and Kidney Function in Community-Dwelling Older Adults: A Systematic Review.",
+          "score": 21.437224349509016,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41894612:s00000:p0:47376bb583a8",
+            "MED:41894612:s00001:p0:108e6d67445f",
+            "MED:41894612:s00001:p1:c8227789da0a"
+          ]
+        },
+        {
+          "id": "MED:42248908",
+          "title": "The effect of comorbidity and frailty on dietary intake and protein losses in end-stage kidney disease patients undergoing peritoneal dialysis.",
+          "score": 17.60460276308139,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42248908:s00035:p0:1f26599033a9",
+            "MED:42248908:s00050:p0:ff4c8db54ae7",
+            "MED:42248908:s00001:p0:355d595fe80d"
+          ]
+        },
+        {
+          "id": "MED:42289790",
+          "title": "Effects of High-Protein Diets on Renal Function and Body Composition in Adults Without Chronic Kidney Disease: A Systematic Review and Meta-Analysis of Randomised Trials.",
+          "score": 16.08050916179791,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42289790:s00000:p0:4cdc5180e708",
+            "MED:42289790:s00001:p0:0fe16ddad512",
+            "MED:42289790:s00001:p1:abb95459d2e6"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 52,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 1.8179999897256494,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42084728",
+          "title": "[Potassium substitution: is replacing sodium with potassium-enriched salts beneficial?]",
+          "score": 0.2462110082785164,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42084728:s00001:p0:7bb656203ed7",
+            "MED:42084728:s00001:p1:d72cf814310a",
+            "MED:42084728:s00000:p0:2ce5df1567e7"
+          ]
+        },
+        {
+          "id": "MED:42288189",
+          "title": "Rethinking the impact of dietary sodium and potassium on blood pressure to advance public health.",
+          "score": 0.20659867759608166,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42288189:s00000:p0:24ff93c54583",
+            "MED:42288189:s00001:p0:3d75ce4f89c1",
+            "MED:42288189:s00001:p1:7aebf687ef63"
+          ]
+        },
+        {
+          "id": "MED:42716956",
+          "title": "Effects of sodium reduction interventions on home and morning home blood pressure: a systematic review and meta-analysis of randomized controlled trials.",
+          "score": 0.20374254653417115,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42716956:s00001:p2:fa9c6753b1a2",
+            "MED:42716956:s00000:p0:8f8dbeb4a540",
+            "MED:42716956:s00001:p1:c0695633906f"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 52,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 1.343000098131597,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42716956",
+          "title": "Effects of sodium reduction interventions on home and morning home blood pressure: a systematic review and meta-analysis of randomized controlled trials.",
+          "score": 4.570508594625101,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42716956:s00001:p2:fa9c6753b1a2",
+            "MED:42716956:s00000:p0:8f8dbeb4a540",
+            "MED:42716956:s00001:p1:c0695633906f"
+          ]
+        },
+        {
+          "id": "MED:42605627",
+          "title": "Myeloid Activator Protein-1 Complex Contributes to Salt-Sensitive Hypertension.",
+          "score": 4.498474780646896,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42605627:s00001:p0:b149069ee87e",
+            "MED:42605627:s00001:p1:e837e81e4bd9",
+            "MED:42605627:s00001:p2:0a9a4717ba70"
+          ]
+        },
+        {
+          "id": "MED:42084728",
+          "title": "[Potassium substitution: is replacing sodium with potassium-enriched salts beneficial?]",
+          "score": 4.462621713446595,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42084728:s00001:p0:7bb656203ed7",
+            "MED:42084728:s00001:p1:d72cf814310a",
+            "MED:42084728:s00000:p0:2ce5df1567e7"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 519,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 6.617300095967948,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42047235",
+          "title": "Sodium reduction and salt substitutes: impact on blood pressure and recurrent stroke.",
+          "score": 18.22657692776224,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42047235:s00000:p0:af29e2f4fbc0",
+            "MED:42047235:s00001:p0:e7e30032491e",
+            "MED:42047235:s00008:p0:d5daa2e964c3"
+          ]
+        },
+        {
+          "id": "MED:42288189",
+          "title": "Rethinking the impact of dietary sodium and potassium on blood pressure to advance public health.",
+          "score": 17.856469163866592,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42288189:s00000:p0:24ff93c54583",
+            "MED:42288189:s00001:p0:3d75ce4f89c1",
+            "MED:42288189:s00001:p1:7aebf687ef63"
+          ]
+        },
+        {
+          "id": "MED:42716956",
+          "title": "Effects of sodium reduction interventions on home and morning home blood pressure: a systematic review and meta-analysis of randomized controlled trials.",
+          "score": 17.04869313389738,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42716956:s00000:p0:8f8dbeb4a540",
+            "MED:42716956:s00001:p2:fa9c6753b1a2",
+            "MED:42716956:s00001:p1:c0695633906f"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 50,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 4.166900063864887,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42437713",
+          "title": "Late eating is associated with higher total energy intake and poorer adequacy of food groups in patients with non-communicable diseases.",
+          "score": 0.18283824873524465,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42437713:s00001:p0:5d3cbafdd23d",
+            "MED:42437713:s00000:p0:ca2c0fafed00",
+            "MED:42437713:s00001:p1:aef5a7f6ff9a"
+          ]
+        },
+        {
+          "id": "MED:42375777",
+          "title": "Time-restricted eating and metabolic health: implications for nutritional strategies and weight loss.",
+          "score": 0.09463621933584727,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42375777:s00021:p0:21a1d9d8f35c",
+            "MED:42375777:s00000:p0:65f52491fbff",
+            "MED:42375777:s00022:p0:1f285a8e006c"
+          ]
+        },
+        {
+          "id": "MED:42208206",
+          "title": "Exploring the impact of intermittent fasting plus time-restricted eating versus calorie restriction on eating behavior, mood, sleep, quality of life in adults with obesity.",
+          "score": 0.09059267911894439,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42208206:s00001:p1:51c7593228c2",
+            "MED:42208206:s00000:p0:b8ed9dc3bd24",
+            "MED:42208206:s00001:p0:0a23fd20be4e"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 50,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 23.057700018398464,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42375777",
+          "title": "Time-restricted eating and metabolic health: implications for nutritional strategies and weight loss.",
+          "score": 9.027686624698598,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42375777:s00021:p0:21a1d9d8f35c",
+            "MED:42375777:s00000:p0:65f52491fbff",
+            "MED:42375777:s00022:p0:1f285a8e006c"
+          ]
+        },
+        {
+          "id": "MED:42796993",
+          "title": "Chrono-Nutritional Disruption as a Potential Modifiable Factor in Bipolar Disorder.",
+          "score": 8.987340947960249,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796993:s00127:p0:77616661f0b5",
+            "MED:42796993:s00105:p0:e5cd5bd0eaa2",
+            "MED:42796993:s00132:p0:7e0b73167a91"
+          ]
+        },
+        {
+          "id": "MED:42746281",
+          "title": "Effect of Intermittent Fasting on Weight Loss in Overweight and Obese Adults: A Systematic Review of Clinical Trials.",
+          "score": 7.838123175182012,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42746281:s00020:p1:b94fccaedb07",
+            "MED:42746281:s00056:p0:fa9f8cd45f5d",
+            "MED:42746281:s00028:p0:c9271c1f1a30"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 577,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "fba29542c9ea1beb4a54fe026e429a30fbd4c7097ba1d6e5a42df0ea3dc3dea4",
+          "built_seconds": 3.886073299916461,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 20.722300047054887,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42796993",
+          "title": "Chrono-Nutritional Disruption as a Potential Modifiable Factor in Bipolar Disorder.",
+          "score": 13.736092092051123,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796993:s00105:p0:e5cd5bd0eaa2",
+            "MED:42796993:s00127:p0:77616661f0b5",
+            "MED:42796993:s00132:p0:7e0b73167a91"
+          ]
+        },
+        {
+          "id": "MED:42437713",
+          "title": "Late eating is associated with higher total energy intake and poorer adequacy of food groups in patients with non-communicable diseases.",
+          "score": 12.840363556981536,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42437713:s00000:p0:ca2c0fafed00",
+            "MED:42437713:s00001:p0:5d3cbafdd23d",
+            "MED:42437713:s00001:p1:aef5a7f6ff9a"
+          ]
+        },
+        {
+          "id": "MED:42280377",
+          "title": "Effects of Collagen Hydrolysate-Based Protein Complexes on Physical Endurance, Glucose Metabolism, and Renal Function in Rats.",
+          "score": 11.121558605538228,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42280377:s00097:p0:30396d076572",
+            "MED:42280377:s00072:p0:a33e86e7fc8a",
+            "MED:42280377:s00071:p1:d243028d140e"
+          ]
+        }
+      ]
+    }
+  ],
+  "measurements": {
+    "sqlite_bytes": 66818048,
+    "sqlite_gzip_bytes": 15316670,
+    "rss_before_bytes": 40628224,
+    "rss_after_bytes": 140083200,
+    "available_ram_bytes": 2878095360,
+    "pilot_limit_note": "Pages bound this measurement job only; --pages 0 continues until budget/time/source exhaustion."
+  },
+  "quality_metrics": {
+    "status": "Unavailable: independent relevance judgments not supplied",
+    "human_review": false
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 123994458,
+    "free_bytes": 261888376832,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  }
+}

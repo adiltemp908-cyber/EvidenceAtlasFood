@@ -1,0 +1,1725 @@
+{
+  "elapsed_seconds": 913.6351239000214,
+  "network_bytes": 65876833,
+  "requests": 430,
+  "new_full_texts": 378,
+  "parse_seconds": [
+    0.004730100044980645,
+    0.004410799941979349,
+    0.0061298999935388565,
+    0.0050499000353738666,
+    0.010250899940729141,
+    0.004785400000400841,
+    0.005279500037431717,
+    0.025527699966914952,
+    0.007854799972847104,
+    0.01312420004978776,
+    0.005145200062543154,
+    0.010974899982102215,
+    0.00686269998550415,
+    0.003430300042964518,
+    0.007735699997283518,
+    0.006639600032940507,
+    0.006634399993345141,
+    0.005886600003577769,
+    0.003934900043532252,
+    0.005376200075261295,
+    0.0056955000618472695,
+    0.006022099987603724,
+    0.005410300102084875,
+    0.006233199965208769,
+    0.0032336999429389834,
+    0.00830149999819696,
+    0.02012320002540946,
+    0.00815919996239245,
+    0.008727799984626472,
+    0.0030898000113666058,
+    0.005251899943687022,
+    0.005350399995222688,
+    0.008444500039331615,
+    0.011519000050611794,
+    0.006473600049503148,
+    0.006723600090481341,
+    0.004408700042404234,
+    0.004224199918098748,
+    0.009676999994553626,
+    0.008991500013507903,
+    0.005470899981446564,
+    0.010476599913090467,
+    0.002511700033210218,
+    0.0073877000249922276,
+    0.006350500043481588,
+    0.005586199928075075,
+    0.007262400002218783,
+    0.005726800067350268,
+    0.007724100025370717,
+    0.006223400007002056,
+    0.003818499972112477,
+    0.006139199947938323,
+    0.005019400035962462,
+    0.010207799961790442,
+    0.008806099998764694,
+    0.004828899982385337,
+    0.007377699948847294,
+    0.005656599998474121,
+    0.018093000049702823,
+    0.0053125000558793545,
+    0.004988499917089939,
+    0.004070800030604005,
+    0.010645800037309527,
+    0.010988000081852078,
+    0.00429509999230504,
+    0.017481900053098798,
+    0.005088099977001548,
+    0.007182199973613024,
+    0.003821199992671609,
+    0.006060700048692524,
+    0.009976699948310852,
+    0.01068830001167953,
+    0.013072900008410215,
+    0.006443199934437871,
+    0.005430999910458922,
+    0.007257899967953563,
+    0.007425399962812662,
+    0.007746100076474249,
+    0.008446400053799152,
+    0.01079500000923872,
+    0.011323200073093176,
+    0.010494000045582652,
+    0.006162600009702146,
+    0.007730300072580576,
+    0.006266999989748001,
+    0.007181400083936751,
+    0.007089200080372393,
+    0.004848300013691187,
+    0.00871319998987019,
+    0.007384500000625849,
+    0.023879599990323186,
+    0.010971699957735837,
+    0.0005952999927103519,
+    0.0017590000061318278,
+    0.010348599986173213,
+    0.007581799989566207,
+    0.013873799936845899,
+    0.00382860004901886,
+    0.013610400026664138,
+    0.013246699934825301,
+    0.012650699936784804,
+    0.005436800071038306,
+    0.006288300035521388,
+    0.007294400013051927,
+    0.006825299933552742,
+    0.008689900045283139,
+    0.003684900002554059,
+    0.015237799962051213,
+    0.013847999973222613,
+    0.010116699966602027,
+    0.005406800075434148,
+    0.006082500098273158,
+    0.004791099927388132,
+    0.005858200020156801,
+    0.008476799936033785,
+    0.006906599970534444,
+    0.01348109997343272,
+    0.0062049999833106995,
+    0.008570100064389408,
+    0.0036325999535620213,
+    0.007289600092917681,
+    0.003946400014683604,
+    0.005221800063736737,
+    0.006286000018008053,
+    0.009615999995730817,
+    0.006863199989311397,
+    0.004868199932388961,
+    0.0021510999649763107,
+    0.005789699964225292,
+    0.010115299955941737,
+    0.00736349995713681,
+    0.004565799958072603,
+    0.005255599971860647,
+    0.017475800006650388,
+    0.002114900038577616,
+    0.008351600030437112,
+    0.006221999996341765,
+    0.008128399960696697,
+    0.006968499976210296,
+    0.005397900007665157,
+    0.007495100027881563,
+    0.005832500057294965,
+    0.017579799983650446,
+    0.005994400009512901,
+    0.006739700096659362,
+    0.02184190007392317,
+    0.0074616000056266785,
+    0.005770099931396544,
+    0.010614399914629757,
+    0.009177800035104156,
+    0.009047500090673566,
+    0.016523599973879755,
+    0.0067248999839648604,
+    0.008997099939733744,
+    0.005070700077340007,
+    0.006572499987669289,
+    0.010875900043174624,
+    0.00446529989130795,
+    0.005174200050532818,
+    0.00704349996522069,
+    0.006380699924193323,
+    0.006585999974049628,
+    0.012861500028520823,
+    0.004837800050154328,
+    0.006323999958112836,
+    0.005841500009410083,
+    0.004209900042042136,
+    0.0069469999289140105,
+    0.006388899986632168,
+    0.005174699937924743,
+    0.00790440000128001,
+    0.006485300022177398,
+    0.01320559997111559,
+    0.0038926999550312757,
+    0.00318250001873821,
+    0.005921900039538741,
+    0.009489299962297082,
+    0.0036328999558463693,
+    0.0050255999667569995,
+    0.014264700002968311,
+    0.02738460002001375,
+    0.011004499974660575,
+    0.015340300044044852,
+    0.014689300092868507,
+    0.008953499956987798,
+    0.010918600019067526,
+    0.01036389998625964,
+    0.005482099950313568,
+    0.01228389993775636,
+    0.006747299921698868,
+    0.01004079997073859,
+    0.009690499980933964,
+    0.007504999986849725,
+    0.00976080005057156,
+    0.0036004999419674277,
+    0.006456899922341108,
+    0.009965999983251095,
+    0.008075300022028387,
+    0.0035836000461131334,
+    0.0072913001058623195,
+    0.005987000069580972,
+    0.009530299925245345,
+    0.005779900006018579,
+    0.011111099971458316,
+    0.006673900061286986,
+    0.005857600015588105,
+    0.008733200025744736,
+    0.005767799913883209,
+    0.0033698000479489565,
+    0.008914200006984174,
+    0.007229199982248247,
+    0.006749999942258,
+    0.007318699965253472,
+    0.012893699924461544,
+    0.008497499977238476,
+    0.006490899948403239,
+    0.010086700087413192,
+    0.007982199895195663,
+    0.004790600039996207,
+    0.00826600007712841,
+    0.006438100012019277,
+    0.004286700044758618,
+    0.003757099970243871,
+    0.012665500049479306,
+    0.013868600013665855,
+    0.0022101999493315816,
+    0.010465499944984913,
+    0.0075777999591082335,
+    0.006534299929626286,
+    0.0075527000008150935,
+    0.012123599997721612,
+    0.0027332999743521214,
+    0.02174690004903823,
+    0.00938299996778369,
+    0.006121600046753883,
+    0.006636400008574128,
+    0.006491200067102909,
+    0.005586399929597974,
+    0.011631799978204072,
+    0.006658599944785237,
+    0.024449499906040728,
+    0.009547400055453181,
+    0.009268300025723875,
+    0.0030815000645816326,
+    0.008567199925892055,
+    0.0066507000010460615,
+    0.00593079999089241,
+    0.006275800056755543,
+    0.0062824999913573265,
+    0.013766499934718013,
+    0.01297419995535165,
+    0.00893229991197586,
+    0.009578100056387484,
+    0.008377399994060397,
+    0.008021100074984133,
+    0.009661699994467199,
+    0.008615599945187569,
+    0.010123399901203811,
+    0.0049097000155597925,
+    0.009637100039981306,
+    0.005326800048351288,
+    0.012452899944037199,
+    0.0053088999120518565,
+    0.014846500009298325,
+    0.0060400000074878335,
+    0.010093300021253526,
+    0.01239960000384599,
+    0.007407499942928553,
+    0.008306600037030876,
+    0.01220529992133379,
+    0.00796519999857992,
+    0.009708300000056624,
+    0.012687099981121719,
+    0.005035300040617585,
+    0.008192099980078638,
+    0.0038457000628113747,
+    0.006172199966385961,
+    0.009081600001081824,
+    0.008083999971859157,
+    0.00644189992453903,
+    0.0030542999738827348,
+    0.01282179995905608,
+    0.00808820000384003,
+    0.005221399944275618,
+    0.0056585000129416585,
+    0.008091800031252205,
+    0.00590730004478246,
+    0.004343800013884902,
+    0.004572699894197285,
+    0.002615500008687377,
+    0.007713699946179986,
+    0.006739700096659362,
+    0.0030270999995991588,
+    0.005867699976079166,
+    0.007801399915479124,
+    0.003967799944803119,
+    0.007011199952103198,
+    0.00445799995213747,
+    0.004152900073677301,
+    0.010029500001110137,
+    0.005894099944271147,
+    0.003570099943317473,
+    0.003444999922066927,
+    0.00774569995701313,
+    0.0033686000388115644,
+    0.01094299997203052,
+    0.003282399964518845,
+    0.008808600017800927,
+    0.010643000015988946,
+    0.008687800029292703,
+    0.010320000001229346,
+    0.004197800066322088,
+    0.0059486000100150704,
+    0.007926100050099194,
+    0.01697350002359599,
+    0.00975490000564605,
+    0.007239900063723326,
+    0.00973409996367991,
+    0.02158799988683313,
+    0.008237399975769222,
+    0.005482400069013238,
+    0.0257843000581488,
+    0.005161399953067303,
+    0.004070500028319657,
+    0.004953700001351535,
+    0.010253300075419247,
+    0.011178500019013882,
+    0.006098899990320206,
+    0.004289100063033402,
+    0.007154299993999302,
+    0.010929999989457428,
+    0.005205199937336147,
+    0.006195200025103986,
+    0.00556790002156049,
+    0.007599000004120171,
+    0.006273399922065437,
+    0.00632789998780936,
+    0.01210920000448823,
+    0.006360400002449751,
+    0.005234200041741133,
+    0.007756700040772557,
+    0.0033657000167295337,
+    0.006117100012488663,
+    0.007453300058841705,
+    0.00521949992980808,
+    0.0075270000379532576,
+    0.013758100103586912,
+    0.007925900048576295,
+    0.008035500068217516,
+    0.00823619996663183,
+    0.006523599964566529,
+    0.005566100007854402,
+    0.00711899995803833,
+    0.0058262000093236566,
+    0.008966199937276542,
+    0.010292000020854175,
+    0.006673099938780069,
+    0.011379099916666746,
+    0.0124604000011459,
+    0.006542299990542233,
+    0.008624200010672212,
+    0.0043605000246316195,
+    0.015093900030478835,
+    0.007917199982330203,
+    0.005438199965283275,
+    0.014326900010928512,
+    0.001677999971434474,
+    0.00886630010791123,
+    0.024463500012643635,
+    0.010993100004270673,
+    0.010252199950627983,
+    0.007348799961619079,
+    0.007766700000502169,
+    0.00865700002759695,
+    0.0039041000418365,
+    0.0064134999411180615,
+    0.006553399958647788,
+    0.010373499942943454
+  ],
+  "pages": [
+    {
+      "topic": "caffeine_sleep",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 958
+    },
+    {
+      "topic": "caffeine_sleep",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 958
+    },
+    {
+      "topic": "caffeine_sleep",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 2544
+    },
+    {
+      "topic": "caffeine_sleep",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 2544
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 660
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 660
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 2258
+    },
+    {
+      "topic": "meal_timing",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 2258
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 1672
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 1672
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 3656
+    },
+    {
+      "topic": "protein_kidney",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 3656
+    },
+    {
+      "topic": "sweeteners",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 1973
+    },
+    {
+      "topic": "sweeteners",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 1973
+    },
+    {
+      "topic": "sweeteners",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 6417
+    },
+    {
+      "topic": "sweeteners",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 6417
+    },
+    {
+      "topic": "dietary_fats",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 2628
+    },
+    {
+      "topic": "dietary_fats",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 2628
+    },
+    {
+      "topic": "dietary_fats",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 5079
+    },
+    {
+      "topic": "dietary_fats",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 5079
+    },
+    {
+      "topic": "fiber_gut",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 3460
+    },
+    {
+      "topic": "fiber_gut",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 3460
+    },
+    {
+      "topic": "fiber_gut",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 8993
+    },
+    {
+      "topic": "fiber_gut",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 8993
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 3611
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 3611
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 8024
+    },
+    {
+      "topic": "sodium_pressure",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 8024
+    },
+    {
+      "topic": "preparation_vitamins",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 48
+    },
+    {
+      "topic": "preparation_vitamins",
+      "mode": "mesh",
+      "returned": 23,
+      "hits": 48
+    },
+    {
+      "topic": "preparation_vitamins",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 728
+    },
+    {
+      "topic": "preparation_vitamins",
+      "mode": "title_abstract",
+      "returned": 25,
+      "hits": 728
+    },
+    {
+      "topic": "dietary_patterns",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 4313
+    },
+    {
+      "topic": "dietary_patterns",
+      "mode": "mesh",
+      "returned": 25,
+      "hits": 4313
+    }
+  ],
+  "counts": {
+    "papers": 808,
+    "passages": 33016,
+    "availability": {
+      "abstract-only": 382,
+      "full-text": 420,
+      "metadata-only": 6
+    },
+    "screening": {
+      "accepted": 901,
+      "excluded": 1,
+      "needs_review": 22
+    },
+    "topics": [
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 97
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 76
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 50
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 103
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 98
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 0
+  },
+  "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+  "completed_at": "2026-10-06T15:11:16.893517+00:00",
+  "persistent": true,
+  "index": {
+    "version": "positional-lexical-1",
+    "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+    "built_seconds": 66.25393839995377,
+    "weights": {
+      "title": 1.4,
+      "abstract": 1.0,
+      "methods": 0.85,
+      "results": 1.25,
+      "discussion": 1.0,
+      "conclusion": 1.1,
+      "limitations": 1.05,
+      "background": 0.6,
+      "table": 1.0,
+      "body": 1.0
+    },
+    "weights_status": "hypothesis; not tuned or validated"
+  },
+  "retrieval_experiments": [
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 356,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 27.645699912682176,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41124973",
+          "title": "Age- and dose-specific effects of caffeine on sleep: A meta-analysis of controlled crossover trials.",
+          "score": 0.29137218111011964,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41124973:s00001:p1:ef75193da2d8",
+            "MED:41124973:s00000:p0:d7e3fab4f1c6",
+            "MED:41124973:s00001:p0:9f548b7838fa"
+          ]
+        },
+        {
+          "id": "MED:40923914",
+          "title": "Patterns of Caffeine Use in Adolescents and Their Association with Sleep Quality: A Latent Class Analysis.",
+          "score": 0.22463115720373106,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:40923914:s00001:p1:ed9a26389680",
+            "MED:40923914:s00001:p0:ba8ab9ae4f12",
+            "MED:40923914:s00000:p0:5a6db9eea949"
+          ]
+        },
+        {
+          "id": "MED:41523151",
+          "title": "Lifestyle and Behavioral Enhancements of Sleep: A Review.",
+          "score": 0.19511019975101004,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41523151:s00001:p1:bdbdba256c15",
+            "MED:41523151:s00001:p0:491f5c5bd3bd",
+            "MED:41523151:s00000:p0:0ad0b6212118"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 356,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 36.63400001823902,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42075032",
+          "title": "The Caffeinated Brain Part 2: The Effect of Caffeine on Sleep-Related Electroencephalography (EEG)-A Systematic and Mechanistic Review.",
+          "score": 13.678169250893601,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42075032:s00152:p0:a71282d06c76",
+            "MED:42075032:s00061:p0:f7ba7961345d",
+            "MED:42075032:s00041:p1:aad69b0c69e7"
+          ]
+        },
+        {
+          "id": "MED:42796929",
+          "title": "Energy Drink Use and Adolescent Sleep Debt: Implications for Obesity, Cognition, and Physical Activity.",
+          "score": 13.521797512970315,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796929:s00017:p0:d5b99e5a2959",
+            "MED:42796929:s00056:p0:98bf6a0f058f",
+            "MED:42796929:s00001:p1:85ee293e4949"
+          ]
+        },
+        {
+          "id": "MED:42823978",
+          "title": "Effects of caffeine supplementation on post-exercise recovery: a systematic review and three-level meta-analysis of perceptual, functional performance, physiological, and sleep outcomes.",
+          "score": 13.47446712625239,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42823978:s00073:p0:b04f73beb7df",
+            "MED:42823978:s00116:p0:e928fdbf2849",
+            "MED:42823978:s00001:p1:774c77d17b29"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "caffeine sleep timing dose",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "caffeine sleep timing dose",
+        "expanded": "caffeine sleep timing dose",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "caffeine",
+          "sleep",
+          "timing",
+          "dose"
+        ],
+        "filters": {},
+        "candidate_units": 5281,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 111.1691000405699,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42075032",
+          "title": "The Caffeinated Brain Part 2: The Effect of Caffeine on Sleep-Related Electroencephalography (EEG)-A Systematic and Mechanistic Review.",
+          "score": 18.319840143230884,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42075032:s00059:p0:e09ee7259546",
+            "MED:42075032:s00152:p0:a71282d06c76",
+            "MED:42075032:s00061:p0:f7ba7961345d"
+          ]
+        },
+        {
+          "id": "MED:42196950",
+          "title": "The Caffeinated Brain Part 1: The Effects of Caffeine on Event-Related Potentials (ERPs)-A Systematic and Mechanistic Review.",
+          "score": 17.946347438030458,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42196950:s00404:p0:0f45d5ad2ecc",
+            "MED:42196950:s00119:p0:59a5a02ee1f3",
+            "MED:42196950:s00322:p0:8c0c656e7228"
+          ]
+        },
+        {
+          "id": "MED:41124973",
+          "title": "Age- and dose-specific effects of caffeine on sleep: A meta-analysis of controlled crossover trials.",
+          "score": 17.64829020984216,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41124973:s00000:p0:d7e3fab4f1c6",
+            "MED:41124973:s00001:p1:ef75193da2d8",
+            "MED:41124973:s00001:p0:9f548b7838fa"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 635,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 36.98350000195205,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41894612",
+          "title": "Association Between Dietary Protein Intake and Kidney Function in Community-Dwelling Older Adults: A Systematic Review.",
+          "score": 0.2563788756109295,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41894612:s00001:p0:108e6d67445f",
+            "MED:41894612:s00001:p1:c8227789da0a",
+            "MED:41894612:s00000:p0:47376bb583a8"
+          ]
+        },
+        {
+          "id": "MED:41878915",
+          "title": "Unfavorable lifestyle, hypertriglyceridemia and smoking are risk factors for chronic kidney disease in people with type 2 diabetes.",
+          "score": 0.24192349471056654,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41878915:s00001:p1:625d30b6430f",
+            "MED:41878915:s00001:p0:29c9fede3e0b",
+            "MED:41878915:s00000:p0:a12c04380579"
+          ]
+        },
+        {
+          "id": "MED:42398794",
+          "title": "High-Protein Diets: What to Tell Our Patients.",
+          "score": 0.1977977594713702,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42398794:s00001:p0:03dfd1c743ff",
+            "MED:42398794:s00001:p1:67549f17e780",
+            "MED:42398794:s00000:p0:492b35a683b1"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 635,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 32.638799981214106,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42626629",
+          "title": "Combined effects of diet and genetic predisposition on kidney function outcomes.",
+          "score": 7.062628210224456,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42626629:s00045:p0:55592d64a455",
+            "MED:42626629:s00045:p1:967eb31e97d8",
+            "MED:42626629:s00044:p0:285fc0f0d689"
+          ]
+        },
+        {
+          "id": "MED:42123996",
+          "title": "Plant-Based Proteins and Renal Protection in Acute Kidney Injury: Nutritional and Metabolic Perspectives.",
+          "score": 6.995728434992276,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42123996:s00001:p0:f56ffe3b5e71",
+            "MED:42123996:s00049:p0:aa59cbef3bc6",
+            "MED:42123996:s00046:p0:10aed59c51c6"
+          ]
+        },
+        {
+          "id": "MED:42194946",
+          "title": "Phosphate Excretion Differentiates the Amount of Nephroprotective Effect of Amino Acid Ketoanalogues Treatment with Low Protein Diet in Chronic Kidney Disease-A Retrospective Single-Center Cohort Study.",
+          "score": 6.9849150235788695,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42194946:s00023:p1:a21d6bb2e0fc",
+            "MED:42194946:s00023:p0:7dccb3bb67a0",
+            "MED:42194946:s00030:p0:8f2a1605e446"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dietary protein kidney function",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "dietary protein kidney function",
+        "expanded": "dietary protein kidney function",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "dietary",
+          "protein",
+          "kidney",
+          "function"
+        ],
+        "filters": {},
+        "candidate_units": 8769,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 147.26490003522485,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41894612",
+          "title": "Association Between Dietary Protein Intake and Kidney Function in Community-Dwelling Older Adults: A Systematic Review.",
+          "score": 22.235902284188015,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41894612:s00000:p0:47376bb583a8",
+            "MED:41894612:s00001:p0:108e6d67445f",
+            "MED:41894612:s00001:p1:c8227789da0a"
+          ]
+        },
+        {
+          "id": "MED:40078350",
+          "title": "The Effect of Protein Intake on Bone Disease, Kidney Disease, and Sarcopenia: A Systematic Review.",
+          "score": 18.581756599611815,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:40078350:s00033:p0:0d4fe792816a",
+            "MED:40078350:s00024:p0:5160e43964c7",
+            "MED:40078350:s00031:p1:56f890b960da"
+          ]
+        },
+        {
+          "id": "MED:42248908",
+          "title": "The effect of comorbidity and frailty on dietary intake and protein losses in end-stage kidney disease patients undergoing peritoneal dialysis.",
+          "score": 18.11345721467539,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42248908:s00035:p0:1f26599033a9",
+            "MED:42248908:s00050:p0:ff4c8db54ae7",
+            "MED:42248908:s00001:p0:355d595fe80d"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 440,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 17.899499973282218,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42084728",
+          "title": "[Potassium substitution: is replacing sodium with potassium-enriched salts beneficial?]",
+          "score": 0.257260442644163,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42084728:s00001:p0:7bb656203ed7",
+            "MED:42084728:s00001:p1:d72cf814310a",
+            "MED:42084728:s00000:p0:2ce5df1567e7"
+          ]
+        },
+        {
+          "id": "MED:42014326",
+          "title": "[Renal sodium transporters in salt-sensitive hypertension].",
+          "score": 0.23317093855494367,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42014326:s00001:p0:2813d79a459b",
+            "MED:42014326:s00000:p0:2a705a06dbb8",
+            "MED:42014326:s00001:p1:f4f9d70ca42e"
+          ]
+        },
+        {
+          "id": "MED:40613399",
+          "title": "Lowering Sodium Intake: Reduction and Substitution for Cardiovascular Health.",
+          "score": 0.22966434110010076,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:40613399:s00001:p0:0ca432e8a975",
+            "MED:40613399:s00001:p1:cc47854cc17d",
+            "MED:40613399:s00000:p0:3808c8e0dc39"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 440,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 19.583499990403652,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41464543",
+          "title": "Urine Sodium Excretion in Children with Primary Hypertension: A Single-Center Retrospective Study.",
+          "score": 6.527605264772415,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:41464543:s00022:p0:165a4746a366",
+            "MED:41464543:s00027:p0:415a61fad81e",
+            "MED:41464543:s00029:p0:ce973f436c6f"
+          ]
+        },
+        {
+          "id": "MED:41835651",
+          "title": "Impact of Sodium on Blood Pressure and Well Being on Coastal Population: A Social Pharmacy Perspective.",
+          "score": 6.5197481693163315,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:41835651:s00018:p0:61a88646d715",
+            "MED:41835651:s00020:p0:41e071ea44ba",
+            "MED:41835651:s00001:p0:210943abed73"
+          ]
+        },
+        {
+          "id": "MED:42196499",
+          "title": "Gut Microbiota as a Mediator of Dietary Salt Effects on Blood Pressure.",
+          "score": 6.47898010169855,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42196499:s00013:p0:09c0b2200b13",
+            "MED:42196499:s00014:p0:1b57e60d86c2",
+            "MED:42196499:s00034:p0:4dd870e429cc"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sodium blood pressure",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "sodium blood pressure",
+        "expanded": "sodium blood pressure",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "sodium",
+          "blood",
+          "pressure"
+        ],
+        "filters": {},
+        "candidate_units": 3607,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 59.23099990468472,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41877571",
+          "title": "Effects of dietary patterns and sodium intake on blood pressure variability: results from the DASH and DASH-sodium trials.",
+          "score": 19.861919242901784,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41877571:s00000:p0:be55da3030ba",
+            "MED:41877571:s00001:p0:0f5edc209552",
+            "MED:41877571:s00001:p1:cb6b2dcd515d"
+          ]
+        },
+        {
+          "id": "MED:42047235",
+          "title": "Sodium reduction and salt substitutes: impact on blood pressure and recurrent stroke.",
+          "score": 19.59327944912172,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42047235:s00000:p0:af29e2f4fbc0",
+            "MED:42047235:s00001:p0:e7e30032491e",
+            "MED:42047235:s00008:p0:d5daa2e964c3"
+          ]
+        },
+        {
+          "id": "MED:42288189",
+          "title": "Rethinking the impact of dietary sodium and potassium on blood pressure to advance public health.",
+          "score": 19.188409921364297,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42288189:s00000:p0:24ff93c54583",
+            "MED:42288189:s00001:p0:3d75ce4f89c1",
+            "MED:42288189:s00001:p1:7aebf687ef63"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "tfidf",
+      "trace": {
+        "method": "tfidf",
+        "level": "paper",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 477,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 18.550900043919683,
+        "weights": null,
+        "formula": "log TF × smoothed IDF, cosine",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41246831",
+          "title": "Late-eating adolescents consume more energy, make poorer dietary choices, and are more likely to have excess weight: An analysis of the Brazilian Household Budget Survey (2008-2009).",
+          "score": 0.21818582776672255,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41246831:s00001:p0:6f1728b3d242",
+            "MED:41246831:s00000:p0:e8cec4cb7612",
+            "MED:41246831:s00001:p1:7bdc0d428590"
+          ]
+        },
+        {
+          "id": "MED:42302513",
+          "title": "Effects of an early, late, and self-selected time-restricted eating intervention on weight loss maintenance in adults with overweight or obesity: A 12-month follow-up of a randomized controlled trial.",
+          "score": 0.1948768088782616,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42302513:s00001:p0:9c50f7261f01",
+            "MED:42302513:s00000:p0:79dc8d93a125",
+            "MED:42302513:s00001:p1:966dd52bda7d"
+          ]
+        },
+        {
+          "id": "MED:42437713",
+          "title": "Late eating is associated with higher total energy intake and poorer adequacy of food groups in patients with non-communicable diseases.",
+          "score": 0.1902539071379592,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42437713:s00001:p0:5d3cbafdd23d",
+            "MED:42437713:s00000:p0:ca2c0fafed00",
+            "MED:42437713:s00001:p1:aef5a7f6ff9a"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "bm25",
+      "trace": {
+        "method": "bm25",
+        "level": "paper",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 477,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 26.63310000207275,
+        "weights": null,
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:42356360",
+          "title": "Chrononutrition Behaviors and BMI Change During the Transition to University Life in Young Adults: A Prospective Study.",
+          "score": 12.568984578144434,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42356360:s00001:p1:c952c35c1511",
+            "MED:42356360:s00039:p0:f53b1804d284",
+            "MED:42356360:s00031:p0:1a8f3851e85e"
+          ]
+        },
+        {
+          "id": "MED:42796993",
+          "title": "Chrono-Nutritional Disruption as a Potential Modifiable Factor in Bipolar Disorder.",
+          "score": 10.196127124682713,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42796993:s00127:p0:77616661f0b5",
+            "MED:42796993:s00105:p0:e5cd5bd0eaa2",
+            "MED:42796993:s00132:p0:7e0b73167a91"
+          ]
+        },
+        {
+          "id": "MED:42375777",
+          "title": "Time-restricted eating and metabolic health: implications for nutritional strategies and weight loss.",
+          "score": 10.167702651411089,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42375777:s00021:p0:21a1d9d8f35c",
+            "MED:42375777:s00000:p0:65f52491fbff",
+            "MED:42375777:s00022:p0:1f285a8e006c"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "late eating weight gain",
+      "method": "structure",
+      "trace": {
+        "method": "structure",
+        "level": "passage",
+        "original": "late eating weight gain",
+        "expanded": "late eating weight gain",
+        "expansions": [],
+        "advanced": false,
+        "tokens": [
+          "late",
+          "eating",
+          "weight",
+          "gain"
+        ],
+        "filters": {},
+        "candidate_units": 3953,
+        "inspected_parents": 3,
+        "index": {
+          "version": "positional-lexical-1",
+          "corpus": "ef754fed9c687676da6f74d163913951f553f8daa872cd4addc5c08d7b2e8f4f",
+          "built_seconds": 66.25393839995377,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1.0,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1.0,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1.0,
+            "body": 1.0
+          },
+          "weights_status": "hypothesis; not tuned or validated"
+        },
+        "latency_ms": 65.69719989784062,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1.0,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1.0,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1.0,
+          "body": 1.0
+        },
+        "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+        "diversification": "maximum-scoring unit per unique parent paper",
+        "score_meaning": "retrieval relevance, not truth or scientific certainty"
+      },
+      "hits": [
+        {
+          "id": "MED:41246831",
+          "title": "Late-eating adolescents consume more energy, make poorer dietary choices, and are more likely to have excess weight: An analysis of the Brazilian Household Budget Survey (2008-2009).",
+          "score": 19.7595672869939,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:41246831:s00000:p0:e8cec4cb7612",
+            "MED:41246831:s00001:p0:6f1728b3d242",
+            "MED:41246831:s00001:p1:7bdc0d428590"
+          ]
+        },
+        {
+          "id": "MED:42302513",
+          "title": "Effects of an early, late, and self-selected time-restricted eating intervention on weight loss maintenance in adults with overweight or obesity: A 12-month follow-up of a randomized controlled trial.",
+          "score": 19.27222476930081,
+          "availability": "abstract-only",
+          "passage_ids": [
+            "MED:42302513:s00000:p0:79dc8d93a125",
+            "MED:42302513:s00001:p0:9c50f7261f01",
+            "MED:42302513:s00001:p1:966dd52bda7d"
+          ]
+        },
+        {
+          "id": "MED:42356360",
+          "title": "Chrononutrition Behaviors and BMI Change During the Transition to University Life in Young Adults: A Prospective Study.",
+          "score": 18.060846829005392,
+          "availability": "full-text",
+          "passage_ids": [
+            "MED:42356360:s00001:p1:c952c35c1511",
+            "MED:42356360:s00039:p0:f53b1804d284",
+            "MED:42356360:s00031:p0:1a8f3851e85e"
+          ]
+        }
+      ]
+    }
+  ],
+  "measurements": {
+    "sqlite_bytes": 579850240,
+    "sqlite_gzip_bytes": null,
+    "rss_before_bytes": 40263680,
+    "rss_after_bytes": 79220736,
+    "available_ram_bytes": 3065114624,
+    "pilot_limit_note": "Pages bound this measurement job only; --pages 0 continues until budget/time/source exhaustion."
+  },
+  "quality_metrics": {
+    "status": "Unavailable: independent relevance judgments not supplied",
+    "human_review": false
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 1703256881,
+    "free_bytes": 260306636800,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  }
+}

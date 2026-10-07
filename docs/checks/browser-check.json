@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Real query returns paper cards",
+    "Source opens exact highlighted passage with full-text sections",
+    "Side-by-side source-linked comparison",
+    "Saved investigation and notes persist and reload",
+    "Evidence JSON export downloads",
+    "Coverage shows real counts; evaluation pending is explicit",
+    "AI audit shows real limited results separately from human validation",
+    "Active full-text semantic index and historical audit are distinguished",
+    "Semantic search uses the completed passage index in the browser",
+    "390px layout has no horizontal overflow",
+    "Keyboard focus reaches interactive elements"
+  ],
+  "errors": []
+}

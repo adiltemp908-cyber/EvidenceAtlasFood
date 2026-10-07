@@ -1,0 +1,138 @@
+{
+  "counts": {
+    "papers": 973,
+    "searchable_papers": 950,
+    "passages": 37975,
+    "availability": {
+      "abstract-only": 473,
+      "full-text": 494,
+      "metadata-only": 6
+    },
+    "screening": {
+      "accepted": 1079,
+      "excluded": 5,
+      "needs_review": 20
+    },
+    "topics": [
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 27
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 123
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 4069679018,
+    "free_bytes": 257939628032,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  },
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df"
+}

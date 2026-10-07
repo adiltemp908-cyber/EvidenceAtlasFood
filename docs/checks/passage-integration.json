@@ -1,0 +1,28 @@
+{
+  "index_level": "passage",
+  "passages": 37975,
+  "checks": [
+    {
+      "method": "dense",
+      "rerank": false,
+      "unique_filtered_results": 5,
+      "source_texts_match": true,
+      "latency_ms": 10529.967000009492
+    },
+    {
+      "method": "hybrid",
+      "rerank": false,
+      "unique_filtered_results": 5,
+      "source_texts_match": true,
+      "latency_ms": 2253.998499829322
+    },
+    {
+      "method": "hybrid",
+      "rerank": true,
+      "unique_filtered_results": 5,
+      "source_texts_match": true,
+      "latency_ms": 3975.8514999412
+    }
+  ],
+  "quality_claim": "Integration only, not scientific accuracy"
+}

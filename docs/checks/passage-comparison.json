@@ -1,0 +1,1212 @@
+{
+  "before": "delivery-v1",
+  "after": "passage-v1",
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+  "methods": {
+    "bm25": {
+      "claims": 8,
+      "mean_shared_top10": 10,
+      "queries_with_changed_order": 0,
+      "before_median_ms": 184.97080000815913,
+      "after_median_ms": 165.7975499983877
+    },
+    "dense": {
+      "claims": 8,
+      "mean_shared_top10": 3.75,
+      "queries_with_changed_order": 8,
+      "before_median_ms": 62.877749965991825,
+      "after_median_ms": 74.78925003670156
+    },
+    "hybrid": {
+      "claims": 8,
+      "mean_shared_top10": 6.625,
+      "queries_with_changed_order": 8,
+      "before_median_ms": 537.3453500214964,
+      "after_median_ms": 500.6747499573976
+    },
+    "hybrid_rerank": {
+      "claims": 8,
+      "mean_shared_top10": 7.375,
+      "queries_with_changed_order": 8,
+      "before_median_ms": 1434.42689999938,
+      "after_median_ms": 1330.9372501680627
+    },
+    "structure": {
+      "claims": 8,
+      "mean_shared_top10": 10,
+      "queries_with_changed_order": 0,
+      "before_median_ms": 508.03284998983145,
+      "after_median_ms": 562.2850499348715
+    },
+    "structure_expanded": {
+      "claims": 8,
+      "mean_shared_top10": 10,
+      "queries_with_changed_order": 0,
+      "before_median_ms": 286.1414499930106,
+      "after_median_ms": 289.06694997567683
+    },
+    "tfidf": {
+      "claims": 8,
+      "mean_shared_top10": 10,
+      "queries_with_changed_order": 0,
+      "before_median_ms": 193.2688499800861,
+      "after_median_ms": 246.50075007230043
+    }
+  },
+  "runs": [
+    {
+      "claim_id": "food-001",
+      "method": "bm25",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41164018",
+        "MED:41957046",
+        "MED:41829995"
+      ],
+      "after_top3": [
+        "MED:41164018",
+        "MED:41957046",
+        "MED:41829995"
+      ],
+      "before_ms": 153.9109000004828,
+      "after_ms": 163.84140006266534
+    },
+    {
+      "claim_id": "food-001",
+      "method": "dense",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 3,
+      "jaccard_top10": 0.17647058823529413,
+      "same_order": false,
+      "before_top3": [
+        "MED:41124973",
+        "MED:40362813",
+        "MED:42040196"
+      ],
+      "after_top3": [
+        "MED:41164018",
+        "MED:41801928",
+        "MED:41097115"
+      ],
+      "before_ms": 10875.05490006879,
+      "after_ms": 12653.097599977627
+    },
+    {
+      "claim_id": "food-001",
+      "method": "hybrid",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 6,
+      "jaccard_top10": 0.42857142857142855,
+      "same_order": false,
+      "before_top3": [
+        "MED:40362813",
+        "MED:41801928",
+        "MED:42170230"
+      ],
+      "after_top3": [
+        "MED:41320238",
+        "MED:41841082",
+        "MED:41801928"
+      ],
+      "before_ms": 525.0629000365734,
+      "after_ms": 445.89860015548766
+    },
+    {
+      "claim_id": "food-001",
+      "method": "hybrid_rerank",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:41978115",
+        "MED:41320238",
+        "MED:41801928"
+      ],
+      "after_top3": [
+        "MED:41978115",
+        "MED:41320238",
+        "MED:41801928"
+      ],
+      "before_ms": 1483.6856999900192,
+      "after_ms": 1280.1561001688242
+    },
+    {
+      "claim_id": "food-001",
+      "method": "structure",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:31881028",
+        "MED:41320238",
+        "MED:41841082"
+      ],
+      "after_top3": [
+        "MED:31881028",
+        "MED:41320238",
+        "MED:41841082"
+      ],
+      "before_ms": 309.0030000312254,
+      "after_ms": 595.5802998505533
+    },
+    {
+      "claim_id": "food-001",
+      "method": "structure_expanded",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:31881028",
+        "MED:41320238",
+        "MED:41841082"
+      ],
+      "after_top3": [
+        "MED:31881028",
+        "MED:41320238",
+        "MED:41841082"
+      ],
+      "before_ms": 120.00380002427846,
+      "after_ms": 142.79299997724593
+    },
+    {
+      "claim_id": "food-001",
+      "method": "tfidf",
+      "query": "Does afternoon coffee affect sleep?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40972143",
+        "MED:31866308",
+        "MED:28875062"
+      ],
+      "after_top3": [
+        "MED:40972143",
+        "MED:31866308",
+        "MED:28875062"
+      ],
+      "before_ms": 147.94440008699894,
+      "after_ms": 385.5734998360276
+    },
+    {
+      "claim_id": "food-002",
+      "method": "bm25",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42075032",
+        "MED:42444712",
+        "MED:42796929"
+      ],
+      "after_top3": [
+        "MED:42075032",
+        "MED:42444712",
+        "MED:42796929"
+      ],
+      "before_ms": 181.23019998893142,
+      "after_ms": 140.80819999799132
+    },
+    {
+      "claim_id": "food-002",
+      "method": "dense",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 4,
+      "jaccard_top10": 0.25,
+      "same_order": false,
+      "before_top3": [
+        "MED:41124973",
+        "MED:31866308",
+        "MED:40362813"
+      ],
+      "after_top3": [
+        "MED:42444712",
+        "MED:42823978",
+        "MED:42075032"
+      ],
+      "before_ms": 92.30089990887791,
+      "after_ms": 70.46779990196228
+    },
+    {
+      "claim_id": "food-002",
+      "method": "hybrid",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 6,
+      "jaccard_top10": 0.42857142857142855,
+      "same_order": false,
+      "before_top3": [
+        "MED:42075032",
+        "MED:40362813",
+        "MED:42444712"
+      ],
+      "after_top3": [
+        "MED:42075032",
+        "MED:42444712",
+        "MED:42796929"
+      ],
+      "before_ms": 674.5991000207141,
+      "after_ms": 653.1742999795824
+    },
+    {
+      "claim_id": "food-002",
+      "method": "hybrid_rerank",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 7,
+      "jaccard_top10": 0.5384615384615384,
+      "same_order": false,
+      "before_top3": [
+        "MED:42444712",
+        "MED:42075032",
+        "MED:41978115"
+      ],
+      "after_top3": [
+        "MED:42078218",
+        "MED:42444712",
+        "MED:42075032"
+      ],
+      "before_ms": 2007.3411000194028,
+      "after_ms": 1742.136200191453,
+      "baseline_AI_labels_on_new_top3": {
+        "judged_fraction": 0.6666666666666666,
+        "precision_at_k": null,
+        "precision_bounds": [
+          0.6666666666666666,
+          1.0
+        ]
+      }
+    },
+    {
+      "claim_id": "food-002",
+      "method": "structure",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42075032",
+        "MED:41978115",
+        "MED:42444712"
+      ],
+      "after_top3": [
+        "MED:42075032",
+        "MED:41978115",
+        "MED:42444712"
+      ],
+      "before_ms": 1227.351100067608,
+      "after_ms": 1439.1274000518024
+    },
+    {
+      "claim_id": "food-002",
+      "method": "structure_expanded",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42075032",
+        "MED:41978115",
+        "MED:42444712"
+      ],
+      "after_top3": [
+        "MED:42075032",
+        "MED:41978115",
+        "MED:42444712"
+      ],
+      "before_ms": 499.23209997359663,
+      "after_ms": 567.33059999533
+    },
+    {
+      "claim_id": "food-002",
+      "method": "tfidf",
+      "query": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41399000",
+        "MED:41124973",
+        "MED:41864111"
+      ],
+      "after_top3": [
+        "MED:41399000",
+        "MED:41124973",
+        "MED:41864111"
+      ],
+      "before_ms": 389.6278999745846,
+      "after_ms": 474.79739994741976
+    },
+    {
+      "claim_id": "food-003",
+      "method": "bm25",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40739997",
+        "MED:40493450",
+        "MED:42365349"
+      ],
+      "after_top3": [
+        "MED:40739997",
+        "MED:40493450",
+        "MED:42365349"
+      ],
+      "before_ms": 188.71140002738684,
+      "after_ms": 167.75369993411005
+    },
+    {
+      "claim_id": "food-003",
+      "method": "dense",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 2,
+      "jaccard_top10": 0.1111111111111111,
+      "same_order": false,
+      "before_top3": [
+        "MED:40739997",
+        "MED:42289790",
+        "MED:40459947"
+      ],
+      "after_top3": [
+        "MED:40739997",
+        "MED:41546741",
+        "MED:42289790"
+      ],
+      "before_ms": 69.14419995155185,
+      "after_ms": 129.02119988575578
+    },
+    {
+      "claim_id": "food-003",
+      "method": "hybrid",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 5,
+      "jaccard_top10": 0.3333333333333333,
+      "same_order": false,
+      "before_top3": [
+        "MED:40739997",
+        "MED:40010167",
+        "MED:41546741"
+      ],
+      "after_top3": [
+        "MED:40739997",
+        "MED:41546741",
+        "MED:42626629"
+      ],
+      "before_ms": 549.6278000064194,
+      "after_ms": 497.3077999893576
+    },
+    {
+      "claim_id": "food-003",
+      "method": "hybrid_rerank",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 5,
+      "jaccard_top10": 0.3333333333333333,
+      "same_order": false,
+      "before_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:42289790"
+      ],
+      "after_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:42289790"
+      ],
+      "before_ms": 1520.2120000030845,
+      "after_ms": 1476.8968001008034
+    },
+    {
+      "claim_id": "food-003",
+      "method": "structure",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:41546741"
+      ],
+      "after_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:41546741"
+      ],
+      "before_ms": 890.2406999841332,
+      "after_ms": 956.8811999633908
+    },
+    {
+      "claim_id": "food-003",
+      "method": "structure_expanded",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:42289790"
+      ],
+      "after_top3": [
+        "MED:42626629",
+        "MED:40739997",
+        "MED:42289790"
+      ],
+      "before_ms": 367.13249993044883,
+      "after_ms": 391.8482998851687
+    },
+    {
+      "claim_id": "food-003",
+      "method": "tfidf",
+      "query": "Does a high protein diet harm healthy kidneys?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40522944",
+        "MED:40576232",
+        "MED:42681987"
+      ],
+      "after_top3": [
+        "MED:40522944",
+        "MED:40576232",
+        "MED:42681987"
+      ],
+      "before_ms": 221.75070003140718,
+      "after_ms": 242.41080018691719
+    },
+    {
+      "claim_id": "food-004",
+      "method": "bm25",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40573113",
+        "MED:42507749",
+        "MED:42379074"
+      ],
+      "after_top3": [
+        "MED:40573113",
+        "MED:42507749",
+        "MED:42379074"
+      ],
+      "before_ms": 233.63539995625615,
+      "after_ms": 259.2561000492424
+    },
+    {
+      "claim_id": "food-004",
+      "method": "dense",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 3,
+      "jaccard_top10": 0.17647058823529413,
+      "same_order": false,
+      "before_top3": [
+        "MED:40739997",
+        "MED:40459947",
+        "MED:42398794"
+      ],
+      "after_top3": [
+        "MED:42048078",
+        "MED:30428524",
+        "MED:40739997"
+      ],
+      "before_ms": 44.15980004705489,
+      "after_ms": 60.301899909973145
+    },
+    {
+      "claim_id": "food-004",
+      "method": "hybrid",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:40739997",
+        "MED:30428524",
+        "MED:42048078"
+      ],
+      "after_top3": [
+        "MED:42048078",
+        "MED:30428524",
+        "MED:40739997"
+      ],
+      "before_ms": 665.2214999776334,
+      "after_ms": 628.7349001504481
+    },
+    {
+      "claim_id": "food-004",
+      "method": "hybrid_rerank",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:42289790",
+        "MED:40739997",
+        "MED:42413885"
+      ],
+      "after_top3": [
+        "MED:42289790",
+        "MED:40739997",
+        "MED:42413885"
+      ],
+      "before_ms": 736.1633999971673,
+      "after_ms": 764.4219000358135,
+      "baseline_AI_labels_on_new_top3": {
+        "judged_fraction": 1.0,
+        "precision_at_k": 0.6666666666666666,
+        "precision_bounds": [
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    {
+      "claim_id": "food-004",
+      "method": "structure",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:30626166",
+        "MED:40576232",
+        "MED:30428524"
+      ],
+      "after_top3": [
+        "MED:30626166",
+        "MED:40576232",
+        "MED:30428524"
+      ],
+      "before_ms": 746.4847000082955,
+      "after_ms": 852.6400001719594
+    },
+    {
+      "claim_id": "food-004",
+      "method": "structure_expanded",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:30626166",
+        "MED:40576232",
+        "MED:30428524"
+      ],
+      "after_top3": [
+        "MED:30626166",
+        "MED:40576232",
+        "MED:30428524"
+      ],
+      "before_ms": 286.6994000505656,
+      "after_ms": 322.2873001359403
+    },
+    {
+      "claim_id": "food-004",
+      "method": "tfidf",
+      "query": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:31728497",
+        "MED:41878915",
+        "MED:40012426"
+      ],
+      "after_top3": [
+        "MED:31728497",
+        "MED:41878915",
+        "MED:40012426"
+      ],
+      "before_ms": 203.55620002374053,
+      "after_ms": 267.326399916783
+    },
+    {
+      "claim_id": "food-005",
+      "method": "bm25",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40613399",
+        "MED:42026574",
+        "MED:42812504"
+      ],
+      "after_top3": [
+        "MED:40613399",
+        "MED:42026574",
+        "MED:42812504"
+      ],
+      "before_ms": 132.53459997940809,
+      "after_ms": 144.83490004204214
+    },
+    {
+      "claim_id": "food-005",
+      "method": "dense",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 3,
+      "jaccard_top10": 0.17647058823529413,
+      "same_order": false,
+      "before_top3": [
+        "MED:42047235",
+        "MED:42716956",
+        "MED:42181372"
+      ],
+      "after_top3": [
+        "MED:41714719",
+        "MED:42797038",
+        "MED:42181372"
+      ],
+      "before_ms": 49.58069999702275,
+      "after_ms": 79.11070017144084
+    },
+    {
+      "claim_id": "food-005",
+      "method": "hybrid",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 6,
+      "jaccard_top10": 0.42857142857142855,
+      "same_order": false,
+      "before_top3": [
+        "MED:42047235",
+        "MED:42444615",
+        "MED:41275512"
+      ],
+      "after_top3": [
+        "MED:41275512",
+        "MED:42047235",
+        "MED:41228536"
+      ],
+      "before_ms": 402.85740001127124,
+      "after_ms": 447.66649999655783
+    },
+    {
+      "claim_id": "food-005",
+      "method": "hybrid_rerank",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 7,
+      "jaccard_top10": 0.5384615384615384,
+      "same_order": false,
+      "before_top3": [
+        "MED:40613399",
+        "MED:41243115",
+        "MED:42084728"
+      ],
+      "after_top3": [
+        "MED:40613399",
+        "MED:41243115",
+        "MED:42237257"
+      ],
+      "before_ms": 1149.8018000274897,
+      "after_ms": 1095.27080017142
+    },
+    {
+      "claim_id": "food-005",
+      "method": "structure",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41228536",
+        "MED:42559087",
+        "MED:41275512"
+      ],
+      "after_top3": [
+        "MED:41228536",
+        "MED:42559087",
+        "MED:41275512"
+      ],
+      "before_ms": 487.01489996165037,
+      "after_ms": 528.9898000191897
+    },
+    {
+      "claim_id": "food-005",
+      "method": "structure_expanded",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41228536",
+        "MED:42559087",
+        "MED:41275512"
+      ],
+      "after_top3": [
+        "MED:41228536",
+        "MED:42559087",
+        "MED:41275512"
+      ],
+      "before_ms": 238.02429996430874,
+      "after_ms": 231.94579989649355
+    },
+    {
+      "claim_id": "food-005",
+      "method": "tfidf",
+      "query": "Does lowering salt intake lower blood pressure?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40613399",
+        "MED:42377342",
+        "MED:42178304"
+      ],
+      "after_top3": [
+        "MED:40613399",
+        "MED:42377342",
+        "MED:42178304"
+      ],
+      "before_ms": 142.6167000317946,
+      "after_ms": 188.5696998797357
+    },
+    {
+      "claim_id": "food-006",
+      "method": "bm25",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41935633",
+        "MED:42650632",
+        "MED:40256412"
+      ],
+      "after_top3": [
+        "MED:41935633",
+        "MED:42650632",
+        "MED:40256412"
+      ],
+      "before_ms": 181.21840001549572,
+      "after_ms": 161.00160009227693
+    },
+    {
+      "claim_id": "food-006",
+      "method": "dense",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 5,
+      "jaccard_top10": 0.3333333333333333,
+      "same_order": false,
+      "before_top3": [
+        "MED:42716956",
+        "MED:42444615",
+        "MED:42047235"
+      ],
+      "after_top3": [
+        "MED:42196499",
+        "MED:42488174",
+        "MED:41470809"
+      ],
+      "before_ms": 51.99670000001788,
+      "after_ms": 64.55840007402003
+    },
+    {
+      "claim_id": "food-006",
+      "method": "hybrid",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 7,
+      "jaccard_top10": 0.5384615384615384,
+      "same_order": false,
+      "before_top3": [
+        "MED:42047235",
+        "MED:42716956",
+        "MED:41635921"
+      ],
+      "after_top3": [
+        "MED:42196499",
+        "MED:42047235",
+        "MED:42716956"
+      ],
+      "before_ms": 386.7048000684008,
+      "after_ms": 352.2759999614209
+    },
+    {
+      "claim_id": "food-006",
+      "method": "hybrid_rerank",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:40613399",
+        "MED:42196499",
+        "MED:40256412"
+      ],
+      "after_top3": [
+        "MED:40613399",
+        "MED:42196499",
+        "MED:40256412"
+      ],
+      "before_ms": 1385.168100008741,
+      "after_ms": 1381.7184001673013,
+      "baseline_AI_labels_on_new_top3": {
+        "judged_fraction": 1.0,
+        "precision_at_k": 0.3333333333333333,
+        "precision_bounds": [
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      }
+    },
+    {
+      "claim_id": "food-006",
+      "method": "structure",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42047235",
+        "MED:42191891",
+        "MED:41635921"
+      ],
+      "after_top3": [
+        "MED:42047235",
+        "MED:42191891",
+        "MED:41635921"
+      ],
+      "before_ms": 474.73919996991754,
+      "after_ms": 522.948999889195
+    },
+    {
+      "claim_id": "food-006",
+      "method": "structure_expanded",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42047235",
+        "MED:42191891",
+        "MED:41635921"
+      ],
+      "after_top3": [
+        "MED:42047235",
+        "MED:42191891",
+        "MED:41635921"
+      ],
+      "before_ms": 277.57869998458773,
+      "after_ms": 223.7464999780059
+    },
+    {
+      "claim_id": "food-006",
+      "method": "tfidf",
+      "query": "All adults get the same blood pressure benefit from sodium reduction.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:40613399",
+        "MED:42049608",
+        "MED:42288189"
+      ],
+      "after_top3": [
+        "MED:40613399",
+        "MED:42049608",
+        "MED:42288189"
+      ],
+      "before_ms": 155.85710003506392,
+      "after_ms": 185.1147001143545
+    },
+    {
+      "claim_id": "food-007",
+      "method": "bm25",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:31590425",
+        "MED:42356360",
+        "MED:42796993"
+      ],
+      "after_top3": [
+        "MED:31590425",
+        "MED:42356360",
+        "MED:42796993"
+      ],
+      "before_ms": 213.09500001370907,
+      "after_ms": 243.52519982494414
+    },
+    {
+      "claim_id": "food-007",
+      "method": "dense",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 5,
+      "jaccard_top10": 0.3333333333333333,
+      "same_order": false,
+      "before_top3": [
+        "MED:42437713",
+        "MED:41246831",
+        "MED:31339000"
+      ],
+      "after_top3": [
+        "MED:41246831",
+        "MED:42796993",
+        "MED:42437713"
+      ],
+      "before_ms": 74.356299941428,
+      "after_ms": 98.1653998605907
+    },
+    {
+      "claim_id": "food-007",
+      "method": "hybrid",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:41246831",
+        "MED:42356360",
+        "MED:42437713"
+      ],
+      "after_top3": [
+        "MED:41246831",
+        "MED:42796993",
+        "MED:42356360"
+      ],
+      "before_ms": 566.7055000085384,
+      "after_ms": 569.4766000378877
+    },
+    {
+      "claim_id": "food-007",
+      "method": "hybrid_rerank",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:41246831",
+        "MED:42356360",
+        "MED:42437713"
+      ],
+      "after_top3": [
+        "MED:41246831",
+        "MED:42356360",
+        "MED:42437713"
+      ],
+      "before_ms": 1640.6508999643847,
+      "after_ms": 1445.9116000216454
+    },
+    {
+      "claim_id": "food-007",
+      "method": "structure",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42796993",
+        "MED:41246831",
+        "MED:42302513"
+      ],
+      "after_top3": [
+        "MED:42796993",
+        "MED:41246831",
+        "MED:42302513"
+      ],
+      "before_ms": 454.7859999584034,
+      "after_ms": 484.80340000241995
+    },
+    {
+      "claim_id": "food-007",
+      "method": "structure_expanded",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42796993",
+        "MED:41246831",
+        "MED:42302513"
+      ],
+      "after_top3": [
+        "MED:42796993",
+        "MED:41246831",
+        "MED:42302513"
+      ],
+      "before_ms": 285.5834999354556,
+      "after_ms": 282.46369981206954
+    },
+    {
+      "claim_id": "food-007",
+      "method": "tfidf",
+      "query": "Does late eating cause weight gain even when calories are the same?",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41246831",
+        "MED:42437713",
+        "MED:42302513"
+      ],
+      "after_top3": [
+        "MED:41246831",
+        "MED:42437713",
+        "MED:42302513"
+      ],
+      "before_ms": 246.57590000424534,
+      "after_ms": 250.59069995768368
+    },
+    {
+      "claim_id": "food-008",
+      "method": "bm25",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42221753",
+        "MED:41601725",
+        "MED:41470839"
+      ],
+      "after_top3": [
+        "MED:42221753",
+        "MED:41601725",
+        "MED:41470839"
+      ],
+      "before_ms": 211.54319995548576,
+      "after_ms": 216.66490007191896
+    },
+    {
+      "claim_id": "food-008",
+      "method": "dense",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 5,
+      "jaccard_top10": 0.3333333333333333,
+      "same_order": false,
+      "before_top3": [
+        "MED:42507108",
+        "MED:42375777",
+        "MED:41586347"
+      ],
+      "after_top3": [
+        "MED:41586347",
+        "MED:42507108",
+        "MED:42277575"
+      ],
+      "before_ms": 56.611299980431795,
+      "after_ms": 69.04480000957847
+    },
+    {
+      "claim_id": "food-008",
+      "method": "hybrid",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 7,
+      "jaccard_top10": 0.5384615384615384,
+      "same_order": false,
+      "before_top3": [
+        "MED:42375777",
+        "MED:41586347",
+        "MED:42302513"
+      ],
+      "after_top3": [
+        "MED:41586347",
+        "MED:42375777",
+        "MED:42277575"
+      ],
+      "before_ms": 466.1385999061167,
+      "after_ms": 504.04169992543757
+    },
+    {
+      "claim_id": "food-008",
+      "method": "hybrid_rerank",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 8,
+      "jaccard_top10": 0.6666666666666666,
+      "same_order": false,
+      "before_top3": [
+        "MED:41601725",
+        "MED:41586347",
+        "MED:40705196"
+      ],
+      "after_top3": [
+        "MED:41601725",
+        "MED:41586347",
+        "MED:40705196"
+      ],
+      "before_ms": 985.5384000111371,
+      "after_ms": 1020.7883999682963,
+      "baseline_AI_labels_on_new_top3": {
+        "judged_fraction": 1.0,
+        "precision_at_k": 1.0,
+        "precision_bounds": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "claim_id": "food-008",
+      "method": "structure",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42739011",
+        "MED:42375777",
+        "MED:42277575"
+      ],
+      "after_top3": [
+        "MED:42739011",
+        "MED:42375777",
+        "MED:42277575"
+      ],
+      "before_ms": 529.0508000180125,
+      "after_ms": 415.0459000375122
+    },
+    {
+      "claim_id": "food-008",
+      "method": "structure_expanded",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:42739011",
+        "MED:42375777",
+        "MED:42277575"
+      ],
+      "after_top3": [
+        "MED:42739011",
+        "MED:42375777",
+        "MED:42277575"
+      ],
+      "before_ms": 288.64280006382614,
+      "after_ms": 295.67020013928413
+    },
+    {
+      "claim_id": "food-008",
+      "method": "tfidf",
+      "query": "Time restricted eating improves glucose control independently of weight loss.",
+      "shared_top10": 10,
+      "jaccard_top10": 1.0,
+      "same_order": true,
+      "before_top3": [
+        "MED:41954637",
+        "MED:39666946",
+        "MED:31813824"
+      ],
+      "after_top3": [
+        "MED:41954637",
+        "MED:39666946",
+        "MED:31813824"
+      ],
+      "before_ms": 182.98149993643165,
+      "after_ms": 173.66399988532066
+    }
+  ],
+  "interpretation": "Rank changes measure retrieval behavior, not improvement. New results are unjudged unless already in the small baseline AI pool. No accuracy gain or recall claim.",
+  "timing_limit": "Single ordered runs; cache, cold model loads and host contention differ."
+}

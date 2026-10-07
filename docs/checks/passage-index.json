@@ -1,0 +1,24 @@
+{
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+  "model": [
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "level": "passage",
+  "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+  "dimensions": 384,
+  "passages": 37975,
+  "truncated_passages": 2723,
+  "max_tokens": 256,
+  "elapsed_seconds": 805.0769497000147,
+  "elapsed_scope": "current invocation only; excludes earlier checkpoint work",
+  "resumed_from": 12288,
+  "validation": {
+    "vectors": 37975,
+    "dimensions": 384,
+    "finite": true,
+    "unit_norm_tolerance": 0.0001
+  },
+  "path": "E:\\EvidenceAtlasFood\\indexes\\dense-eb8022c2e6285731",
+  "vector_file_bytes": 58329728
+}
