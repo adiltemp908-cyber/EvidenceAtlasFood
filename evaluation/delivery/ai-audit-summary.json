@@ -1,0 +1,63 @@
+{
+  "status": "Preliminary AI self-audit; not independent validation or overall accuracy",
+  "method": "hybrid_rerank",
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+  "sample_pairs": 12,
+  "claims": 4,
+  "selection": "Top three per declarative development claim, fixed before labeling",
+  "macro_precision_at_3": 0.6666666666666666,
+  "relevance_grade_counts": {
+    "0": 0,
+    "1": 4,
+    "2": 6,
+    "3": 2
+  },
+  "grade3_fraction": 0.16666666666666666,
+  "exact_rationale_spans_validated": 12,
+  "availability": {
+    "abstract-only": 3,
+    "full-text": 9
+  },
+  "results": [
+    {
+      "claim_id": "food-002",
+      "claim": "Caffeine taken six hours before bedtime reduces total sleep time in healthy adults.",
+      "relevant_at_3": 2,
+      "precision_at_3": 0.6666666666666666,
+      "grade3_at_3": 0,
+      "judged_fraction": 1.0
+    },
+    {
+      "claim_id": "food-004",
+      "claim": "Higher dietary protein is safe for every person with chronic kidney disease.",
+      "relevant_at_3": 2,
+      "precision_at_3": 0.6666666666666666,
+      "grade3_at_3": 1,
+      "judged_fraction": 1.0
+    },
+    {
+      "claim_id": "food-006",
+      "claim": "All adults get the same blood pressure benefit from sodium reduction.",
+      "relevant_at_3": 1,
+      "precision_at_3": 0.3333333333333333,
+      "grade3_at_3": 1,
+      "judged_fraction": 1.0
+    },
+    {
+      "claim_id": "food-008",
+      "claim": "Time restricted eating improves glucose control independently of weight loss.",
+      "relevant_at_3": 3,
+      "precision_at_3": 1.0,
+      "grade3_at_3": 0,
+      "judged_fraction": 1.0
+    }
+  ],
+  "unmeasured": [
+    "Held-out effectiveness",
+    "NLI/stance accuracy",
+    "Citation entailment accuracy",
+    "Recall",
+    "Scientific certainty",
+    "Human reviewer agreement"
+  ]
+}

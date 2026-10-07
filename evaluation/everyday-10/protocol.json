@@ -1,0 +1,35 @@
+{
+  "questions": [
+    "Does yogurt help digestion?",
+    "Does boiling vegetables remove vitamins?",
+    "Is olive oil healthier than butter?",
+    "Is wholegrain bread healthier than white bread?",
+    "Do artificial sweeteners help with weight loss?",
+    "Is fruit juice as healthy as whole fruit?",
+    "Do eggs raise cholesterol?",
+    "Does drinking milk help keep bones strong?",
+    "Does eating red meat increase cancer risk?",
+    "Does eating more protein help build muscle?"
+  ],
+  "methods": [
+    "structure",
+    "bm25",
+    "tfidf",
+    "dense",
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "expand": true,
+  "filters": "none",
+  "top_k": 3,
+  "reviewer": "AI",
+  "grade": "0 off-topic; 1 partial/background; 2 directly useful for part of the question; same label per question-paper across methods",
+  "limitations": "AI-assessed topical retrieval precision on a small exploratory query set; not human gold or overall answer accuracy",
+  "relevance_threshold": 2,
+  "positions": [
+    1,
+    2,
+    3
+  ],
+  "selection": "Exploratory everyday questions, not a representative or held-out benchmark. Strong examples selected after inspection must be labeled as showcases."
+}

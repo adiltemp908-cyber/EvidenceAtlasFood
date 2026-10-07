@@ -1,0 +1,943 @@
+{
+  "reviewer_kind": "AI",
+  "relevance_threshold": 2,
+  "queries": 10,
+  "runs": 60,
+  "unique_judged_pairs": 95,
+  "judged_positions": 180,
+  "aggregate": {
+    "structure": {
+      "1": 0.2,
+      "2": 0.25,
+      "3": 0.2333333333333333
+    },
+    "bm25": {
+      "1": 0.3,
+      "2": 0.2,
+      "3": 0.26666666666666666
+    },
+    "tfidf": {
+      "1": 0.3,
+      "2": 0.35,
+      "3": 0.3
+    },
+    "dense": {
+      "1": 0.5,
+      "2": 0.45,
+      "3": 0.4
+    },
+    "hybrid": {
+      "1": 0.5,
+      "2": 0.45,
+      "3": 0.36666666666666664
+    },
+    "hybrid_rerank": {
+      "1": 0.6,
+      "2": 0.5,
+      "3": 0.4
+    }
+  },
+  "per_query": [
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "structure",
+      "grades": [
+        1,
+        0,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "bm25",
+      "grades": [
+        1,
+        0,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "tfidf",
+      "grades": [
+        0,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "dense",
+      "grades": [
+        1,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "hybrid",
+      "grades": [
+        1,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 0,
+      "question": "Does yogurt help digestion?",
+      "method": "hybrid_rerank",
+      "grades": [
+        1,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "structure",
+      "grades": [
+        1,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "bm25",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "tfidf",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "dense",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "hybrid",
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 1,
+      "question": "Does boiling vegetables remove vitamins?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "structure",
+      "grades": [
+        1,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "bm25",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "tfidf",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "dense",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "hybrid",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 2,
+      "question": "Is olive oil healthier than butter?",
+      "method": "hybrid_rerank",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "structure",
+      "grades": [
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "bm25",
+      "grades": [
+        1,
+        1,
+        2
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "tfidf",
+      "grades": [
+        0,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "dense",
+      "grades": [
+        2,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "hybrid",
+      "grades": [
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 3,
+      "question": "Is wholegrain bread healthier than white bread?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "structure",
+      "grades": [
+        1,
+        1,
+        2
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "bm25",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "tfidf",
+      "grades": [
+        1,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "dense",
+      "grades": [
+        2,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "hybrid",
+      "grades": [
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 4,
+      "question": "Do artificial sweeteners help with weight loss?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "structure",
+      "grades": [
+        1,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "bm25",
+      "grades": [
+        0,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "tfidf",
+      "grades": [
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "dense",
+      "grades": [
+        1,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "hybrid",
+      "grades": [
+        1,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 5,
+      "question": "Is fruit juice as healthy as whole fruit?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "structure",
+      "grades": [
+        2,
+        2,
+        0
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "bm25",
+      "grades": [
+        2,
+        0,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "tfidf",
+      "grades": [
+        2,
+        0,
+        0
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "dense",
+      "grades": [
+        2,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "hybrid",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 6,
+      "question": "Do eggs raise cholesterol?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "structure",
+      "grades": [
+        0,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "bm25",
+      "grades": [
+        2,
+        1,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "tfidf",
+      "grades": [
+        1,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "dense",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "hybrid",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 7,
+      "question": "Does drinking milk help keep bones strong?",
+      "method": "hybrid_rerank",
+      "grades": [
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "structure",
+      "grades": [
+        1,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "bm25",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "tfidf",
+      "grades": [
+        0,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "dense",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "hybrid",
+      "grades": [
+        1,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 8,
+      "question": "Does eating red meat increase cancer risk?",
+      "method": "hybrid_rerank",
+      "grades": [
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "structure",
+      "grades": [
+        0,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "bm25",
+      "grades": [
+        1,
+        0,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "tfidf",
+      "grades": [
+        1,
+        2,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.3333333333333333
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "dense",
+      "grades": [
+        0,
+        2,
+        2
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.5,
+        "3": 0.6666666666666666
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "hybrid",
+      "grades": [
+        1,
+        1,
+        0
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    },
+    {
+      "qi": 9,
+      "question": "Does eating more protein help build muscle?",
+      "method": "hybrid_rerank",
+      "grades": [
+        0,
+        1,
+        1
+      ],
+      "precision": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      }
+    }
+  ],
+  "limitations": "AI-assessed topical retrieval precision on a small exploratory query set; not human gold or overall answer accuracy"
+}

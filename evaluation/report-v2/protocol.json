@@ -1,0 +1,56 @@
+{
+  "name": "Selected everyday searches and query refinement",
+  "method": "hybrid",
+  "rerank": true,
+  "expand": true,
+  "k": 10,
+  "filters": "none",
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+  "positions": [
+    3,
+    5,
+    10
+  ],
+  "reviewer_kind": "AI",
+  "rubric": {
+    "0": "Off-topic for exposure and outcome",
+    "1": "Related/background; exposure, preparation or outcome differs",
+    "2": "Directly useful for at least part of the question, including relevant null findings or review synthesis"
+  },
+  "relevant_grade": 2,
+  "selection": "Five presentation examples chosen after inspecting six original questions and four refinements. These are selected demonstrations, not a held-out or representative accuracy estimate.",
+  "selected": [
+    "caffeine:original",
+    "timing:original",
+    "vegetables:original",
+    "sodium:refined",
+    "milk:original"
+  ],
+  "judged_runs": [
+    "eggs:original",
+    "milk:original",
+    "vegetables:original",
+    "caffeine:original",
+    "sodium:original",
+    "timing:original",
+    "vegetables:refined",
+    "sodium:refined",
+    "caffeine:bm25",
+    "sodium:bm25"
+  ],
+  "screened_only": [
+    "eggs:refined",
+    "milk:refined"
+  ],
+  "scope": "Relevance refers to the food/outcome question. Words such as clinical trials are retrieval preferences, not an eligibility filter. Comparator and context mismatches are recorded in reasons. Scientific validity and human applicability are not graded by precision.",
+  "baseline_pairs": [
+    [
+      "caffeine:bm25",
+      "caffeine:original"
+    ],
+    [
+      "sodium:bm25",
+      "sodium:refined"
+    ]
+  ]
+}

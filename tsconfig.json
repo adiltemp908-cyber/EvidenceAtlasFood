@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": false,
+    "noEmitOnError": true,
+    "skipLibCheck": true
+  },
+  "files": ["web/app.ts", "web/contracts.d.ts"]
+}

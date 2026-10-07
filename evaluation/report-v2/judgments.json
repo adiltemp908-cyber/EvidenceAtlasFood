@@ -1,0 +1,1002 @@
+[
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:40339906",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Randomized human egg diets with LDL outcomes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:42468602",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Review explicitly discusses eggs and HDL with source studies.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:41994668",
+    "rank": 3,
+    "grade": 1,
+    "reason": "Broad cholesterol review; retrieved egg discussion is nutritional background rather than an egg-cholesterol finding.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:42810096",
+    "rank": 4,
+    "grade": 0,
+    "reason": "Duck feeding and yolk composition, not eating eggs and human blood cholesterol.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:40944114",
+    "rank": 5,
+    "grade": 1,
+    "reason": "Dairy and cardiovascular outcomes; exposure is not eggs.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:42588074",
+    "rank": 6,
+    "grade": 1,
+    "reason": "Broad cardiac metabolism; egg-related choline mechanism is indirect.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:42739011",
+    "rank": 7,
+    "grade": 0,
+    "reason": "Time-restricted eating rather than egg consumption.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:42796926",
+    "rank": 8,
+    "grade": 0,
+    "reason": "Population dietary trends, not blood cholesterol effects.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:40952543",
+    "rank": 9,
+    "grade": 1,
+    "reason": "Dyslipidemia review without egg-specific findings in the inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "eggs:original",
+    "topic": "eggs",
+    "paper_id": "MED:40282780",
+    "rank": 10,
+    "grade": 0,
+    "reason": "Perilla oil in rats, not egg consumption.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42673620",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Human milk intervention with bone-turnover markers; acute exercise setting limits applicability.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42796947",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Milk-component and bone-health synthesis directly informs mechanisms, although much evidence is preclinical.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42451157",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Review evaluates milk intake and bone accrual in young people.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:40944114",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Synthesis includes milk and bone density, fractures and turnover.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42637381",
+    "rank": 5,
+    "grade": 1,
+    "reason": "Isolated mineral delivery system in rats; not drinking whole milk.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:41098795",
+    "rank": 6,
+    "grade": 1,
+    "reason": "Yogurt-specific review; different exposure.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42588192",
+    "rank": 7,
+    "grade": 1,
+    "reason": "Milk mineral supplement in growing rats; different preparation and population.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:40488877",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Human liquid dairy cohort includes milk and fracture outcomes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:42514361",
+    "rank": 9,
+    "grade": 1,
+    "reason": "Calcium/vitamin D supplements, not a milk comparison.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "milk:original",
+    "topic": "milk",
+    "paper_id": "MED:40077766",
+    "rank": 10,
+    "grade": 1,
+    "reason": "CKD nutrition overview without a milk-specific result in the inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:22229802",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Water-free versus ordinary cooking with vegetable vitamin biomarkers and leaching discussion.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:34134516",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Boiling leafy vegetables and measured vitamin K bioaccessibility.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:42650632",
+    "rank": 3,
+    "grade": 1,
+    "reason": "Kidney disease review discusses potassium removal; vitamins are not its inspected outcome.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:42653823",
+    "rank": 4,
+    "grade": 1,
+    "reason": "Measures total carotenoids and other phytochemicals; individual vitamins/provitamin-A activity not established.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:39169551",
+    "rank": 5,
+    "grade": 2,
+    "reason": "Review explicitly covers boiling and ascorbic acid retention/degradation.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:9806122",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Measures vegetable cooking effects on vitamin content.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:42737207",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Bitter-leaf processing review discusses heat-sensitive nutrients and vitamins, with explicit evidence limits.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:35204095",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Human boiled/steamed broccoli comparison measures vitamin K availability.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:18421876",
+    "rank": 9,
+    "grade": 2,
+    "reason": "Vegetable vitamin B1/B2 retention under cooking, including scalding.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:original",
+    "topic": "vegetables",
+    "paper_id": "MED:41674686",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Boiled pumpkin cultivars with vitamin C and carotenoid outcomes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41320238",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Coffee intake and sleep-quality survey in active adults.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:31881028",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Objective sleep measurements and coffee exposure in a large cohort.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41164018",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Coffee and sleep-quality analysis, including null associations.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41801928",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Habitual coffee and sleep quality/daytime sleepiness.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:40362813",
+    "rank": 5,
+    "grade": 2,
+    "reason": "Coffee intervention and subjective/objective sleep measurements.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41097115",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Review includes coffee/caffeine and sleep disorders.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41078921",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Genetic analysis includes coffee and sleep-related outcomes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41841082",
+    "rank": 8,
+    "grade": 1,
+    "reason": "Primary analysis is academic performance; sleep appears as a related factor.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:42075032",
+    "rank": 9,
+    "grade": 2,
+    "reason": "Human caffeine/sleep synthesis includes coffee dosing studies.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:original",
+    "topic": "caffeine",
+    "paper_id": "MED:41109744",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Habitual caffeinated beverages and measured sleep variables.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:42196499",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Review directly addresses dietary salt and blood pressure mechanisms with human evidence.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:42444615",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Salt intake/reduction related to measured blood pressure in hypertensive men.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:41835651",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Dietary sodium and measured blood pressure in fishermen.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:41965584",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Salt consumption is analyzed as a predictor of ambulatory blood pressure.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:40613399",
+    "rank": 5,
+    "grade": 2,
+    "reason": "Review synthesizes sodium reduction and blood pressure.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:41714719",
+    "rank": 6,
+    "grade": 1,
+    "reason": "Survey of salt knowledge and practices; no direct intake-effect comparison in inspected evidence.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:41275512",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Meta-analysis of salt change and blood pressure in randomized trials.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:42021444",
+    "rank": 8,
+    "grade": 1,
+    "reason": "Salt taste sensitivity is the exposure, rather than measured salt intake.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:41228536",
+    "rank": 9,
+    "grade": 1,
+    "reason": "Review primarily addresses blood-pressure-independent atherosclerosis; inspected BP content is background.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:original",
+    "topic": "sodium",
+    "paper_id": "MED:42121926",
+    "rank": 10,
+    "grade": 1,
+    "reason": "Salt exposure and transient pressure changes in nephrectomized mice; indirect for everyday human diet.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42356360",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Late eating and main-meal timing with longitudinal BMI outcomes; adjusted null finding is relevant.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42280467",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Evening meal-to-sleep interval and glycemic measures in humans.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42437713",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Late eating with energy intake and diet quality in adults with chronic disease.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:41246831",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Late eating, calories after 20:00 and excess weight among adolescents.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42588125",
+    "rank": 5,
+    "grade": 1,
+    "reason": "Multicomponent lifestyle intervention; late-night eating is background only.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:41470839",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Review discusses circadian timing and late-meal glucose responses.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:31547547",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Review directly includes night-time meals and metabolic outcomes in shift workers.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42796993",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Review examines nocturnal eating and mental/metabolic health; population is specialized and evidence limited.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:42091606",
+    "rank": 9,
+    "grade": 1,
+    "reason": "Fasting duration, meal frequency and aging indices; no isolated late-night meal result in inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "timing:original",
+    "topic": "timing",
+    "paper_id": "MED:31590425",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Review directly discusses late energy intake, expenditure and energy balance.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:18421876",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Vegetable vitamin B1/B2 retention under cooking, including scalding.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:42653823",
+    "rank": 2,
+    "grade": 1,
+    "reason": "Measures total carotenoids and other phytochemicals; individual vitamins/provitamin-A activity not established.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:9806122",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Measures vegetable cooking effects on vitamin content.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:20169231",
+    "rank": 4,
+    "grade": 1,
+    "reason": "Restaurant storage/preparation vitamin-C losses; boiling effect not isolated.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:39169551",
+    "rank": 5,
+    "grade": 2,
+    "reason": "Review explicitly covers boiling and ascorbic acid retention/degradation.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:22229802",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Water-free versus ordinary cooking with vegetable vitamin biomarkers and leaching discussion.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:21615279",
+    "rank": 7,
+    "grade": 1,
+    "reason": "Zinc is a mineral; does not measure vitamins.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:40629907",
+    "rank": 8,
+    "grade": 1,
+    "reason": "Steamed bananas and provitamin A, rather than boiled vegetables.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:2017427",
+    "rank": 9,
+    "grade": 2,
+    "reason": "Traditional cooking of vegetable leaves and vitamin losses.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "vegetables:refined",
+    "topic": "vegetables",
+    "paper_id": "MED:35204095",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Human boiled/steamed broccoli comparison measures vitamin K availability.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:41761767",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Randomized dietary sodium reduction with blood-pressure response.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:41100086",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Salt-reduction program measures blood pressure as a secondary outcome; null findings still relevant.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:40256412",
+    "rank": 3,
+    "grade": 1,
+    "reason": "Main reported outcome is calculated ASCVD risk; BP used as an input without an isolated BP-effect result in inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:41635921",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Dose-response synthesis of sodium interventions and BP.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:40613399",
+    "rank": 5,
+    "grade": 2,
+    "reason": "Review synthesizes sodium reduction and blood pressure.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:42466516",
+    "rank": 6,
+    "grade": 1,
+    "reason": "Pharmaceutical sodium rather than dietary sodium; related context only.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:42196499",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Review directly addresses dietary salt and blood pressure mechanisms with human evidence.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:41877571",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Dietary sodium intervention and blood-pressure variability/absolute-level distinction.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:42588147",
+    "rank": 9,
+    "grade": 2,
+    "reason": "Plant-based dietary review directly discusses added sodium and BP with trial context.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:refined",
+    "topic": "sodium",
+    "paper_id": "MED:41243115",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Meta-analytic synthesis explicitly reports sodium intake and systolic/diastolic blood-pressure changes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:41097115",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Review includes coffee/caffeine and sleep disorders.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:31881028",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Objective sleep measurements and coffee exposure in a large cohort.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:41164018",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Coffee and sleep-quality analysis, including null associations.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:40362813",
+    "rank": 4,
+    "grade": 2,
+    "reason": "Coffee intervention and subjective/objective sleep measurements.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:42243807",
+    "rank": 5,
+    "grade": 1,
+    "reason": "Academic-performance study; coffee and sleep are co-occurring behaviors, without a direct coffee-sleep result in inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:41109744",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Habitual caffeinated beverages and measured sleep variables.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:41801928",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Habitual coffee and sleep quality/daytime sleepiness.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:31818322",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Coffee intake is compared with apnea risk and daytime sleepiness; null findings are relevant.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:41841082",
+    "rank": 9,
+    "grade": 1,
+    "reason": "Primary analysis is academic performance; sleep appears as a related factor.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "caffeine:bm25",
+    "topic": "caffeine",
+    "paper_id": "MED:42654270",
+    "rank": 10,
+    "grade": 1,
+    "reason": "Physical-performance review; sleep is a modifying factor rather than the main coffee outcome.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42196499",
+    "rank": 1,
+    "grade": 2,
+    "reason": "Review directly addresses dietary salt and blood pressure mechanisms with human evidence.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:41100086",
+    "rank": 2,
+    "grade": 2,
+    "reason": "Salt-reduction program measures blood pressure as a secondary outcome; null findings still relevant.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42812504",
+    "rank": 3,
+    "grade": 2,
+    "reason": "Review directly discusses salt reduction and blood pressure in CKD, including intervention studies.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:40256412",
+    "rank": 4,
+    "grade": 1,
+    "reason": "Main reported outcome is calculated ASCVD risk; BP used as an input without an isolated BP-effect result in inspected text.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42650632",
+    "rank": 5,
+    "grade": 1,
+    "reason": "Primarily plant-food and potassium management; selected sodium balance discussion is indirect.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42588147",
+    "rank": 6,
+    "grade": 2,
+    "reason": "Plant-based dietary review directly discusses added sodium and BP with trial context.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:41635921",
+    "rank": 7,
+    "grade": 2,
+    "reason": "Dose-response synthesis of sodium interventions and BP.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42488174",
+    "rank": 8,
+    "grade": 2,
+    "reason": "Review includes BP responses in sodium reduction trials, with counterarguments and implementation limits.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:42819067",
+    "rank": 9,
+    "grade": 2,
+    "reason": "Review reports a sodium-restriction trial with systolic BP outcomes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  },
+  {
+    "run": "sodium:bm25",
+    "topic": "sodium",
+    "paper_id": "MED:41243115",
+    "rank": 10,
+    "grade": 2,
+    "reason": "Meta-analytic synthesis explicitly reports sodium intake and systolic/diastolic blood-pressure changes.",
+    "reviewer_kind": "AI",
+    "basis": "Title, abstract and selected retrieved/source sections; not exhaustive full-paper critical appraisal."
+  }
+]

@@ -1,0 +1,243 @@
+{
+  "reviewer_kind": "AI",
+  "positions": [
+    3,
+    5,
+    10
+  ],
+  "selected": [
+    "caffeine:original",
+    "timing:original",
+    "vegetables:original",
+    "sodium:refined",
+    "milk:original"
+  ],
+  "selection": "Five presentation examples chosen after inspecting six original questions and four refinements. These are selected demonstrations, not a held-out or representative accuracy estimate.",
+  "metrics": {
+    "eggs:original": {
+      "query": "Do eggs raise cholesterol?",
+      "grades": [
+        2,
+        2,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "precision": {
+        "3": 0.6666666666666666,
+        "5": 0.4,
+        "10": 0.2
+      }
+    },
+    "milk:original": {
+      "query": "Does drinking milk help keep bones strong?",
+      "grades": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 0.8,
+        "10": 0.5
+      }
+    },
+    "vegetables:original": {
+      "query": "Does boiling vegetables remove vitamins?",
+      "grades": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "3": 0.6666666666666666,
+        "5": 0.6,
+        "10": 0.8
+      }
+    },
+    "caffeine:original": {
+      "query": "Does coffee affect sleep?",
+      "grades": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 1.0,
+        "10": 0.9
+      }
+    },
+    "sodium:original": {
+      "query": "Does eating salt raise blood pressure?",
+      "grades": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 1.0,
+        "10": 0.6
+      }
+    },
+    "timing:original": {
+      "query": "Is eating a late night meal bad?",
+      "grades": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 0.8,
+        "10": 0.8
+      }
+    },
+    "vegetables:refined": {
+      "query": "Boiling vegetables vitamin retention cooking losses",
+      "grades": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "precision": {
+        "3": 0.6666666666666666,
+        "5": 0.6,
+        "10": 0.6
+      }
+    },
+    "sodium:refined": {
+      "query": "Dietary sodium reduction blood pressure clinical trials",
+      "grades": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "3": 0.6666666666666666,
+        "5": 0.8,
+        "10": 0.8
+      }
+    },
+    "caffeine:bm25": {
+      "query": "Does coffee affect sleep?",
+      "grades": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 0.8,
+        "10": 0.7
+      }
+    },
+    "sodium:bm25": {
+      "query": "Dietary sodium reduction blood pressure clinical trials",
+      "grades": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "precision": {
+        "3": 1.0,
+        "5": 0.6,
+        "10": 0.8
+      }
+    }
+  },
+  "selected_mean": {
+    "3": 0.8666666666666666,
+    "5": 0.8,
+    "10": 0.76
+  },
+  "original_six_mean": {
+    "3": 0.8888888888888888,
+    "5": 0.7666666666666666,
+    "10": 0.6333333333333334
+  },
+  "paired_baseline_mean": {
+    "3": 1.0,
+    "5": 0.7,
+    "10": 0.75
+  },
+  "paired_hybrid_mean": {
+    "3": 0.8333333333333333,
+    "5": 0.9,
+    "10": 0.8500000000000001
+  },
+  "total_runs": 12,
+  "judged_runs": 10,
+  "judged_positions": 100,
+  "unique_topic_paper_pairs": 79,
+  "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df"
+}

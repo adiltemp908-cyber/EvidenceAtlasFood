@@ -1,0 +1,2933 @@
+[
+  {
+    "key": "eggs:original",
+    "topic": "eggs",
+    "stage": "original",
+    "query": "Do eggs raise cholesterol?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Do eggs raise cholesterol?",
+          "expanded": "Do eggs raise cholesterol?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "eggs",
+            "raise",
+            "cholesterol"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 1057,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 1604.9679000861943,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 904.1327000595629,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 4238.429199904203,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Do eggs raise cholesterol?",
+      "expanded": "Do eggs raise cholesterol?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:40339906",
+        "title": "Impact of dietary cholesterol from eggs and saturated fat on LDL cholesterol levels: a randomized cross-over study.",
+        "availability": "abstract-only",
+        "score": 3.6406543254852295,
+        "passage_ids": [
+          "MED:40339906:s00000:p0:048632d23abb",
+          "MED:40339906:s00001:p0:94814c887745",
+          "MED:40339906:s00001:p1:5ab031dd9726"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42468602",
+        "title": "Interpreting Lower HDL Cholesterol in Plant-Based Diets: Mechanisms and Clinical Implications.",
+        "availability": "full-text",
+        "score": -0.4310767352581024,
+        "passage_ids": [
+          "MED:42468602:s00022:p0:f6472d711896",
+          "MED:42468602:s00029:p1:6bc7fdd4a967",
+          "MED:42468602:s00025:p0:7a2559d1bf63"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:41994668",
+        "title": "Re-evaluating Cardiovascular Risk: A Narrative Review Challenging the Cholesterol Hypothesis and Identifying Modern Dietary Drivers.",
+        "availability": "full-text",
+        "score": -2.635040760040283,
+        "passage_ids": [
+          "MED:41994668:s00029:p0:17d0bf0809b7",
+          "MED:41994668:s00028:p0:1e57bf3ffead",
+          "MED:41994668:s00030:p0:6cfd50d4866c"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:42810096",
+        "title": "Effects of dietary Purple Perilla seed oil on performance, egg quality, and yolk deposition of n-3 polyunsaturated fatty acids and functional metabolites in laying ducks.",
+        "availability": "abstract-only",
+        "score": -4.259444713592529,
+        "passage_ids": [
+          "MED:42810096:s00001:p1:b5497c038d4d",
+          "MED:42810096:s00001:p0:d940ae9dde37",
+          "MED:42810096:s00000:p0:aee3eb0e7ebc"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:40944114",
+        "title": "Dairy Consumption and Risk of Cardiovascular and Bone Health Outcomes in Adults: An Umbrella Review and Updated Meta-Analyses.",
+        "availability": "full-text",
+        "score": -4.272292137145996,
+        "passage_ids": [
+          "MED:40944114:s00029:p0:68d17c800b64",
+          "MED:40944114:s00000:p0:e485fe200dd6",
+          "MED:40944114:s00001:p0:cfd16ebf7f19"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:42588074",
+        "title": "Diet-Associated Regulation of Cardiac Metabolism: Molecular Determinants and Pathophysiological Consequences.",
+        "availability": "full-text",
+        "score": -5.398271560668945,
+        "passage_ids": [
+          "MED:42588074:s00031:p0:1a0205d344d7",
+          "MED:42588074:s00105:p0:656ca9bdd0a3",
+          "MED:42588074:s00112:p0:8528d3cca2a1"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:42739011",
+        "title": "Time-Restricted Eating Is Feasible and Acceptable and Improves Glycemic Control in Veterans with Spinal Cord Injury and Obesity: A Pilot Trial.",
+        "availability": "full-text",
+        "score": -6.392688751220703,
+        "passage_ids": [
+          "MED:42739011:s00047:p0:ddaa0d6aa5a4",
+          "MED:42739011:s00040:p0:8357ebafd1eb",
+          "MED:42739011:s00020:p0:95e133648997"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42796926",
+        "title": "Mediterranean Diet and Global Dietary Shifts, 1990-2018: Population-Level Analysis Using Global Dietary Database.",
+        "availability": "full-text",
+        "score": -7.201984405517578,
+        "passage_ids": [
+          "MED:42796926:s00046:p0:8856d9f88a18",
+          "MED:42796926:s00030:p0:6ea055913552",
+          "MED:42796926:s00012:p0:e36411e72c4c"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:40952543",
+        "title": "Dietary Management of Atherogenic Dyslipidemia.",
+        "availability": "full-text",
+        "score": -7.403764724731445,
+        "passage_ids": [
+          "MED:40952543:s00008:p0:215b24344225",
+          "MED:40952543:s00001:p0:8958d1253b12",
+          "MED:40952543:s00017:p0:554908c84a92"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:40282780",
+        "title": "Effects of Perilla Seed Oil on Blood Lipids, Oxidative Stress, and Inflammation in Hyperlipidemic Rats.",
+        "availability": "full-text",
+        "score": -7.769593238830566,
+        "passage_ids": [
+          "MED:40282780:s00029:p0:61048d47367e",
+          "MED:40282780:s00030:p0:4834503e1bf3",
+          "MED:40282780:s00028:p0:0d3a10ba6bd9"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "milk:original",
+    "topic": "milk",
+    "stage": "original",
+    "query": "Does drinking milk help keep bones strong?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Does drinking milk help keep bones strong?",
+          "expanded": "Does drinking milk help keep bones strong?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "drinking",
+            "milk",
+            "help",
+            "keep",
+            "bones",
+            "strong"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 1600,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 938.021499896422,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 172.39900003187358,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1891.110099852085,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Does drinking milk help keep bones strong?",
+      "expanded": "Does drinking milk help keep bones strong?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:42673620",
+        "title": "Milk consumption following acute high-intensity exercise supports bone status indices in young, healthy adults: a randomized crossover study.",
+        "availability": "abstract-only",
+        "score": 2.3604254722595215,
+        "passage_ids": [
+          "MED:42673620:s00000:p0:f45d3334d59d",
+          "MED:42673620:s00001:p1:ea57483375bc",
+          "MED:42673620:s00001:p0:73e385801414"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42796947",
+        "title": "Research Progress on Mechanisms of Milk-Derived Functional Components in Regulating Bone Health and the Gut-Bone Axis.",
+        "availability": "full-text",
+        "score": 1.500068187713623,
+        "passage_ids": [
+          "MED:42796947:s00059:p1:0d5c23a959e7",
+          "MED:42796947:s00065:p0:fd39ab83c196",
+          "MED:42796947:s00066:p0:69ed811290d5"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:42451157",
+        "title": "Milk Intake, Sun Exposure, and Caffeinated Energy Drink Consumption in Children and Adolescents: Evidence, Uncertainty, and Implications for Peak Bone Mass Accrual.",
+        "availability": "full-text",
+        "score": 0.862903356552124,
+        "passage_ids": [
+          "MED:42451157:s00010:p0:72a73fff8d24",
+          "MED:42451157:s00037:p0:7de7a810de18",
+          "MED:42451157:s00000:p0:6f56d8e0839b"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:40944114",
+        "title": "Dairy Consumption and Risk of Cardiovascular and Bone Health Outcomes in Adults: An Umbrella Review and Updated Meta-Analyses.",
+        "availability": "full-text",
+        "score": -0.8844509124755859,
+        "passage_ids": [
+          "MED:40944114:s00059:p0:efdcb8a3f71f",
+          "MED:40944114:s00051:p1:a095ab051f33",
+          "MED:40944114:s00022:p1:927bd3db66f8"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:42637381",
+        "title": "S/O/W-based milk mineral-fortified emulsion: a delivery platform offering stability, enhanced bioavailability, and bone health support.",
+        "availability": "abstract-only",
+        "score": -1.7795478105545044,
+        "passage_ids": [
+          "MED:42637381:s00000:p0:be3f9569a1ef",
+          "MED:42637381:s00001:p0:356e56ca74c5",
+          "MED:42637381:s00001:p1:ddc3d8bfd891"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:41098795",
+        "title": "Impact of yogurt consumption on bone health markers in adults with or without osteoporosis: a systematic review and meta-analysis.",
+        "availability": "full-text",
+        "score": -3.494936466217041,
+        "passage_ids": [
+          "MED:41098795:s00038:p0:083d866e0500",
+          "MED:41098795:s00056:p0:f2e6641e918b",
+          "MED:41098795:s00066:p0:a8a415455a0a"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:42588192",
+        "title": "Mechanistic Insights into Milk Minerals Driving Bone Development and Mineralization in Growing Rats.",
+        "availability": "full-text",
+        "score": -4.31239128112793,
+        "passage_ids": [
+          "MED:42588192:s00000:p0:264c00d64b7f",
+          "MED:42588192:s00038:p0:6d250ad48a9e",
+          "MED:42588192:s00032:p1:a86470a905f7"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:40488877",
+        "title": "Long-term consumption of liquid dairy products predicts lower fracture risk in aging women: a 25-year follow-up.",
+        "availability": "full-text",
+        "score": -4.403232574462891,
+        "passage_ids": [
+          "MED:40488877:s00001:p1:9964d72cefcf",
+          "MED:40488877:s00020:p0:8d7dcebd9a0e",
+          "MED:40488877:s00019:p0:510c2a5d38c0"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42514361",
+        "title": "Daily Calcium and Vitamin D Supplementation as a Foundational Pillar in Osteoporosis Management: A Narrative Review.",
+        "availability": "full-text",
+        "score": -6.677077293395996,
+        "passage_ids": [
+          "MED:42514361:s00053:p0:7c5ba38746ef",
+          "MED:42514361:s00012:p0:c9d6f9008a52",
+          "MED:42514361:s00024:p0:25e5e5fb2976"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:40077766",
+        "title": "Nutritional Intervention and Musculoskeletal Health in Chronic Kidney Disease.",
+        "availability": "full-text",
+        "score": -7.116321563720703,
+        "passage_ids": [
+          "MED:40077766:s00001:p1:5b6121c9831f",
+          "MED:40077766:s00022:p0:d0bedd90879b",
+          "MED:40077766:s00030:p1:3d0085534b39"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "vegetables:original",
+    "topic": "vegetables",
+    "stage": "original",
+    "query": "Does boiling vegetables remove vitamins?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Does boiling vegetables remove vitamins?",
+          "expanded": "Does boiling vegetables remove vitamins?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "boiling",
+            "vegetables",
+            "remove",
+            "vitamins"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 1107,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 356.38060001656413,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 139.84699989669025,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1581.9867998361588,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Does boiling vegetables remove vitamins?",
+      "expanded": "Does boiling vegetables remove vitamins?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:22229802",
+        "title": "Effects of cooking using multi-ply cookware on absorption of potassium and vitamins: a randomized double-blind placebo control study.",
+        "availability": "full-text",
+        "score": 1.764775037765503,
+        "passage_ids": [
+          "MED:22229802:s00017:p0:024f61d95b5a",
+          "MED:22229802:s00018:p0:c524e02c63ae",
+          "MED:22229802:s00005:p0:83d7b77c7abc"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:34134516",
+        "title": "Partial disintegration of vegetable cell wall during cooking improves vitamin K1 (phylloquinone) bioaccessibility in in vitro digestion.",
+        "availability": "abstract-only",
+        "score": 0.969709575176239,
+        "passage_ids": [
+          "MED:34134516:s00001:p0:a2453d0f8ca8",
+          "MED:34134516:s00001:p1:d4973440f6f3",
+          "MED:34134516:s00000:p0:24ffcf2389b1"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:42650632",
+        "title": "Fruits, Vegetables, and Legumes: Harnessing the Gut-Kidney Axis in Hypertensive Chronic Kidney Disease.",
+        "availability": "full-text",
+        "score": 0.7284226417541504,
+        "passage_ids": [
+          "MED:42650632:s00038:p0:b608d1e11089",
+          "MED:42650632:s00035:p0:845631f0f1b6",
+          "MED:42650632:s00025:p0:1f28642b89f2"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:42653823",
+        "title": "Effects of Household Cooking Methods on the Nutritional, Phytochemical and Functional Properties of <i>Cucurbita maxima</i> Leaves.",
+        "availability": "full-text",
+        "score": -1.4596917629241943,
+        "passage_ids": [
+          "MED:42653823:s00056:p0:f994a1e0d7b8",
+          "MED:42653823:s00015:p0:d4d10711bf06",
+          "MED:42653823:s00057:p0:681d728e00d8"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:39169551",
+        "title": "Impact of thermal processing on polyphenols, carotenoids, glucosinolates, and ascorbic acid in fruit and vegetables and their cardiovascular benefits.",
+        "availability": "full-text",
+        "score": -2.0997514724731445,
+        "passage_ids": [
+          "MED:39169551:s00019:p0:9bc770e3b0bf",
+          "MED:39169551:s00008:p0:7d8cc50f93f6",
+          "MED:39169551:s00010:p0:eac301fc404c"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:9806122",
+        "title": "Effects of home-based food preparation practices on the micronutrient content of foods.",
+        "availability": "abstract-only",
+        "score": -2.6537094116210938,
+        "passage_ids": [
+          "MED:9806122:s00001:p0:cc85656ca419",
+          "MED:9806122:s00000:p0:fe4bdc642ed6"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:42737207",
+        "title": "Processing, Bioaccessibility, Predicted Bioavailability, Gut Microbiome Interactions and Potential Food Applications of <i>Vernonia amygdalina</i> (Bitter Leaf): Bridging the Evidence-to-Practice Gap.",
+        "availability": "full-text",
+        "score": -2.8151276111602783,
+        "passage_ids": [
+          "MED:42737207:s00020:p0:e41fda7d0c86",
+          "MED:42737207:s00026:p0:d35a15dd0622",
+          "MED:42737207:s00019:p0:1bd7bd3d68a4"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:35204095",
+        "title": "Bioavailability Study of Isothiocyanates and Other Bioactive Compounds of Brassica oleracea L. var. Italica Boiled or Steamed: Functional Food or Dietary Supplement?",
+        "availability": "full-text",
+        "score": -3.1595025062561035,
+        "passage_ids": [
+          "MED:35204095:s00032:p0:65f8331d7107",
+          "MED:35204095:s00023:p0:126d62840ad2",
+          "MED:35204095:s00035:p0:5dba8b18cef8"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:18421876",
+        "title": "[Study on vitamin B1, vitamin B2 retention factors in vegetables].",
+        "availability": "abstract-only",
+        "score": -3.8622958660125732,
+        "passage_ids": [
+          "MED:18421876:s00000:p0:9ffcd2b5cba7",
+          "MED:18421876:s00001:p0:2e1861c592ec",
+          "MED:18421876:s00001:p1:631532e5a07c"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:41674686",
+        "title": "Effect of different cooking methods on the sensory, nutritional, and flavor profiles of three <i>Cucurbita moschata</i> and <i>Cucurbita maxima</i> cultivars.",
+        "availability": "full-text",
+        "score": -3.890636920928955,
+        "passage_ids": [
+          "MED:41674686:s00019:p1:3c6b3e7133fc",
+          "MED:41674686:s00030:p0:0197547e82ea",
+          "MED:41674686:s00031:p0:d37d3b987851"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "caffeine:original",
+    "topic": "caffeine",
+    "stage": "original",
+    "query": "Does coffee affect sleep?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Does coffee affect sleep?",
+          "expanded": "Does coffee affect sleep?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "coffee",
+            "affect",
+            "sleep"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 4072,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 808.6872000712901,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 169.17539993301034,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1677.097599953413,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Does coffee affect sleep?",
+      "expanded": "Does coffee affect sleep?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:41320238",
+        "title": "The interplay of coffee consumption, plant-based diets on sleep quality and emotional well-being in physically active adults.",
+        "availability": "full-text",
+        "score": 9.338981628417969,
+        "passage_ids": [
+          "MED:41320238:s00001:p2:96ab367fe182",
+          "MED:41320238:s00045:p0:964eb425626c",
+          "MED:41320238:s00036:p0:8eb7e3675c7d"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:31881028",
+        "title": "Objective sleep assessment in >80,000 UK mid-life adults: Associations with sociodemographic characteristics, physical activity and caffeine.",
+        "availability": "full-text",
+        "score": 8.007988929748535,
+        "passage_ids": [
+          "MED:31881028:s00026:p0:86c1fccf29ec",
+          "MED:31881028:s00024:p0:f081a4610f6f",
+          "MED:31881028:s00023:p0:5f2c5f1ab111"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:41164018",
+        "title": "Impact of Coffee Intake on Sleep Quality Among Adults in the Jazan Region, Saudi Arabia: A Cross-Sectional Study.",
+        "availability": "full-text",
+        "score": 7.729409217834473,
+        "passage_ids": [
+          "MED:41164018:s00000:p0:971053b90eae",
+          "MED:41164018:s00041:p0:361cc68db6c3",
+          "MED:41164018:s00051:p0:7fc4c4525436"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:41801928",
+        "title": "Habitual coffee consumption poorly correlates with sleep quality and daytime sleepiness: A cross-sectional study.",
+        "availability": "full-text",
+        "score": 7.538434028625488,
+        "passage_ids": [
+          "MED:41801928:s00000:p0:ed4ebc251feb",
+          "MED:41801928:s00013:p0:a72bd297f611",
+          "MED:41801928:s00009:p0:8cdc8d818253"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:40362813",
+        "title": "Effects of Caffeine Intake on Self-Administered Sleeping Quality and Wearable Monitoring of Sleep in a Cohort of Young Healthy Adults.",
+        "availability": "full-text",
+        "score": 7.441295623779297,
+        "passage_ids": [
+          "MED:40362813:s00032:p0:b9f284a951c0",
+          "MED:40362813:s00035:p0:091b4df4af2e",
+          "MED:40362813:s00045:p0:4711a886143e"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:41097115",
+        "title": "Exploring the Impact and Mechanisms of Coffee and Its Active Ingredients on Depression, Anxiety, and Sleep Disorders.",
+        "availability": "full-text",
+        "score": 7.030041694641113,
+        "passage_ids": [
+          "MED:41097115:s00000:p0:0a2939cdc59f",
+          "MED:41097115:s00001:p0:bd17ce478fa4",
+          "MED:41097115:s00012:p0:99138f313b23"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:41078921",
+        "title": "Application of Mendelian randomization to explore the genetic association between drinking habits of different beverages and sleep disorder.",
+        "availability": "full-text",
+        "score": 6.985572814941406,
+        "passage_ids": [
+          "MED:41078921:s00040:p0:536affd7d741",
+          "MED:41078921:s00001:p1:ef7ed58b6be4",
+          "MED:41078921:s00042:p0:7fdd19410393"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:41841082",
+        "title": "Association Between Coffee Consumption and Academic Performance Among Second-Year Medical Students.",
+        "availability": "full-text",
+        "score": 6.589788913726807,
+        "passage_ids": [
+          "MED:41841082:s00046:p0:025cba84d5b3",
+          "MED:41841082:s00029:p0:6482729f7c4f",
+          "MED:41841082:s00042:p0:746901080947"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42075032",
+        "title": "The Caffeinated Brain Part 2: The Effect of Caffeine on Sleep-Related Electroencephalography (EEG)-A Systematic and Mechanistic Review.",
+        "availability": "full-text",
+        "score": 6.132660388946533,
+        "passage_ids": [
+          "MED:42075032:s00061:p0:f7ba7961345d",
+          "MED:42075032:s00013:p0:5c771d0006db",
+          "MED:42075032:s00041:p1:aad69b0c69e7"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:41109744",
+        "title": "Community-based causal evidence that high habitual caffeine consumption alters distinct polysomnography-derived sleep variables.",
+        "availability": "full-text",
+        "score": 5.534062385559082,
+        "passage_ids": [
+          "MED:41109744:s00039:p1:90f4b46f1490",
+          "MED:41109744:s00037:p0:f2ce8381b21d",
+          "MED:41109744:s00029:p0:61b9aee27c1a"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "sodium:original",
+    "topic": "sodium",
+    "stage": "original",
+    "query": "Does eating salt raise blood pressure?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Does eating salt raise blood pressure?",
+          "expanded": "Does eating salt raise blood pressure?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "eating",
+            "salt",
+            "raise",
+            "blood",
+            "pressure"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 4886,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 777.688300004229,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 118.85920003987849,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1573.2696000486612,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Does eating salt raise blood pressure?",
+      "expanded": "Does eating salt raise blood pressure?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:42196499",
+        "title": "Gut Microbiota as a Mediator of Dietary Salt Effects on Blood Pressure.",
+        "availability": "full-text",
+        "score": 8.216301918029785,
+        "passage_ids": [
+          "MED:42196499:s00026:p1:042c971463f4",
+          "MED:42196499:s00040:p0:9034eaa94d9f",
+          "MED:42196499:s00027:p1:b9d262113bfb"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42444615",
+        "title": "Impact of Obesity on the Association Between Salt Intake and Blood Pressure in Adult Men With Hypertension Who Participated in the Remote Lifestyle Intervention.",
+        "availability": "full-text",
+        "score": 4.832073211669922,
+        "passage_ids": [
+          "MED:42444615:s00000:p0:40a155169e63",
+          "MED:42444615:s00001:p0:65ba32c8b7fc",
+          "MED:42444615:s00031:p0:2c6c88ec4355"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:41835651",
+        "title": "Impact of Sodium on Blood Pressure and Well Being on Coastal Population: A Social Pharmacy Perspective.",
+        "availability": "full-text",
+        "score": 4.831801891326904,
+        "passage_ids": [
+          "MED:41835651:s00020:p0:41e071ea44ba",
+          "MED:41835651:s00018:p0:61a88646d715",
+          "MED:41835651:s00011:p0:5292743973d6"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:41965584",
+        "title": "Socio-demographic, lifestyle, and anthropometric predictors of ambulatory blood pressure among adults in semi-urban Nigeria.",
+        "availability": "full-text",
+        "score": 4.685846328735352,
+        "passage_ids": [
+          "MED:41965584:s00024:p0:562cd2a568d6",
+          "MED:41965584:s00028:p0:cb0c24c4a0a9",
+          "MED:41965584:s00001:p1:46ae9b685426"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:40613399",
+        "title": "Lowering Sodium Intake: Reduction and Substitution for Cardiovascular Health.",
+        "availability": "abstract-only",
+        "score": 4.635367393493652,
+        "passage_ids": [
+          "MED:40613399:s00001:p0:0ca432e8a975",
+          "MED:40613399:s00001:p1:cc47854cc17d",
+          "MED:40613399:s00000:p0:3808c8e0dc39"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:41714719",
+        "title": "Factors associated with poor practice of dietary salt intake among patients with hypertension in a primary health care clinic in Malaysia.",
+        "availability": "full-text",
+        "score": 3.9763622283935547,
+        "passage_ids": [
+          "MED:41714719:s00028:p0:6ffa5596f23f",
+          "MED:41714719:s00001:p0:15585f9bf2c5",
+          "MED:41714719:s00030:p0:afc32394e577"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:41275512",
+        "title": "Association Between Changes in Salt Intake and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "availability": "abstract-only",
+        "score": 3.6617395877838135,
+        "passage_ids": [
+          "MED:41275512:s00000:p0:adb96f610c28",
+          "MED:41275512:s00001:p0:ac0b5d65f3ca",
+          "MED:41275512:s00001:p1:c41825859af3"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42021444",
+        "title": "Association of Salt Taste Sensitivity Threshold with Blood Pressure and Obesity Indicators among Healthy Young Adults.",
+        "availability": "abstract-only",
+        "score": 3.5312366485595703,
+        "passage_ids": [
+          "MED:42021444:s00000:p0:dc4ae9ddf151",
+          "MED:42021444:s00001:p0:dd0844c7703d",
+          "MED:42021444:s00001:p1:0a99f4b98985"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:41228536",
+        "title": "High Salt Intake and Atherosclerosis Progression-Not Only via Blood Pressure: A Narrative Review.",
+        "availability": "full-text",
+        "score": 3.4269657135009766,
+        "passage_ids": [
+          "MED:41228536:s00000:p0:8f5ea09a5195",
+          "MED:41228536:s00014:p1:276607336f8a",
+          "MED:41228536:s00016:p0:f53ceb30bd40"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:42121926",
+        "title": "A Longitudinal Murine Model Reveals Biphasic T Cell Remodeling and Progressive Skeletal Deterioration Under Chronic High-Salt Exposure.",
+        "availability": "full-text",
+        "score": 3.4046735763549805,
+        "passage_ids": [
+          "MED:42121926:s00028:p0:65147f8ca591",
+          "MED:42121926:s00048:p0:36baf743588a",
+          "MED:42121926:s00015:p0:7cfba6fb1cc7"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "timing:original",
+    "topic": "timing",
+    "stage": "original",
+    "query": "Is eating a late night meal bad?",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Is eating a late night meal bad?",
+          "expanded": "Is eating a late night meal bad?",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "eating",
+            "late",
+            "night",
+            "meal",
+            "bad"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 2646,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 418.13890007324517,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 116.3260000757873,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1369.6173001080751,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Is eating a late night meal bad?",
+      "expanded": "Is eating a late night meal bad?",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:42356360",
+        "title": "Chrononutrition Behaviors and BMI Change During the Transition to University Life in Young Adults: A Prospective Study.",
+        "availability": "full-text",
+        "score": 4.824605941772461,
+        "passage_ids": [
+          "MED:42356360:s00047:p0:bb9b4cff5c65",
+          "MED:42356360:s00031:p0:1a8f3851e85e",
+          "MED:42356360:s00032:p0:a50fe56a3f7b"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42280467",
+        "title": "Relationship Between Sleep and Meal Timing with Glycemia Parameters in Individuals with Obesity Participating in a Randomized Time-Restricted Eating Study.",
+        "availability": "full-text",
+        "score": 4.04325532913208,
+        "passage_ids": [
+          "MED:42280467:s00023:p0:a969c13ae6f7",
+          "MED:42280467:s00001:p0:837947d440fb",
+          "MED:42280467:s00001:p1:0ffb8653db47"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:42437713",
+        "title": "Late eating is associated with higher total energy intake and poorer adequacy of food groups in patients with non-communicable diseases.",
+        "availability": "abstract-only",
+        "score": 3.036623477935791,
+        "passage_ids": [
+          "MED:42437713:s00000:p0:ca2c0fafed00",
+          "MED:42437713:s00001:p0:86499a771812",
+          "MED:42437713:s00001:p1:aef5a7f6ff9a"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:41246831",
+        "title": "Late-eating adolescents consume more energy, make poorer dietary choices, and are more likely to have excess weight: An analysis of the Brazilian Household Budget Survey (2008-2009).",
+        "availability": "abstract-only",
+        "score": 2.972615957260132,
+        "passage_ids": [
+          "MED:41246831:s00001:p0:6f1728b3d242",
+          "MED:41246831:s00001:p1:987476c02276",
+          "MED:41246831:s00000:p0:e8cec4cb7612"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:42588125",
+        "title": "Impact of a Behavioral Lifestyle Intervention on Dietary Habits, Anthropometric and Psychological Outcomes, and Biomarkers of Oxidative Stress and Telomere Length in Adults.",
+        "availability": "full-text",
+        "score": 2.6701583862304688,
+        "passage_ids": [
+          "MED:42588125:s00007:p1:ace577888aa0",
+          "MED:42588125:s00099:p0:91d84ce99d07",
+          "MED:42588125:s00100:p0:2aa1c0268637"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:41470839",
+        "title": "Controversies and Perspectives of Time-Qualified Dietary Interventions.",
+        "availability": "full-text",
+        "score": 2.0847458839416504,
+        "passage_ids": [
+          "MED:41470839:s00011:p0:2702b363dc2c",
+          "MED:41470839:s00014:p0:51847602dbfc",
+          "MED:41470839:s00080:p0:e60d5c4ffefa"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:31547547",
+        "title": "Dietary Interventions for Night Shift Workers: A Literature Review.",
+        "availability": "full-text",
+        "score": 2.058030366897583,
+        "passage_ids": [
+          "MED:31547547:s00030:p0:2985e36637c9",
+          "MED:31547547:s00029:p1:9a4d5b745deb",
+          "MED:31547547:s00035:p1:59bfe9b7f5d2"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42796993",
+        "title": "Chrono-Nutritional Disruption as a Potential Modifiable Factor in Bipolar Disorder.",
+        "availability": "full-text",
+        "score": 0.9817132353782654,
+        "passage_ids": [
+          "MED:42796993:s00160:p0:b874fbfd1c74",
+          "MED:42796993:s00017:p0:a2e573a09611",
+          "MED:42796993:s00015:p0:24068c9b26f4"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42091606",
+        "title": "The association of time-restricted eating and indices of organ-specific aging in relation to metabolic health and obesity.",
+        "availability": "full-text",
+        "score": -0.43838900327682495,
+        "passage_ids": [
+          "MED:42091606:s00027:p0:0bb92fd82d9b",
+          "MED:42091606:s00010:p0:a5cf971e7ac6",
+          "MED:42091606:s00007:p0:fefb9c9f0f43"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:31590425",
+        "title": "The Impact of Time of Day on Energy Expenditure: Implications for Long-Term Energy Balance.",
+        "availability": "full-text",
+        "score": -1.1479318141937256,
+        "passage_ids": [
+          "MED:31590425:s00035:p1:fb83ea45f412",
+          "MED:31590425:s00048:p0:9f1d933c41d7",
+          "MED:31590425:s00016:p1:233a935c0982"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "eggs:refined",
+    "topic": "eggs",
+    "stage": "refined",
+    "query": "Egg consumption and blood cholesterol in humans",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Egg consumption and blood cholesterol in humans",
+          "expanded": "Egg consumption and blood cholesterol in humans",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "egg",
+            "consumption",
+            "blood",
+            "cholesterol",
+            "humans"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 6091,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 620.9853999316692,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 154.50579999014735,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1810.2177998516709,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Egg consumption and blood cholesterol in humans",
+      "expanded": "Egg consumption and blood cholesterol in humans",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:40339906",
+        "title": "Impact of dietary cholesterol from eggs and saturated fat on LDL cholesterol levels: a randomized cross-over study.",
+        "availability": "abstract-only",
+        "score": -0.3234741687774658,
+        "passage_ids": [
+          "MED:40339906:s00001:p1:5ab031dd9726",
+          "MED:40339906:s00001:p0:94814c887745",
+          "MED:40339906:s00000:p0:048632d23abb"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42739004",
+        "title": "The Effects of Dietary Fiber and High-Dietary-Fiber Diets on Body Weight Regulation and Lipid Metabolism in Athletes: A Narrative Review.",
+        "availability": "full-text",
+        "score": -3.5413496494293213,
+        "passage_ids": [
+          "MED:42739004:s00048:p0:eac85fa8ddf2",
+          "MED:42739004:s00006:p0:55544caa29b6",
+          "MED:42739004:s00046:p1:d97d0219c62f"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:40944114",
+        "title": "Dairy Consumption and Risk of Cardiovascular and Bone Health Outcomes in Adults: An Umbrella Review and Updated Meta-Analyses.",
+        "availability": "full-text",
+        "score": -5.251041889190674,
+        "passage_ids": [
+          "MED:40944114:s00029:p0:68d17c800b64",
+          "MED:40944114:s00042:p0:455c6f5d81b8",
+          "MED:40944114:s00039:p0:2bb9a0e52c57"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:42420631",
+        "title": "Dietary sesame seed oil supplementation enhances productive performance, antioxidant status, serum lipids, intestinal morphology and microbial load in rhode island red laying hens.",
+        "availability": "abstract-only",
+        "score": -5.258185386657715,
+        "passage_ids": [
+          "MED:42420631:s00001:p1:ca1413d4db89",
+          "MED:42420631:s00001:p0:5a1cc0badb3d",
+          "MED:42420631:s00000:p0:d5bd901adff1"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:42079003",
+        "title": "The impacts of ready-to-eat-cereals and cereal fibers on gut health, body weight, and cardiometabolic health.",
+        "availability": "full-text",
+        "score": -5.841055870056152,
+        "passage_ids": [
+          "MED:42079003:s00049:p1:2137d46b725a",
+          "MED:42079003:s00050:p0:87f41c5dabff",
+          "MED:42079003:s00051:p0:ff1006d86dc6"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:31614992",
+        "title": "Effectiveness of Intermittent Fasting and Time-Restricted Feeding Compared to Continuous Energy Restriction for Weight Loss.",
+        "availability": "full-text",
+        "score": -5.882861137390137,
+        "passage_ids": [
+          "MED:31614992:s00024:p0:78a991fa871b",
+          "MED:31614992:s00021:p0:291bfd0b2a66",
+          "MED:31614992:s00006:p1:2399f39f106a"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:41994668",
+        "title": "Re-evaluating Cardiovascular Risk: A Narrative Review Challenging the Cholesterol Hypothesis and Identifying Modern Dietary Drivers.",
+        "availability": "full-text",
+        "score": -6.369246482849121,
+        "passage_ids": [
+          "MED:41994668:s00026:p0:5e22ac27fed3"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42414930",
+        "title": "Life's essential 8 factors and their impact on the risk of stroke and dementia: a Mendelian randomization study.",
+        "availability": "full-text",
+        "score": -6.937590599060059,
+        "passage_ids": [
+          "MED:42414930:s00013:p0:9f568221a2a0",
+          "MED:42414930:s00033:p0:1fffbecc16e2",
+          "MED:42414930:s00014:p0:5f6e81be7f08"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42782390",
+        "title": "Associations between temporal meal patterns, cardiovascular risk factors and cardiovascular disease in Swedish adults: cross-sectional and nested case-control analyses.",
+        "availability": "full-text",
+        "score": -6.985498905181885,
+        "passage_ids": [
+          "MED:42782390:s00035:p0:a1782ca4f657",
+          "MED:42782390:s00034:p0:949e4584eb21",
+          "MED:42782390:s00036:p0:0c488333500a"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:40282780",
+        "title": "Effects of Perilla Seed Oil on Blood Lipids, Oxidative Stress, and Inflammation in Hyperlipidemic Rats.",
+        "availability": "full-text",
+        "score": -7.0592193603515625,
+        "passage_ids": [
+          "MED:40282780:s00027:p0:f49ddc94e738",
+          "MED:40282780:s00029:p0:61048d47367e",
+          "MED:40282780:s00030:p0:4834503e1bf3"
+        ]
+      }
+    ],
+    "judgment_status": "screened-only"
+  },
+  {
+    "key": "vegetables:refined",
+    "topic": "vegetables",
+    "stage": "refined",
+    "query": "Boiling vegetables vitamin retention cooking losses",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Boiling vegetables vitamin retention cooking losses",
+          "expanded": "Boiling vegetables vitamin retention cooking losses",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "boiling",
+            "vegetables",
+            "vitamin",
+            "retention",
+            "cooking",
+            "losses"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 2662,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 328.42650008387864,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 71.2841001804918,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1364.991000154987,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Boiling vegetables vitamin retention cooking losses",
+      "expanded": "Boiling vegetables vitamin retention cooking losses",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:18421876",
+        "title": "[Study on vitamin B1, vitamin B2 retention factors in vegetables].",
+        "availability": "abstract-only",
+        "score": 5.508974075317383,
+        "passage_ids": [
+          "MED:18421876:s00001:p0:2e1861c592ec",
+          "MED:18421876:s00000:p0:9ffcd2b5cba7",
+          "MED:18421876:s00001:p1:631532e5a07c"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:42653823",
+        "title": "Effects of Household Cooking Methods on the Nutritional, Phytochemical and Functional Properties of <i>Cucurbita maxima</i> Leaves.",
+        "availability": "full-text",
+        "score": 4.40539026260376,
+        "passage_ids": [
+          "MED:42653823:s00021:p0:d5dfc85b6502",
+          "MED:42653823:s00045:p0:322e420e4ab7",
+          "MED:42653823:s00012:p0:ec4fbe87d477"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:9806122",
+        "title": "Effects of home-based food preparation practices on the micronutrient content of foods.",
+        "availability": "abstract-only",
+        "score": 3.353529453277588,
+        "passage_ids": [
+          "MED:9806122:s00001:p0:cc85656ca419",
+          "MED:9806122:s00000:p0:fe4bdc642ed6"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:20169231",
+        "title": "[Vitamin C loss in vegetables during storage, preparation and distribution in restaurants].",
+        "availability": "abstract-only",
+        "score": 2.232950448989868,
+        "passage_ids": [
+          "MED:20169231:s00001:p0:1b9178527b4f",
+          "MED:20169231:s00000:p0:5be8a94a306c",
+          "MED:20169231:s00001:p1:48c12728c418"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:39169551",
+        "title": "Impact of thermal processing on polyphenols, carotenoids, glucosinolates, and ascorbic acid in fruit and vegetables and their cardiovascular benefits.",
+        "availability": "full-text",
+        "score": 1.5227136611938477,
+        "passage_ids": [
+          "MED:39169551:s00010:p2:2864b4a7fb94",
+          "MED:39169551:s00019:p0:9bc770e3b0bf",
+          "MED:39169551:s00012:p0:d78c9e2be27c"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:22229802",
+        "title": "Effects of cooking using multi-ply cookware on absorption of potassium and vitamins: a randomized double-blind placebo control study.",
+        "availability": "full-text",
+        "score": 1.0571297407150269,
+        "passage_ids": [
+          "MED:22229802:s00017:p0:024f61d95b5a",
+          "MED:22229802:s00018:p0:c524e02c63ae",
+          "MED:22229802:s00017:p2:cf52ce069277"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:21615279",
+        "title": "Zinc retention in vegetables according to the method of preparation for consumption.",
+        "availability": "abstract-only",
+        "score": 0.400262713432312,
+        "passage_ids": [
+          "MED:21615279:s00001:p0:22c4842cc553",
+          "MED:21615279:s00000:p0:c7390b48a6a6"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:40629907",
+        "title": "Effect of prolonged cooking on pro-vitamin A levels of biofortified East African highland bananas.",
+        "availability": "full-text",
+        "score": 0.22424039244651794,
+        "passage_ids": [
+          "MED:40629907:s00028:p0:3bfb80de00f2",
+          "MED:40629907:s00001:p0:c22537e3901a",
+          "MED:40629907:s00022:p0:b3bcecf5d796"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:2017427",
+        "title": "Investigations on the effect of traditional food processing, preservation and storage methods on vegetable nutrients: a case study in Tanzania.",
+        "availability": "abstract-only",
+        "score": 0.13995973765850067,
+        "passage_ids": [
+          "MED:2017427:s00001:p0:07c847b60d8f",
+          "MED:2017427:s00000:p0:1c1cc7c6309c"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:35204095",
+        "title": "Bioavailability Study of Isothiocyanates and Other Bioactive Compounds of Brassica oleracea L. var. Italica Boiled or Steamed: Functional Food or Dietary Supplement?",
+        "availability": "full-text",
+        "score": -0.625533938407898,
+        "passage_ids": [
+          "MED:35204095:s00032:p0:65f8331d7107",
+          "MED:35204095:s00035:p0:5dba8b18cef8",
+          "MED:35204095:s00023:p0:126d62840ad2"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "milk:refined",
+    "topic": "milk",
+    "stage": "refined",
+    "query": "Milk consumption bone mineral density fracture risk",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Milk consumption bone mineral density fracture risk",
+          "expanded": "Milk consumption bone mineral density fracture risk",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "milk",
+            "consumption",
+            "bone",
+            "mineral",
+            "density",
+            "fracture",
+            "risk"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 7914,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 606.8927999585867,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 102.67730010673404,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1575.6312999874353,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Milk consumption bone mineral density fracture risk",
+      "expanded": "Milk consumption bone mineral density fracture risk",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:40944114",
+        "title": "Dairy Consumption and Risk of Cardiovascular and Bone Health Outcomes in Adults: An Umbrella Review and Updated Meta-Analyses.",
+        "availability": "full-text",
+        "score": 5.767861366271973,
+        "passage_ids": [
+          "MED:40944114:s00055:p1:d826d0cb13d9",
+          "MED:40944114:s00065:p0:7e8e39e5b0eb",
+          "MED:40944114:s00055:p0:ff716ade2c73"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:41185921",
+        "title": "Caffeine consumption as a potential risk factor of osteoporosis development among night shift workers: epidemiological evidences and hypothesis.",
+        "availability": "full-text",
+        "score": 5.657012939453125,
+        "passage_ids": [
+          "MED:41185921:s00041:p0:3bba71f7aede",
+          "MED:41185921:s00039:p0:3d9cca04924c",
+          "MED:41185921:s00024:p1:0a580803ffcc"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:40488877",
+        "title": "Long-term consumption of liquid dairy products predicts lower fracture risk in aging women: a 25-year follow-up.",
+        "availability": "full-text",
+        "score": 3.288773536682129,
+        "passage_ids": [
+          "MED:40488877:s00028:p0:e35b91447433",
+          "MED:40488877:s00017:p0:151e825d4f21",
+          "MED:40488877:s00023:p0:e56279831d94"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:41098795",
+        "title": "Impact of yogurt consumption on bone health markers in adults with or without osteoporosis: a systematic review and meta-analysis.",
+        "availability": "full-text",
+        "score": 2.1330018043518066,
+        "passage_ids": [
+          "MED:41098795:s00039:p0:7fd46f116ce9",
+          "MED:41098795:s00027:p0:c87a8a45adf2",
+          "MED:41098795:s00001:p0:03b43f07dde6"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:31622772",
+        "title": "Circulating amino acids are associated with bone mineral density decline and ten-year major osteoporotic fracture risk in older community-dwelling adults.",
+        "availability": "abstract-only",
+        "score": 1.5272204875946045,
+        "passage_ids": [
+          "MED:31622772:s00000:p0:4644b481bc1a",
+          "MED:31622772:s00001:p0:47d6779b7b32",
+          "MED:31622772:s00001:p1:df5f10c8b22b"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:42597253",
+        "title": "Gut dysbiosis and vitamin-dependent immune regulation in degenerative musculoskeletal and bone diseases.",
+        "availability": "full-text",
+        "score": 1.4410674571990967,
+        "passage_ids": [
+          "MED:42597253:s00035:p0:7a7e1a00b88c",
+          "MED:42597253:s00061:p0:87e1499ba69a",
+          "MED:42597253:s00034:p0:2c0b71660e5b"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:42824698",
+        "title": "Ten tips to reduce fracture risk by non-pharmacologic interventions in CKD-associated osteoporosis.",
+        "availability": "full-text",
+        "score": 1.1944267749786377,
+        "passage_ids": [
+          "MED:42824698:s00019:p0:30ec765d31ff",
+          "MED:42824698:s00022:p0:a6cf2809c235",
+          "MED:42824698:s00005:p0:171df5cb3602"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42578688",
+        "title": "Chinese Guideline on Risk Management of Osteoporosis in the General Public.",
+        "availability": "full-text",
+        "score": 0.9616686105728149,
+        "passage_ids": [
+          "MED:42578688:s00091:p0:f377812785a8",
+          "MED:42578688:s00076:p0:cb43da249c91",
+          "MED:42578688:s00055:p0:cce9e07af26b"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42588192",
+        "title": "Mechanistic Insights into Milk Minerals Driving Bone Development and Mineralization in Growing Rats.",
+        "availability": "full-text",
+        "score": 0.6631557941436768,
+        "passage_ids": [
+          "MED:42588192:s00001:p0:6d22e4a0b71e",
+          "MED:42588192:s00039:p0:bac3da98b998",
+          "MED:42588192:s00038:p0:6d250ad48a9e"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:42797002",
+        "title": "Plant-Based Diets in Adolescence: Cardiometabolic Benefits, Developmental Risks, and the Role of Fortification.",
+        "availability": "full-text",
+        "score": -0.29390260577201843,
+        "passage_ids": [
+          "MED:42797002:s00022:p0:d2bb84a8d681",
+          "MED:42797002:s00021:p0:8ccd0b346c6e",
+          "MED:42797002:s00022:p1:cf3a6eb251a6"
+        ]
+      }
+    ],
+    "judgment_status": "screened-only"
+  },
+  {
+    "key": "sodium:refined",
+    "topic": "sodium",
+    "stage": "refined",
+    "query": "Dietary sodium reduction blood pressure clinical trials",
+    "trace": {
+      "method": "hybrid",
+      "rrf_k": 60,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "runs": [
+        {
+          "method": "structure",
+          "level": "passage",
+          "original": "Dietary sodium reduction blood pressure clinical trials",
+          "expanded": "Dietary sodium reduction blood pressure clinical trials",
+          "expansions": [],
+          "advanced": false,
+          "tokens": [
+            "dietary",
+            "sodium",
+            "reduction",
+            "blood",
+            "pressure",
+            "clinical",
+            "trials"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_units": 12660,
+          "inspected_parents": 40,
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "latency_ms": 1090.9303999505937,
+          "weights": {
+            "title": 1.4,
+            "abstract": 1,
+            "methods": 0.85,
+            "results": 1.25,
+            "discussion": 1,
+            "conclusion": 1.1,
+            "limitations": 1.05,
+            "background": 0.6,
+            "table": 1,
+            "body": 1
+          },
+          "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+          "diversification": "maximum-scoring unit per unique parent paper",
+          "score_meaning": "retrieval relevance, not truth or scientific certainty"
+        },
+        {
+          "method": "dense",
+          "index": {
+            "version": "positional-lexical-1",
+            "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+            "built_seconds": 81.96837680006865,
+            "weights": {
+              "title": 1.4,
+              "abstract": 1,
+              "methods": 0.85,
+              "results": 1.25,
+              "discussion": 1,
+              "conclusion": 1.1,
+              "limitations": 1.05,
+              "background": 0.6,
+              "table": 1,
+              "body": 1
+            },
+            "weights_status": "hypothesis; not tuned or validated"
+          },
+          "model": [
+            "sentence-transformers/all-MiniLM-L6-v2",
+            "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+          ],
+          "filters": {
+            "fulltext": false,
+            "human": false
+          },
+          "candidate_papers": 950,
+          "latency_ms": 95.93219985254109,
+          "score_meaning": "embedding similarity, not entailment",
+          "level": "passage",
+          "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+          "passage_selection": "dense passage similarity",
+          "truncated_inputs": 2723
+        }
+      ],
+      "latency_ms": 1886.1914000008255,
+      "score_meaning": "reciprocal rank fusion, not truth probability",
+      "reranker": {
+        "model": [
+          "cross-encoder/ms-marco-MiniLM-L6-v2",
+          "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+        ],
+        "pair_limit": 20,
+        "max_tokens": 384,
+        "candidate_text": "title plus top passage; may truncate",
+        "validation": "experimental relevance model, not a stance classifier"
+      },
+      "original": "Dietary sodium reduction blood pressure clinical trials",
+      "expanded": "Dietary sodium reduction blood pressure clinical trials",
+      "expansions": []
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:41761767",
+        "title": "Dietary Sodium Reduction Reveals Aldosterone Dysregulation in Patients With Essential Hypertension.",
+        "availability": "full-text",
+        "score": 8.249226570129395,
+        "passage_ids": [
+          "MED:41761767:s00001:p0:8a81dda33ea6",
+          "MED:41761767:s00000:p0:915158226509",
+          "MED:41761767:s00043:p0:0e37ff33a811"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:41100086",
+        "title": "Sodium Reduction Program Incorporating Genetic Profile and an AI-Based App: A Randomized Clinical Trial.",
+        "availability": "full-text",
+        "score": 7.031167030334473,
+        "passage_ids": [
+          "MED:41100086:s00001:p2:9c70a6c70fd8",
+          "MED:41100086:s00001:p0:5962115194e1",
+          "MED:41100086:s00010:p0:2a184e3073d9"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:40256412",
+        "title": "Dietary sodium reduction lowers 10-year atherosclerotic cardiovascular disease risk score: Results from the DASH-sodium trial.",
+        "availability": "full-text",
+        "score": 7.023401260375977,
+        "passage_ids": [
+          "MED:40256412:s00001:p0:422d955213bc",
+          "MED:40256412:s00000:p0:2a20a3053a8e",
+          "MED:40256412:s00004:p0:dfb561fac277"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:41635921",
+        "title": "Dietary sodium reduction and blood pressure: a dose-response meta-analysis in hypertensive and chronic kidney disease patients.",
+        "availability": "full-text",
+        "score": 6.450714588165283,
+        "passage_ids": [
+          "MED:41635921:s00000:p0:e9d8948d95a6",
+          "MED:41635921:s00033:p0:29ebb58235fd",
+          "MED:41635921:s00001:p0:396fb40e28fc"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:40613399",
+        "title": "Lowering Sodium Intake: Reduction and Substitution for Cardiovascular Health.",
+        "availability": "abstract-only",
+        "score": 5.390260696411133,
+        "passage_ids": [
+          "MED:40613399:s00001:p0:0ca432e8a975",
+          "MED:40613399:s00000:p0:3808c8e0dc39",
+          "MED:40613399:s00001:p1:cc47854cc17d"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:42466516",
+        "title": "Sodium-Containing Pharmaceutical Products as Contributors to Cardiovascular Risk.",
+        "availability": "full-text",
+        "score": 5.278905391693115,
+        "passage_ids": [
+          "MED:42466516:s00001:p0:14f962966438",
+          "MED:42466516:s00014:p0:f9844c41d4d4",
+          "MED:42466516:s00042:p0:60c678dc0cc2"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:42196499",
+        "title": "Gut Microbiota as a Mediator of Dietary Salt Effects on Blood Pressure.",
+        "availability": "full-text",
+        "score": 4.601682662963867,
+        "passage_ids": [
+          "MED:42196499:s00013:p0:09c0b2200b13",
+          "MED:42196499:s00038:p0:7b5e16f3bb5c",
+          "MED:42196499:s00001:p0:25f603d18996"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:41877571",
+        "title": "Effects of dietary patterns and sodium intake on blood pressure variability: results from the DASH and DASH-sodium trials.",
+        "availability": "abstract-only",
+        "score": 4.388463020324707,
+        "passage_ids": [
+          "MED:41877571:s00000:p0:be55da3030ba",
+          "MED:41877571:s00001:p0:0f5edc209552",
+          "MED:41877571:s00001:p1:cb6b2dcd515d"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42588147",
+        "title": "Dietary Quality Along a Plant-Based Continuum: The Role of Added Salt, Oil, and Sugar in Chronic Disease Risk.",
+        "availability": "full-text",
+        "score": 4.267226219177246,
+        "passage_ids": [
+          "MED:42588147:s00018:p0:f3a689246a79",
+          "MED:42588147:s00020:p0:c10f54d9bc4f",
+          "MED:42588147:s00029:p0:cd5d831319df"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:41243115",
+        "title": "Dietary salt intake and cardiovascular outcomes: an umbrella review of meta-analyses and dose-response evidence.",
+        "availability": "full-text",
+        "score": 3.7108147144317627,
+        "passage_ids": [
+          "MED:41243115:s00023:p0:807cd7c65434",
+          "MED:41243115:s00025:p0:7a277520de2b",
+          "MED:41243115:s00045:p0:afd87ccdca9d"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "caffeine:bm25",
+    "topic": "caffeine",
+    "stage": "bm25",
+    "query": "Does coffee affect sleep?",
+    "trace": {
+      "method": "bm25",
+      "level": "paper",
+      "original": "Does coffee affect sleep?",
+      "expanded": "Does coffee affect sleep?",
+      "expansions": [],
+      "advanced": false,
+      "tokens": [
+        "coffee",
+        "affect",
+        "sleep"
+      ],
+      "filters": {
+        "fulltext": false,
+        "human": false
+      },
+      "candidate_units": 420,
+      "inspected_parents": 10,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "latency_ms": 276.7002999316901,
+      "weights": null,
+      "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+      "diversification": "maximum-scoring unit per unique parent paper",
+      "score_meaning": "retrieval relevance, not truth or scientific certainty"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:41097115",
+        "title": "Exploring the Impact and Mechanisms of Coffee and Its Active Ingredients on Depression, Anxiety, and Sleep Disorders.",
+        "availability": "full-text",
+        "score": 9.787898487144627,
+        "passage_ids": [
+          "MED:41097115:s00001:p0:bd17ce478fa4",
+          "MED:41097115:s00012:p0:99138f313b23",
+          "MED:41097115:s00037:p0:a63421a2572d"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:31881028",
+        "title": "Objective sleep assessment in >80,000 UK mid-life adults: Associations with sociodemographic characteristics, physical activity and caffeine.",
+        "availability": "full-text",
+        "score": 9.502553613458456,
+        "passage_ids": [
+          "MED:31881028:s00026:p0:86c1fccf29ec",
+          "MED:31881028:s00024:p0:f081a4610f6f",
+          "MED:31881028:s00023:p0:5f2c5f1ab111"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:41164018",
+        "title": "Impact of Coffee Intake on Sleep Quality Among Adults in the Jazan Region, Saudi Arabia: A Cross-Sectional Study.",
+        "availability": "full-text",
+        "score": 9.424900786406289,
+        "passage_ids": [
+          "MED:41164018:s00041:p0:361cc68db6c3",
+          "MED:41164018:s00051:p0:7fc4c4525436",
+          "MED:41164018:s00048:p0:f1b80a8b145a"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:40362813",
+        "title": "Effects of Caffeine Intake on Self-Administered Sleeping Quality and Wearable Monitoring of Sleep in a Cohort of Young Healthy Adults.",
+        "availability": "full-text",
+        "score": 9.350281637396495,
+        "passage_ids": [
+          "MED:40362813:s00032:p0:b9f284a951c0",
+          "MED:40362813:s00035:p0:091b4df4af2e",
+          "MED:40362813:s00045:p0:4711a886143e"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:42243807",
+        "title": "Lifestyle behaviors during exam periods and their association with academic performance among Palestinian medical students: a cross-sectional study.",
+        "availability": "full-text",
+        "score": 9.27180117554694,
+        "passage_ids": [
+          "MED:42243807:s00001:p1:ede6180aa6b9",
+          "MED:42243807:s00019:p0:2b1ca1bc44bd",
+          "MED:42243807:s00024:p0:560793a26f29"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:41109744",
+        "title": "Community-based causal evidence that high habitual caffeine consumption alters distinct polysomnography-derived sleep variables.",
+        "availability": "full-text",
+        "score": 9.230431575443827,
+        "passage_ids": [
+          "MED:41109744:s00037:p0:f2ce8381b21d",
+          "MED:41109744:s00029:p0:61b9aee27c1a",
+          "MED:41109744:s00039:p1:90f4b46f1490"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:41801928",
+        "title": "Habitual coffee consumption poorly correlates with sleep quality and daytime sleepiness: A cross-sectional study.",
+        "availability": "full-text",
+        "score": 9.163547286364688,
+        "passage_ids": [
+          "MED:41801928:s00013:p0:a72bd297f611",
+          "MED:41801928:s00009:p0:8cdc8d818253",
+          "MED:41801928:s00014:p0:ea9c3df255e8"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:31818322",
+        "title": "The relationship between coffee intake, obstructive sleep apnea risk, and type 2 diabetes glycemic control, in Tabuk City, The Kingdom of Saudi Arabia: a case-control study.",
+        "availability": "full-text",
+        "score": 9.056531048529898,
+        "passage_ids": [
+          "MED:31818322:s00017:p2:36ff9db59a99",
+          "MED:31818322:s00018:p0:447b656e0560",
+          "MED:31818322:s00015:p0:bdfda699e8b1"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:41841082",
+        "title": "Association Between Coffee Consumption and Academic Performance Among Second-Year Medical Students.",
+        "availability": "full-text",
+        "score": 8.994891143666438,
+        "passage_ids": [
+          "MED:41841082:s00029:p0:6482729f7c4f",
+          "MED:41841082:s00046:p0:025cba84d5b3",
+          "MED:41841082:s00042:p0:746901080947"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:42654270",
+        "title": "Coffee and Physical Performance: What Is Driven by Caffeine and What Is Not.",
+        "availability": "full-text",
+        "score": 8.899194992012408,
+        "passage_ids": [
+          "MED:42654270:s00062:p0:65c7b0de8dad",
+          "MED:42654270:s00001:p0:49f699635d62",
+          "MED:42654270:s00001:p1:851d60b3fd24"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  },
+  {
+    "key": "sodium:bm25",
+    "topic": "sodium",
+    "stage": "bm25",
+    "query": "Dietary sodium reduction blood pressure clinical trials",
+    "trace": {
+      "method": "bm25",
+      "level": "paper",
+      "original": "Dietary sodium reduction blood pressure clinical trials",
+      "expanded": "Dietary sodium reduction blood pressure clinical trials",
+      "expansions": [],
+      "advanced": false,
+      "tokens": [
+        "dietary",
+        "sodium",
+        "reduction",
+        "blood",
+        "pressure",
+        "clinical",
+        "trials"
+      ],
+      "filters": {
+        "fulltext": false,
+        "human": false
+      },
+      "candidate_units": 830,
+      "inspected_parents": 10,
+      "index": {
+        "version": "positional-lexical-1",
+        "corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+        "built_seconds": 81.96837680006865,
+        "weights": {
+          "title": 1.4,
+          "abstract": 1,
+          "methods": 0.85,
+          "results": 1.25,
+          "discussion": 1,
+          "conclusion": 1.1,
+          "limitations": 1.05,
+          "background": 0.6,
+          "table": 1,
+          "body": 1
+        },
+        "weights_status": "hypothesis; not tuned or validated"
+      },
+      "latency_ms": 414.20380002819,
+      "weights": null,
+      "formula": "BM25 k1=1.2 b=0.75; positive Robertson IDF",
+      "diversification": "maximum-scoring unit per unique parent paper",
+      "score_meaning": "retrieval relevance, not truth or scientific certainty"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "MED:42196499",
+        "title": "Gut Microbiota as a Mediator of Dietary Salt Effects on Blood Pressure.",
+        "availability": "full-text",
+        "score": 12.033903659770877,
+        "passage_ids": [
+          "MED:42196499:s00013:p0:09c0b2200b13",
+          "MED:42196499:s00038:p0:7b5e16f3bb5c",
+          "MED:42196499:s00001:p0:25f603d18996"
+        ]
+      },
+      {
+        "rank": 2,
+        "id": "MED:41100086",
+        "title": "Sodium Reduction Program Incorporating Genetic Profile and an AI-Based App: A Randomized Clinical Trial.",
+        "availability": "full-text",
+        "score": 11.813772164465925,
+        "passage_ids": [
+          "MED:41100086:s00001:p0:5962115194e1",
+          "MED:41100086:s00010:p0:2a184e3073d9",
+          "MED:41100086:s00001:p2:9c70a6c70fd8"
+        ]
+      },
+      {
+        "rank": 3,
+        "id": "MED:42812504",
+        "title": "Dietary Salt Intake and Hypertension in Chronic Kidney Disease.",
+        "availability": "full-text",
+        "score": 11.772929385963987,
+        "passage_ids": [
+          "MED:42812504:s00015:p0:b02330e65ca5",
+          "MED:42812504:s00018:p0:0715850b1df2",
+          "MED:42812504:s00015:p1:0a587b1ca885"
+        ]
+      },
+      {
+        "rank": 4,
+        "id": "MED:40256412",
+        "title": "Dietary sodium reduction lowers 10-year atherosclerotic cardiovascular disease risk score: Results from the DASH-sodium trial.",
+        "availability": "full-text",
+        "score": 11.692294402432847,
+        "passage_ids": [
+          "MED:40256412:s00001:p0:422d955213bc",
+          "MED:40256412:s00000:p0:2a20a3053a8e",
+          "MED:40256412:s00004:p0:dfb561fac277"
+        ]
+      },
+      {
+        "rank": 5,
+        "id": "MED:42650632",
+        "title": "Fruits, Vegetables, and Legumes: Harnessing the Gut-Kidney Axis in Hypertensive Chronic Kidney Disease.",
+        "availability": "full-text",
+        "score": 11.6485084967745,
+        "passage_ids": [
+          "MED:42650632:s00030:p0:d299fedd0e4b",
+          "MED:42650632:s00024:p0:3feff54cf53f",
+          "MED:42650632:s00016:p0:886ef3668f9d"
+        ]
+      },
+      {
+        "rank": 6,
+        "id": "MED:42588147",
+        "title": "Dietary Quality Along a Plant-Based Continuum: The Role of Added Salt, Oil, and Sugar in Chronic Disease Risk.",
+        "availability": "full-text",
+        "score": 11.636966196660644,
+        "passage_ids": [
+          "MED:42588147:s00018:p0:f3a689246a79",
+          "MED:42588147:s00020:p0:c10f54d9bc4f",
+          "MED:42588147:s00029:p0:cd5d831319df"
+        ]
+      },
+      {
+        "rank": 7,
+        "id": "MED:41635921",
+        "title": "Dietary sodium reduction and blood pressure: a dose-response meta-analysis in hypertensive and chronic kidney disease patients.",
+        "availability": "full-text",
+        "score": 11.587775647066913,
+        "passage_ids": [
+          "MED:41635921:s00000:p0:e9d8948d95a6",
+          "MED:41635921:s00033:p0:29ebb58235fd",
+          "MED:41635921:s00001:p0:396fb40e28fc"
+        ]
+      },
+      {
+        "rank": 8,
+        "id": "MED:42488174",
+        "title": "Guidelines for daily sodium intake: a counterpoint to the current recommendation for low sodium intake.",
+        "availability": "full-text",
+        "score": 11.552409336720395,
+        "passage_ids": [
+          "MED:42488174:s00014:p0:ad7464f8fc62",
+          "MED:42488174:s00016:p0:79c6c5a17c2a",
+          "MED:42488174:s00001:p0:16b251fd3e09"
+        ]
+      },
+      {
+        "rank": 9,
+        "id": "MED:42819067",
+        "title": "Dietary patterns and physical activity in relation to renal and metabolic outcomes among older adults with type 2 diabetes and chronic kidney disease: a systematic review.",
+        "availability": "full-text",
+        "score": 11.446424318886994,
+        "passage_ids": [
+          "MED:42819067:s00055:p0:04aee0fc3e0f",
+          "MED:42819067:s00001:p1:f873c29a843f",
+          "MED:42819067:s00051:p0:2642ff99a4a3"
+        ]
+      },
+      {
+        "rank": 10,
+        "id": "MED:41243115",
+        "title": "Dietary salt intake and cardiovascular outcomes: an umbrella review of meta-analyses and dose-response evidence.",
+        "availability": "full-text",
+        "score": 11.336474945133029,
+        "passage_ids": [
+          "MED:41243115:s00023:p0:807cd7c65434",
+          "MED:41243115:s00025:p0:7a277520de2b",
+          "MED:41243115:s00045:p0:afd87ccdca9d"
+        ]
+      }
+    ],
+    "judgment_status": "complete"
+  }
+]

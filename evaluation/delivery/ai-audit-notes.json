@@ -1,0 +1,110 @@
+[
+  {
+    "claim_id": "food-006",
+    "paper_id": "MED:40613399",
+    "title": "Lowering Sodium Intake: Reduction and Substitution for Cardiovascular Health.",
+    "relevance": 1,
+    "availability": "abstract-only",
+    "rationale_note": "Review describes average sodium/BP benefits; the inspected abstract does not test the universal same-benefit qualifier.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-008",
+    "paper_id": "MED:41586347",
+    "title": "Effects of timing and eating duration of time restricted eating on metabolic outcomes: systematic review and network meta-analysis.",
+    "relevance": 2,
+    "availability": "full-text",
+    "rationale_note": "Meta-analysis directly addresses TRE and glucose, but concurrent weight change and narrative citations do not establish an independent glucose effect in this audit.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-008",
+    "paper_id": "MED:40705196",
+    "title": "Intermittent Fasting for the Prevention of Cardiovascular Disease Risks: Systematic Review and Network Meta-Analysis.",
+    "relevance": 2,
+    "availability": "full-text",
+    "rationale_note": "TRE/glucose synthesis is relevant. The inspected evidence does not isolate effects independent of weight loss; multiple fasting interventions must not be conflated.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-002",
+    "paper_id": "MED:42444712",
+    "title": "Evaluating the association between caffeine exposure and sleep duration and trouble sleeping in adults.",
+    "relevance": 2,
+    "availability": "full-text",
+    "rationale_note": "Cross-sectional association at within eight hours is not a randomized six-hour causal comparison; general adults are not specifically healthy adults.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-006",
+    "paper_id": "MED:40256412",
+    "title": "Dietary sodium reduction lowers 10-year atherosclerotic cardiovascular disease risk score: Results from the DASH-sodium trial.",
+    "relevance": 1,
+    "availability": "full-text",
+    "rationale_note": "Secondary analysis concerns estimated ASCVD risk in elevated-BP adults. Inspected text does not directly test equality of BP response across all adults.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-006",
+    "paper_id": "MED:42196499",
+    "title": "Gut Microbiota as a Mediator of Dietary Salt Effects on Blood Pressure.",
+    "relevance": 3,
+    "availability": "full-text",
+    "rationale_note": "Review explicitly describes heterogeneous BP responses, directly addressing the same-benefit qualifier. This is secondary discussion, not independent primary confirmation.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-002",
+    "paper_id": "MED:41978115",
+    "title": "Coffee and Caffeine in Depression: Symptom-Level Modulation and Challenges in Nutripsychiatric Interpretation.",
+    "relevance": 1,
+    "availability": "full-text",
+    "rationale_note": "Narrative depression review offers background sleep evidence; inspected text does not specify six hours, healthy adults or dose.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-008",
+    "paper_id": "MED:41601725",
+    "title": "Time-restricted eating as a potential strategy for healthy lifespan: an evaluation of current evidence.",
+    "relevance": 2,
+    "availability": "full-text",
+    "rationale_note": "Review directly discusses TRE, glucose and weight-change conditions, but mixed protocols and nonsignificant results do not establish a universal causal stance.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-004",
+    "paper_id": "MED:40739997",
+    "title": "Low-protein diet for chronic kidney disease: Evidence, controversies, and practical guidelines.",
+    "relevance": 3,
+    "availability": "full-text",
+    "rationale_note": "Review directly discusses harm in preexisting kidney impairment, opposing the universal safety assertion; it is secondary evidence and recommends individualized intake.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-002",
+    "paper_id": "MED:42075032",
+    "title": "The Caffeinated Brain Part 2: The Effect of Caffeine on Sleep-Related Electroencephalography (EEG)-A Systematic and Mechanistic Review.",
+    "relevance": 2,
+    "availability": "full-text",
+    "rationale_note": "Review table reports 400 mg at six hours in healthy adults and reduced total sleep time. Supports that qualified scenario; the claim omits dose and the row cites an underlying study.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-004",
+    "paper_id": "MED:42413885",
+    "title": "High-Energy Low-Protein Formula Plus Low-Protein Diet Improves Subjective Global Assessment-Defined Nutritional Status in Nondialysis Chronic Kidney Disease: An Open-Label Randomized Trial.",
+    "relevance": 1,
+    "availability": "abstract-only",
+    "rationale_note": "Trial tests a high-energy low-protein formula within low-protein counseling. It does not directly compare higher-protein intake against a control for the universal safety claim.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  },
+  {
+    "claim_id": "food-004",
+    "paper_id": "MED:42289790",
+    "title": "Effects of High-Protein Diets on Renal Function and Body Composition in Adults Without Chronic Kidney Disease: A Systematic Review and Meta-Analysis of Randomised Trials.",
+    "relevance": 2,
+    "availability": "abstract-only",
+    "rationale_note": "Direct high-protein/renal-function comparison, but explicitly excludes the claimed CKD population and cannot establish safety for it.",
+    "judgment_scope": "Abstract and selected/context passages; not exhaustive full-text appraisal"
+  }
+]
