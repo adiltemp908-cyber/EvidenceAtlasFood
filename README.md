@@ -5,7 +5,7 @@
 **[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
 **[Read Final Report](https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/EvidenceAtlasFood-Report-Final.pdf)**
 
-EvidenceAtlas Food is a local information-retrieval and study-comparison system developed for **CSD358 — Track T6**.
+EvidenceAtlas Food is a local information-retrieval and study-comparison system developed to answer nutrition-related questions using evidence from research papers, helping users distinguish scientifically supported findings from common misconceptions and misinformation circulated online. This can be used by students and researchers studying nutrition, healthcare professionals and dieticians seeking research-backed insights, and members of the public looking to make informed dietary choices.
 
 It turns everyday food and nutrition questions into searches across scientific literature and helps users inspect the evidence behind the retrieved results rather than only returning paper titles.
 
