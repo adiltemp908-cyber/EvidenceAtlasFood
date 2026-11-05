@@ -1,0 +1,14 @@
+{
+  "toggle_checks": [
+    {
+      "enabled": true,
+      "results": 10
+    },
+    {
+      "enabled": false,
+      "results": 10
+    }
+  ],
+  "mobile_no_overflow": true,
+  "javascript_errors": []
+}

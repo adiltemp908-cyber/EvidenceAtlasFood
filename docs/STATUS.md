@@ -1,4 +1,76 @@
-# Current status - full-text embedding continuation completed
+# November 5 repository and report refresh
+
+The updated eight-page report documents all implemented changes through the November 4 collection and summary updates. It preserves historical evaluation scores and distinguishes them from current functional checks. The release passed 77 focused regression tests, TypeScript no-emit checking and reproduction of historical report metrics. See [report](EvidenceAtlas_Food_Report_2026_11_05.pdf), [change log](CHANGELOG_2026_11_05.md) and [release checks](checks/release-2026-11-05.json).
+
+---
+
+# Current status — November 4 everyday-diet collection activated
+
+**3,493 searchable papers, 1,429 searchable full texts, 115,883 semantic vectors.** Added 141 searchable papers, including 81 full texts and 28 papers about water intake/hydration, across eleven everyday-diet topics. All 19 saved investigations were preserved. Thirty-six functional tests passed; six live searches and 82 exact source passages across 29 papers were verified. The original water question now retrieves human plain-water studies and the daily-water-requirement review in its top five.
+
+This is a coverage expansion, not an independent accuracy evaluation. Some everyday queries still rank tangential studies highly; the reranker algorithm was not changed. See [collection scope and checks](COVERAGE_2026_11_04.md).
+
+---
+
+# November 4 answer applicability and search defaults
+
+Hybrid + relevance reranking is now the opening search default, with capability-aware fallbacks. Summary pipeline v9 checks direct applicability before drafting and during final verification, and abstains when it cannot identify findings that directly answer the question in the selected papers. Related quotations remain inspectable; no claim of worldwide absence of research is made. Older saved answers require regeneration.
+
+Thirty-five focused tests, TypeScript compilation, browser checks and synthetic local-model pipeline checks completed. Applicability remains model-assessed; one verifier diagnostic conflated citation support with relevance while correctly suppressing the indirect answer. See [behavior, checks and limitations](LOCAL_SUMMARIES.md). The corpus is unchanged by this update.
+
+---
+
+# October 24 collection activation
+
+**3,352 searchable papers, 1,348 searchable full texts, 109,628 semantic vectors.** Added 428 searchable papers and 155 searchable full texts; incremental indexing is complete and active. See [coverage and checks](COVERAGE_2026_10_23.md). Summary paper-count controls and full-text section reading remain available. No new accuracy claim is made.
+
+---
+
+# Historical checkpoint — October 21 audit repairs
+
+**2,924 searchable papers; 98,356 semantic vectors.** Four missing papers were added with two available full texts; 98,131 previous vectors were reused. Reranking now considers study abstracts across 30 candidates. Summary source-role, context, uncertainty and absence-claim checks address the observed failures, with reusable section readings and one transient-timeout retry. All 19 saved investigations were preserved.
+
+Sixty-four regression checks and a browser check passed. The same three development questions improved from 20/30 to 27/30 directly relevant results at ten; these are AI-assisted judgments on a targeted repair set, not independent accuracy validation. See [recorded checks](checks/audit-gap-repair.json). The report's original evaluations remain historical.
+
+---
+
+# Historical checkpoint — local paper summaries available
+
+October 21, 2026: the search results now include **Summarize top 10 papers**. Qwen3-4B-Instruct-2507 runs locally on the RTX 4050, processes all stored passages, and produces excerpt-grounded answers with inspectable citations. Abstract-only evidence is labelled separately. Functional tests and a ten-paper live/browser check are recorded in [local summary details](LOCAL_SUMMARIES.md). This does not establish independently measured scientific accuracy. No new corpus ingestion or embedding was required for this feature.
+
+---
+
+# Historical checkpoint — semantic passage splitting active
+
+2,920 searchable papers; 86,903 unchanged source passages; 98,131 token-bounded semantic chunks. 79,903 existing vectors reused and 18,228 new vectors encoded. No truncated embedding inputs. [Details and verification](SEMANTIC_CHUNKING.md). Retrieval accuracy has not been independently remeasured.
+
+---
+
+# Historical checkpoint — October 20 food coverage expansion
+
+**2,920 searchable papers, 1,191 searchable full texts, 86,903 indexed passages.** Acquisition and incremental encoding are complete. The optional recency bonus remains active. See [latest coverage](COVERAGE_2026_10_20.md) for measurements and limitations. Current accuracy has not been remeasured; earlier checkpoints follow.
+
+---
+
+# Historical checkpoint — product expansion and recency ranking
+
+The live collection has **2,291 searchable papers, 1,000 searchable full texts and 73,347 indexed passages**. The product batch and incremental encoding are complete. A small, optional recency bonus is active in interactive search. See [product expansion](PRODUCT_EXPANSION.md) for measurements, checks and ranking details.
+
+Thirty-two focused tests and browser checks passed; current precision is not yet evaluated. Previous report scores are historical. The notes below preserve earlier checkpoints.
+
+---
+
+# Historical checkpoint — first expansion activated October 19, 2026
+
+The local application now has **1,866 records, 1,796 searchable papers, 839 full-text records and 60,420 indexed passages**. Lexical and passage-level dense indexes match the active corpus. 22,445 vectors were encoded and 37,975 reused after exact-text/model checks. Acquisition and indexing have finished for this bounded run.
+
+See [collection continuation](COLLECTION_CONTINUATION.md) for measured storage, source-access failures, commands and limitations. Twenty-six tests and four live search checks passed. New accuracy has not been measured; the report and saved evaluations remain tied to their earlier corpus. Context matching and independent scientific validation remain open.
+
+The notes below describe earlier checkpoints and their historical counts; they are retained for provenance.
+
+---
+
+# Historical checkpoint — initial full-text embedding continuation
 
 The user authorized completing full-text embeddings after the reduced delivery. **All 37,975 passage vectors are complete, validated and active.** No encoding or acquisition job is running. The original full specification still has outstanding scientific-validation and context-matching work.
 

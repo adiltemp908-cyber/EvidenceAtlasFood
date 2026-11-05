@@ -1,0 +1,229 @@
+{
+  "reviewer": "AI-assisted review; same direct/partial rubric as baseline. These questions are the repair/development set, not held-out validation.",
+  "cases": [
+    {
+      "id": "late-meals",
+      "query": "Is eating late at night bad for health?",
+      "corpus": "2e46bd0ccda191a9743037e85f36865b4e18fbe47571a9f86237552e5f4405a8",
+      "judgments": [
+        {
+          "rank": 1,
+          "id": "MED:31303526",
+          "grade": 2,
+          "reason": "Human evening/morning meal challenge."
+        },
+        {
+          "rank": 2,
+          "id": "MED:42377351",
+          "grade": 2,
+          "reason": "Review of late-night metabolic outcomes."
+        },
+        {
+          "rank": 3,
+          "id": "MED:36198293",
+          "grade": 2,
+          "reason": "Controlled late versus early eating trial."
+        },
+        {
+          "rank": 4,
+          "id": "MED:42437713",
+          "grade": 1,
+          "reason": "Later caloric midpoint is not specifically night eating."
+        },
+        {
+          "rank": 5,
+          "id": "MED:41246831",
+          "grade": 2,
+          "reason": "Adolescent calories after 20:00 and overweight."
+        },
+        {
+          "rank": 6,
+          "id": "MED:42625842",
+          "grade": 2,
+          "reason": "Early/midday/late eating windows and cardiometabolic outcomes in RCTs."
+        },
+        {
+          "rank": 7,
+          "id": "MED:42796993",
+          "grade": 2,
+          "reason": "Review includes human night-eating health findings with narrow bipolar context."
+        },
+        {
+          "rank": 8,
+          "id": "MED:41399000",
+          "grade": 2,
+          "reason": "Evening eating-to-sleep interval and sleep quality."
+        },
+        {
+          "rank": 9,
+          "id": "MED:31614924",
+          "grade": 2,
+          "reason": "Night eating and metabolic syndrome in adults."
+        },
+        {
+          "rank": 10,
+          "id": "MED:30705391",
+          "grade": 2,
+          "reason": "Intake within two hours of bedtime and BMI by chronotype."
+        }
+      ],
+      "precision": {
+        "P@3": 1.0,
+        "P@5": 0.8,
+        "P@10": 0.9
+      },
+      "search_seconds": 1.8104204999981448
+    },
+    {
+      "id": "breakfast-cereal",
+      "query": "Is breakfast cereal good to eat every day?",
+      "corpus": "2e46bd0ccda191a9743037e85f36865b4e18fbe47571a9f86237552e5f4405a8",
+      "judgments": [
+        {
+          "rank": 1,
+          "id": "MED:42079003",
+          "grade": 2,
+          "reason": "Review of ready-to-eat cereal and health/nutrition outcomes."
+        },
+        {
+          "rank": 2,
+          "id": "MED:18502106",
+          "grade": 2,
+          "reason": "Child cereal consumption and obesity association."
+        },
+        {
+          "rank": 3,
+          "id": "MED:19083483",
+          "grade": 2,
+          "reason": "Cereal consumption and nutrient intake in girls."
+        },
+        {
+          "rank": 4,
+          "id": "MED:15310735",
+          "grade": 2,
+          "reason": "Cereal snack intervention and energy intake/weight; evening context must be retained."
+        },
+        {
+          "rank": 5,
+          "id": "MED:42389703",
+          "grade": 2,
+          "reason": "Review of cereal intake and health/nutrition."
+        },
+        {
+          "rank": 6,
+          "id": "MED:33540761",
+          "grade": 1,
+          "reason": "Product-composition audit, not human consumption outcomes."
+        },
+        {
+          "rank": 7,
+          "id": "MED:26273900",
+          "grade": 2,
+          "reason": "Cereal-versus-oatmeal intake and satiety trial."
+        },
+        {
+          "rank": 8,
+          "id": "MED:27749919",
+          "grade": 2,
+          "reason": "Systematic review of cereal consumption and nutritional/health outcomes."
+        },
+        {
+          "rank": 9,
+          "id": "MED:33261155",
+          "grade": 2,
+          "reason": "Cereal-versus-egg breakfast trial with null between-group outcomes."
+        },
+        {
+          "rank": 10,
+          "id": "MED:31058848",
+          "grade": 2,
+          "reason": "Canadian population cereal consumption and nutrient intake."
+        }
+      ],
+      "precision": {
+        "P@3": 1.0,
+        "P@5": 1.0,
+        "P@10": 0.9
+      },
+      "search_seconds": 1.9551678000716493
+    },
+    {
+      "id": "creatine",
+      "query": "Does creatine help build muscle?",
+      "corpus": "2e46bd0ccda191a9743037e85f36865b4e18fbe47571a9f86237552e5f4405a8",
+      "judgments": [
+        {
+          "rank": 1,
+          "id": "MED:42832309",
+          "grade": 2,
+          "reason": "Review directly examines muscle hypertrophy with creatine and training."
+        },
+        {
+          "rank": 2,
+          "id": "MED:20034396",
+          "grade": 2,
+          "reason": "Review of creatine and muscle hypertrophy in older adults."
+        },
+        {
+          "rank": 3,
+          "id": "MED:19741514",
+          "grade": 2,
+          "reason": "Clinical review of creatine and muscle mass in wasting disease; limited population applicability."
+        },
+        {
+          "rank": 4,
+          "id": "MED:37432300",
+          "grade": 2,
+          "reason": "Meta-analysis of human directly measured muscle hypertrophy."
+        },
+        {
+          "rank": 5,
+          "id": "MED:42800365",
+          "grade": 1,
+          "reason": "GLP-1 muscle-loss proposal is hypothesis-generating without direct clinical trial."
+        },
+        {
+          "rank": 6,
+          "id": "MED:41873283",
+          "grade": 2,
+          "reason": "Clinical review includes human muscle-mass results; narrow orthopedic context."
+        },
+        {
+          "rank": 7,
+          "id": "MED:19242554",
+          "grade": 2,
+          "reason": "HIV trial measures thigh cross-sectional area and lean mass, including null hypertrophy result."
+        },
+        {
+          "rank": 8,
+          "id": "MED:41870601",
+          "grade": 2,
+          "reason": "Review includes lean mass and training adaptations."
+        },
+        {
+          "rank": 9,
+          "id": "MED:31652853",
+          "grade": 2,
+          "reason": "Review of aging muscle mass and creatine."
+        },
+        {
+          "rank": 10,
+          "id": "MED:42578920",
+          "grade": 2,
+          "reason": "Intervention with lean mass outcomes with/without exercise."
+        }
+      ],
+      "precision": {
+        "P@3": 1.0,
+        "P@5": 0.8,
+        "P@10": 0.9
+      },
+      "search_seconds": 2.0742909000255167
+    }
+  ],
+  "macro_precision": {
+    "P@3": 1.0,
+    "P@5": 0.8666666666666667,
+    "P@10": 0.9
+  }
+}

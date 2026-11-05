@@ -1,5 +1,7 @@
 # Project documents
 
-Start with STATUS.md and OPEN_ISSUES.md. EvidenceAtlas_Food_Report.pdf and DEMO_SCRIPT.md are the course presentation materials. SPECIFICATION.md, DELIVERY_SCOPE.md and COURSE_REQUIREMENTS.md preserve the original requirements and agreed scope. ARCHITECTURE.md, DECISIONS.md and PLAN.md record implementation choices. SETUP_REFERENCE.md preserves the detailed setup and reproduction instructions.
+Start with [the November 5 report](EvidenceAtlas_Food_Report_2026_11_05.pdf), [change log](CHANGELOG_2026_11_05.md), [status](STATUS.md) and [open issues](OPEN_ISSUES.md). REPORT_2026_11_05.md is the current report source; REPORT.md and EvidenceAtlas_Food_Report.pdf mirror the latest report. REPORT_2026_10_07.md and EvidenceAtlas_Food_Report_2026_10_07.pdf preserve the October report. The previously published EvidenceAtlasFood-Report-Final.pdf also remains historical.
 
-checks/ contains measured run and verification files; screenshots/ contains interface images. These records explain what was actually checked and are retained for reproducibility. Earlier milestones describe historical state; use STATUS.md for the latest baseline.
+DEMO_SCRIPT.md is the updated live demonstration plan. SPECIFICATION.md, DELIVERY_SCOPE.md and COURSE_REQUIREMENTS.md preserve original requirements. ARCHITECTURE.md, DECISIONS.md and PLAN.md record design decisions. SETUP_REFERENCE.md and the root README provide installation instructions.
+
+checks/ contains measured verification records; screenshots/ contains interface images. Earlier records describe their dated snapshots, not the current collection.

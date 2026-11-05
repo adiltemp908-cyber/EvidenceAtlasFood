@@ -1,6 +1,6 @@
 # EvidenceAtlas Food
 
-A local, source-grounded food/nutrition literature investigation system for CSD358 Track T6. This reduced-scope delivery includes 973 records, 950 searchable papers and 494 full texts; see `docs/DELIVERY_SCOPE.md` and `docs/STATUS.md` for verified functionality and deferred requirements. It is **not yet a validated fact-checking system**.
+A local, source-grounded food/nutrition literature investigation system for CSD358 Track T6. The original report snapshot included 973 records, 950 searchable papers and 494 full texts; the expanded current counts are in COLLECTION_CONTINUATION.md; see `docs/DELIVERY_SCOPE.md` and `docs/STATUS.md` for verified functionality and deferred requirements. It is **not yet a validated fact-checking system**.
 
 ## Open the interface
 
@@ -57,7 +57,7 @@ python -m evidenceatlas.models embedding reranker nli
 python -m evidenceatlas.cli dense-index
 ```
 
-Model revisions are pinned in `models.py`; downloads/cache stay on E:. Models use CPU: four threads for embedding and two for cross-encoders. The active semantic index has 37,975 section-passage vectors, capped at 256 model tokens (2,723 inputs truncated). Complete full-text paragraphs remain searchable through the lexical index. The earlier 950-vector title/abstract index is retained for comparison and rollback. Dense vectors are float32/memory-mapped. Truncation counts are reported. Model similarity, relevance reranking and NLI stance are distinct; none is validated scientific certainty. See status for which model workflows have actually run.
+Model revisions are pinned in `models.py`; downloads/cache stay on E:. Retrieval models use CPU: four threads for embedding and two for cross-encoders. The optional local Qwen3 summary model uses the GPU; see LOCAL_SUMMARIES.md. The original report snapshot had 37,975 section-passage vectors, capped at 256 model tokens (2,723 inputs truncated). The November 4 index contains 115,883 overlapping chunk vectors from 102,752 source passages, with zero truncated semantic inputs. See SEMANTIC_CHUNKING.md and checks/coverage-2026-11-04.json. Complete full-text paragraphs remain searchable through the lexical index. The earlier 950-vector title/abstract index is retained for comparison and rollback. Dense vectors are float32/memory-mapped. Truncation counts are reported. Model similarity, relevance reranking and NLI stance are distinct; none is validated scientific certainty. See status for which model workflows have actually run.
 
 ## Evaluation
 

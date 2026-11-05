@@ -1,0 +1,17 @@
+{
+  "status": "active",
+  "source_passages": 86903,
+  "semantic_chunks": 98131,
+  "split_passages": 7000,
+  "reused_vectors": 79903,
+  "new_vectors": 18228,
+  "truncated_inputs": 0,
+  "live_queries": 6,
+  "matched_spans_verified": 8,
+  "saved_investigations_preserved": 19,
+  "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+  "tail_probes_at_10_before": 11,
+  "tail_probes_at_10_after": 12,
+  "tail_probe_count": 12,
+  "accuracy_claim": "None; source recovery probes are not a relevance benchmark"
+}

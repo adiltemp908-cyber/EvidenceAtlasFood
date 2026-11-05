@@ -1,0 +1,497 @@
+{
+  "date": "2026-10-21",
+  "targeted_papers_added": [
+    {
+      "id": "MED:39074168",
+      "title": "The Effect of Creatine Supplementation on Resistance Training-Based Changes to Body Composition: A Systematic Review and Meta-analysis.",
+      "availability": "abstract-only",
+      "passages": 3,
+      "screening_reason": "Nutrition entity and health/nutrient outcome found in title/abstract; provisional rule screen"
+    },
+    {
+      "id": "MED:37432300",
+      "title": "The Effects of Creatine Supplementation Combined with Resistance Training on Regional Measures of Muscle Hypertrophy: A Systematic Review with Meta-Analysis.",
+      "availability": "full-text",
+      "passages": 38,
+      "screening_reason": "Nutrition entity and health/nutrient outcome found in title/abstract; provisional rule screen"
+    },
+    {
+      "id": "MED:36198293",
+      "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity.",
+      "availability": "abstract-only",
+      "passages": 3,
+      "screening_reason": "Nutrition entity and health/nutrient outcome found in title/abstract; provisional rule screen"
+    },
+    {
+      "id": "MED:27749919",
+      "title": "Effects of Ready-to-Eat-Cereals on Key Nutritional and Health Outcomes: A Systematic Review.",
+      "availability": "full-text",
+      "passages": 136,
+      "screening_reason": "Nutrition entity and health/nutrient outcome found in title/abstract; provisional rule screen"
+    }
+  ],
+  "counts": {
+    "papers": 3058,
+    "searchable_papers": 2924,
+    "passages": 87083,
+    "availability": {
+      "abstract-only": 1822,
+      "full-text": 1215,
+      "metadata-only": 21
+    },
+    "screening": {
+      "accepted": 3556,
+      "excluded": 20,
+      "needs_review": 135
+    },
+    "topics": [
+      {
+        "topic": "audit-gap-repair",
+        "decision": "accepted",
+        "papers": 4
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 41
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "needs_review",
+        "papers": 7
+      },
+      {
+        "topic": "fermented_products",
+        "decision": "accepted",
+        "papers": 62
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 74
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "green_tea",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "green_tea",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "green_tea",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "accepted",
+        "papers": 72
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 53
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 225
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 84
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "accepted",
+        "papers": 37
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 47
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 42
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 127
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 48
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "new_vectors": 225,
+  "reused_vectors": 98131,
+  "tests_passed": 64,
+  "typescript": "passed",
+  "browser": {
+    "summary_button": true,
+    "completed_answer": true,
+    "source_navigation": true,
+    "study_context_navigation": true,
+    "mobile_no_horizontal_overflow": true,
+    "javascript_errors": []
+  },
+  "summaries": [
+    {
+      "case": "late-meals",
+      "paragraphs": 1,
+      "seconds": 17.2,
+      "cached_section_groups": 32,
+      "exact_quotations": {
+        "verified": 20,
+        "total": 20
+      },
+      "answer_source_sections": [
+        "Abstract"
+      ]
+    },
+    {
+      "case": "breakfast-cereal",
+      "paragraphs": 1,
+      "seconds": 32.9,
+      "cached_section_groups": 38,
+      "exact_quotations": {
+        "verified": 20,
+        "total": 20
+      },
+      "answer_source_sections": [
+        "Abstract"
+      ]
+    },
+    {
+      "case": "creatine",
+      "paragraphs": 1,
+      "seconds": 20.2,
+      "cached_section_groups": 28,
+      "exact_quotations": {
+        "verified": 22,
+        "total": 22
+      },
+      "answer_source_sections": [
+        "Review"
+      ]
+    }
+  ],
+  "baseline_macro_precision": {
+    "P@3": 0.7777777777777778,
+    "P@5": 0.7333333333333334,
+    "P@10": 0.6666666666666666
+  },
+  "after_macro_precision": {
+    "P@3": 1.0,
+    "P@5": 0.8666666666666667,
+    "P@10": 0.9
+  },
+  "evaluation_scope": "Same three development questions; AI-assisted judgments, not an independent benchmark.",
+  "remaining_summary_limits": [
+    "All three final answers contained only one retained finding; coverage is incomplete.",
+    "Cereal wording omitted the baseline qualifier from age 9-10; exact context remains visible.",
+    "Same-model verification is not independent scientific review."
+  ],
+  "sessions_preserved": 19,
+  "pipeline": "local-full-paper-summary-v8"
+}

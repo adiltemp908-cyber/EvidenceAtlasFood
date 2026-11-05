@@ -1,0 +1,32 @@
+{
+  "scope": "Synthetic source, real installed model and complete summary pipeline. Not scientific validation.",
+  "checks": [
+    {
+      "query": "Does sodium reduction lower blood pressure?",
+      "expected": "answer",
+      "job_status": "complete",
+      "result_status": "answer",
+      "reason": null,
+      "paragraphs": [
+        {
+          "text": "The intervention study reports that sodium reduction lowered blood pressure compared with usual intake. The population, intervention, and outcome are described in the context of the study's findings, with no details on dose, duration, or comparator beyond the comparison to usual intake. The association is stated as a finding, without specifying the magnitude or uncertainty of the effect. ",
+          "citations": [
+            "N1"
+          ]
+        }
+      ],
+      "message": "",
+      "passed": true
+    },
+    {
+      "query": "Does sodium reduction improve sleep in children?",
+      "expected": "insufficient",
+      "job_status": "complete",
+      "result_status": "insufficient",
+      "reason": "no_direct_evidence",
+      "paragraphs": [],
+      "message": "I couldn't identify research findings that directly answer this question in the 1 retrieved papers I read. Related findings may concern different conditions or answer only part of the question. This does not mean no such studies exist: this collection and the available paper text are incomplete. Try broadening the search or reading more papers.",
+      "passed": true
+    }
+  ]
+}

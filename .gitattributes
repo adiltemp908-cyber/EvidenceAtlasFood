@@ -1,0 +1,4 @@
+# Preserve exact source and frozen evaluation bytes for SHA-256 manifests.
+* -text
+*.pdf binary
+*.png binary

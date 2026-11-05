@@ -1,0 +1,837 @@
+{
+  "run": "coverage-2026-10-20",
+  "published_at": "2026-10-20T05:14:02.392110+00:00",
+  "before": {
+    "papers": 2392,
+    "searchable_papers": 2291,
+    "passages": 73347,
+    "availability": {
+      "abstract-only": 1353,
+      "full-text": 1022,
+      "metadata-only": 17
+    },
+    "screening": {
+      "accepted": 2673,
+      "excluded": 15,
+      "needs_review": 94
+    },
+    "topics": [
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 41
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 53
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 183
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 47
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 42
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 48
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "counts": {
+    "papers": 3054,
+    "searchable_papers": 2920,
+    "passages": 86903,
+    "availability": {
+      "abstract-only": 1820,
+      "full-text": 1213,
+      "metadata-only": 21
+    },
+    "screening": {
+      "accepted": 3552,
+      "excluded": 20,
+      "needs_review": 135
+    },
+    "topics": [
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 41
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "needs_review",
+        "papers": 7
+      },
+      {
+        "topic": "fermented_products",
+        "decision": "accepted",
+        "papers": 62
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 74
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "green_tea",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "green_tea",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "green_tea",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "accepted",
+        "papers": 72
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 53
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 225
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 84
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "accepted",
+        "papers": 37
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 47
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 42
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 127
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 48
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+  "dense": {
+    "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+    "source_corpus": "94f90c6755f3849f08dce16df2ff10ec5edd91f4a53fa1d6eae77032ac36cd9f",
+    "model": [
+      "sentence-transformers/all-MiniLM-L6-v2",
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "max_tokens": 256,
+    "level": "passage",
+    "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+    "dimensions": 384,
+    "passages": 86903,
+    "truncated_passages": 7000,
+    "reused_vectors": 73347,
+    "new_vectors": 13556,
+    "elapsed_seconds": 364.8698476999998,
+    "validation": {
+      "vectors": 86903,
+      "dimensions": 384,
+      "finite": true,
+      "unit_norm_tolerance": 0.0001
+    },
+    "path": "E:\\EvidenceAtlasFood\\indexes\\dense-10800e54e68ce1db",
+    "activation": "staged; activate only with the matching corpus"
+  },
+  "lexical": {
+    "version": "positional-lexical-1",
+    "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+    "built_seconds": 215.79449130001012,
+    "weights": {
+      "title": 1.4,
+      "abstract": 1.0,
+      "methods": 0.85,
+      "results": 1.25,
+      "discussion": 1.0,
+      "conclusion": 1.1,
+      "limitations": 1.05,
+      "background": 0.6,
+      "table": 1.0,
+      "body": 1.0
+    },
+    "weights_status": "hypothesis; not tuned or validated"
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 14942626960,
+    "free_bytes": 246956453888,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  },
+  "fulltext_backfill": [
+    {
+      "id": "MED:31339000",
+      "pmcid": "PMC6658129",
+      "status": "failed",
+      "error": "500 Server Error:  for url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6658129/fullTextXML"
+    }
+  ],
+  "errors": [],
+  "searchable_fulltexts": 1191,
+  "mentions_before": {
+    "flaxseed": {
+      "title": 8,
+      "title_abstract": 15
+    },
+    "chia": {
+      "title": 9,
+      "title_abstract": 12
+    },
+    "protein bars": {
+      "title": 2,
+      "title_abstract": 3
+    },
+    "electrolyte drinks": {
+      "title": 0,
+      "title_abstract": 4
+    },
+    "oat milk": {
+      "title": 2,
+      "title_abstract": 6
+    },
+    "almond milk": {
+      "title": 1,
+      "title_abstract": 5
+    },
+    "green tea": {
+      "title": 4,
+      "title_abstract": 8
+    },
+    "legumes": {
+      "title": 5,
+      "title_abstract": 37
+    },
+    "fermented products": {
+      "title": 0,
+      "title_abstract": 3
+    }
+  },
+  "mentions_after": {
+    "flaxseed": {
+      "title": 30,
+      "title_abstract": 51
+    },
+    "chia": {
+      "title": 22,
+      "title_abstract": 26
+    },
+    "protein bars": {
+      "title": 17,
+      "title_abstract": 38
+    },
+    "electrolyte drinks": {
+      "title": 21,
+      "title_abstract": 47
+    },
+    "oat milk": {
+      "title": 6,
+      "title_abstract": 14
+    },
+    "almond milk": {
+      "title": 13,
+      "title_abstract": 27
+    },
+    "green tea": {
+      "title": 51,
+      "title_abstract": 75
+    },
+    "legumes": {
+      "title": 45,
+      "title_abstract": 107
+    },
+    "fermented products": {
+      "title": 31,
+      "title_abstract": 63
+    }
+  },
+  "mention_metric": "Phrase counts in searchable titles/abstracts, not independently judged relevant papers",
+  "verified_searches": 6,
+  "verified_passage_links": 90,
+  "saved_investigations_preserved": 19,
+  "evaluation": "Functional checks; no new precision estimate"
+}

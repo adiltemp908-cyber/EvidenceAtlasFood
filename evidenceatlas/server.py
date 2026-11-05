@@ -15,6 +15,8 @@ WEB=Path(__file__).resolve().parent.parent/'web'
 
 def serve(settings,port=8765):
     engine=None
+    from .summarization import SummaryManager
+    summary_manager=SummaryManager(settings)
     def get_engine():
         nonlocal engine
         if engine is None:
@@ -44,15 +46,21 @@ def serve(settings,port=8765):
                         'capabilities':{'dense':(settings.root/'indexes/dense-active.json').exists(),'reranker':(settings.root/'models/reranker/config.json').exists(),'experimental_nli':(settings.root/'models/nli/config.json').exists()},'dense_index':index_metadata(settings),
                         'jobs':[json.loads(r[0]) for r in store.db.execute('SELECT payload FROM jobs')],
                         'limitations':['Provisional metadata screening; not independently validated','Pilot/development collection, not comprehensive nutrition coverage','Model stance and claim synthesis are not yet validated']})
+                if path.startswith('/api/summaries/'):
+                    return self.send(summary_manager.status(path.removeprefix('/api/summaries/')))
                 if path=='/api/search':
                     query=q.get('q',[''])[0];method=q.get('method',['structure'])[0]
                     filters={key:q[key][0] for key in ('topic','section','year_min','year_max') if q.get(key) and q[key][0]}
                     filters.update({key:q.get(key,['false'])[0]=='true' for key in ('fulltext','human')})
                     count=min(30,max(1,int(q.get('k',['10'])[0])));expanded=q.get('expand',['true'])[0]=='true'
+                    recency=q.get('recency',['true'])[0]=='true'
+                    candidate_count=max(40,count) if recency else count
                     if method in ('hybrid','dense') or q.get('rerank',['false'])[0]=='true':
                         if any(c in query for c in ('"','(',')')) or re.search(r'\b(AND|OR|NOT)\b',query):raise ValueError('Use lexical retrieval for Boolean/phrase constraints; dense syntax is natural language only')
-                        run=get_engine().run(store,query,method,k=count,filters=filters,expand=expanded,rerank=q.get('rerank',['false'])[0]=='true')
-                    else:run=search(store,query,method,k=count,filters=filters,expand=expanded)
+                        run=get_engine().run(store,query,method,k=candidate_count,filters=filters,expand=expanded,rerank=q.get('rerank',['false'])[0]=='true')
+                    else:run=search(store,query,method,k=candidate_count,filters=filters,expand=expanded)
+                    from .ranking import apply_recency
+                    run=apply_recency(run,count,enabled=recency)
                     from .intent import interpret
                     run['intent']=interpret(query);run['evidence']=inspect_evidence(store,query,run);return self.send(run)
                 if path.startswith('/api/papers/'):
@@ -111,6 +119,12 @@ def serve(settings,port=8765):
                 length=int(self.headers.get('Content-Length',0))
                 if length<1 or length>2_000_000:return self.send({'error':'Invalid request size'},413)
                 value=json.loads(self.rfile.read(length))
+                if self.path=='/api/summaries':
+                    try:return self.send(summary_manager.start(value.get('query'),value.get('paper_ids'),value.get('corpus')),202)
+                    except ValueError as exc:return self.send({'error':str(exc)},400)
+                    except RuntimeError as exc:return self.send({'error':str(exc)},409)
+                if self.path.startswith('/api/summaries/') and self.path.endswith('/cancel'):
+                    return self.send(summary_manager.cancel(self.path.split('/')[3]))
                 if self.path=='/api/analyze':
                     claim=value.get('claim','')
                     if not isinstance(claim,str) or not 3<=len(claim)<=1000:raise ValueError('Claim must contain 3–1000 characters')

@@ -3,9 +3,30 @@ import json
 import re
 import threading
 import time
-from .retrieval import search,normalize,tokens
+from .retrieval import search,normalize,tokens,STOP
 from .dense import DenseIndex,fuse
 from .models import cross_model,MODELS
+
+def rerank_text(paper,query,tokenizer,max_tokens=384):
+    """Judge paper relevance from a bounded, query-focused abstract, with full-text fallback."""
+    title=paper['title']
+    body=paper.get('abstract') or paper.get('semantic_match',{}).get('text') or next((p['text'] for p in paper['passages'] if p.get('zone')!='title'),'')
+    terms=set(tokens(query))-STOP-{'good','bad','help','build','every','day','health','healthy'}
+    sentences=re.split(r'(?<=[.!?])\s+(?=[A-Z0-9])',body)
+    candidates=sorted(enumerate(sentences),key=lambda pair:-len(terms & set(tokens(pair[1]))))
+    selected=[]
+    for i,sentence in candidates:
+        proposed=sorted(selected+[(i,sentence)])
+        text=title+' '+' '.join(s for _,s in proposed)
+        if len(tokenizer.encode(query,text,add_special_tokens=True,truncation=False))<=max_tokens:
+            selected=proposed
+        if len(selected)>=4:break
+    if selected:return title+' '+' '.join(s for _,s in selected)
+    # Long single sentences are explicitly bounded; retain the highest-overlap one.
+    text=title+' '+(candidates[0][1] if candidates else body)
+    while text and len(tokenizer.encode(query,text,add_special_tokens=True,truncation=False))>max_tokens:
+        text=text[:max(0,len(text)*9//10)]
+    return text
 
 class ResearchEngine:
     def __init__(self,settings):
@@ -23,16 +44,17 @@ class ResearchEngine:
                 if self.dense is None:self.dense=DenseIndex(self.settings)
                 lexical=search(store,query,'structure',k=40,filters=filters,expand=expand)
                 dense=self.dense.search(store,expanded,40,filters)
-                run=fuse([lexical,dense],k=20 if rerank else k)
-            else:run=search(store,query,method,k=20 if rerank else k,filters=filters,expand=expand)
+                run=fuse([lexical,dense],k=30 if rerank else k)
+            else:run=search(store,query,method,k=30 if rerank else k,filters=filters,expand=expand)
             if rerank and run['results']:
                 if self.reranker is None:self.reranker=cross_model(self.settings,'reranker')
-                pairs=[(query,p['title']+' '+p['passages'][0]['text']) for p in run['results'] if p['passages']]
+                texts=[rerank_text(p,expanded,self.reranker.tokenizer) for p in run['results']]
+                pairs=[(expanded,text) for text in texts]
                 values=self.reranker.predict(pairs,batch_size=4,show_progress_bar=False)
-                for p,score in zip(run['results'],values):p['score_components'].append({'pre_rerank_rank':p['rank'],'cross_encoder_score':float(score)});p['score']=float(score)
+                for p,score,text in zip(run['results'],values,texts):p['score_components'].append({'pre_rerank_rank':p['rank'],'cross_encoder_score':float(score),'rerank_input':text});p['score']=float(score)
                 run['results']=sorted(run['results'],key=lambda p:-p['score'])[:k]
                 for i,p in enumerate(run['results'],1):p['rank']=i
-                run['trace']['reranker']={'model':MODELS['reranker'],'pair_limit':20,'max_tokens':384,'candidate_text':'title plus top passage; may truncate','validation':'experimental relevance model, not a stance classifier'}
+                run['trace']['reranker']={'model':MODELS['reranker'],'pair_limit':30,'max_tokens':384,'query':expanded,'candidate_text':'title plus query-focused abstract sentences; matched passage fallback when abstract unavailable; explicitly token-bounded','validation':'experimental relevance model, not a stance classifier'}
             run['query']=query;run['trace'].update({'original':query,'expanded':expanded,'expansions':changes,'latency_ms':(time.perf_counter()-start)*1000})
             return run
 

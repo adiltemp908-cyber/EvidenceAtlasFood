@@ -11,6 +11,7 @@ INDEX_VERSION='positional-lexical-1'
 STOP=set('a an the is are was were does do did of to in on for and or with as at by from this that it be have has can how what whether'.split())
 WEIGHTS={'title':1.4,'abstract':1.0,'methods':0.85,'results':1.25,'discussion':1.0,'conclusion':1.1,'limitations':1.05,'background':0.6,'table':1.0,'body':1.0}
 EXPANSIONS={'fibre':'fiber','high blood pressure':'hypertension','late night eating':'late eating meal timing','artificial sweeteners':'non nutritive sweeteners','seed oils':'vegetable oils','kidneys':'kidney renal'}
+EXPANSIONS.update({'build muscle':'muscle hypertrophy lean mass','muscle growth':'muscle hypertrophy lean mass','gain muscle':'muscle hypertrophy lean mass'})
 
 def tokens(text):return re.findall(r"[^\W_]+(?:[.'’][^\W_]+)*",text.casefold(),re.UNICODE)
 

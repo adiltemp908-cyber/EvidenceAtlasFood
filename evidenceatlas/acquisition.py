@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 import requests
 from .parsing import abstract_text,clean,make_passages,paragraphs_jats,screen,SCREENING_VERSION
 from .taxonomy import TOPICS,queries,VERSION
+from .topic_screening import screen_topic
 
 BASE='https://www.ebi.ac.uk/europepmc/webservices/rest'
 def now():return datetime.now(timezone.utc).isoformat()
@@ -83,7 +84,7 @@ def ingest(store,client,topics=None,pages=1,page_size=10,fulltext=True,refresh=F
                 records=response['resultList']['result']
                 for rec in records:
                     pid=store.canonical(rec)
-                    decision,reason,species=screen(rec,TOPICS[topic][2])
+                    decision,reason,species=screen_topic(rec,topic)
                     existing=store.paper(pid)
                     has_passages=bool(existing and existing['passages'])
                     if existing and not refresh and (has_passages or decision!='accepted'):

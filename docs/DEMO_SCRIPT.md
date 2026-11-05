@@ -1,19 +1,13 @@
-# Course demo plan (not a recording)
+# Updated live demo plan - November 5, 2026
 
-The supplied PDF requires a 5–8 minute prerecorded live demo with no slides. This script is preparation only; no video has been recorded or uploaded.
+The course format is a 5-8 minute prerecorded live demo without slides. The README preserves the existing published video link; this plan does not claim that recording has been updated or reviewed.
 
-1. **0:00–0:45 — problem and T6.** Open the working app. Explain a food claim's dependence on dose, timing, population and comparison. Show the local collection count and abstract/full-text distinction.
-2. **0:45–2:00 — real investigation.** Search caffeine and sleep, open a source excerpt in its full-text section, inspect surrounding limitations. Show at least one limitation, such as a review/background passage ranking above direct evidence.
-3. **2:00–3:00 — compare context.** Switch to Dietitian, select two studies, open candidate dose/population mentions. Explain why context compatibility and stance are separate, and why unknowns remain visible.
-4. **3:00–4:30 — substantive IR.** Switch to Research. Show original/expanded query, token contributions, BM25 parameters and section weights. Run a phrase/Boolean query. Open `retrieval.py` and inspect actual SQL postings rather than only a screen.
-5. **4:30–5:30 — experiments.** Show frozen run artifacts and actual latency/storage measurements. If human judgments remain unavailable, state this clearly and show the annotation protocol; do not present missing P@k/F1 as completed evaluation.
-6. **5:30–6:30 — model limits and persistence.** If verified, show dense/hybrid rank changes and an experimental stance failure. Save an investigation, reload notes and export citations/evidence with scope preserved.
-7. **6:30–7:30 — ownership and next steps.** Each real team member explains the component they actually own. Disclose AI-generated code/documentation and actual human work. Do not use invented roles.
+1. **0:00-0:45 - purpose and collection.** Open the application and explain the CSD358 Track T6 domain. Show 3,493 searchable papers and distinguish full-text from abstract-only availability. This is a bounded local nutrition collection.
+2. **0:45-2:00 - retrieve and inspect.** Search an everyday food question using the opening Hybrid + relevance reranking default. Open an exact source passage and its surrounding context. Show a tangential result as a visible limitation if one appears.
+3. **2:00-3:00 - compare studies.** Compare two studies in the dietitian view. Check population, dose, exposure, timing and outcome; extracted context remains provisional.
+4. **3:00-4:15 - explain retrieval.** Use the research trace to show lexical scores, semantic matching, fusion and reranking. The current index has 115,883 chunk vectors from 102,752 source passages, with no truncated embedding inputs in the recorded activation. Demonstrate a phrase query and the optional recency preference.
+5. **4:15-5:30 - local paper reading.** Select three papers and show summary progress or a prepared completed answer. Explain that a cached answer reuses earlier readings. Open exact quotations and context; demonstrate or explain abstention for evidence that does not directly answer the question. Avoid promising completion within the recording: uncached readings can take minutes.
+6. **5:30-6:30 - evaluation and limits.** Show historical Precision@3, @5 and @10, identifying the frozen collection and AI-assisted labels. Keep those scores separate from current collection counts, synthetic applicability checks and targeted development repairs. No independent summary-accuracy claim is available.
+7. **6:30-7:30 - persistence and ownership.** Save an investigation, reopen it and export evidence. Identify the published author, actual contributions and AI assistance. Explain the next need for independent relevance and study-context review.
 
-Recording readiness still depends on frozen experiment review and team ownership details. Course report must stay within eight pages excluding references/appendix.
-
-## Updated evaluation demonstration
-In Collection & evaluation, expand Preliminary AI relevance audit: 8/12 direct or near-direct results, only 2/12 judged directly applicable. State that the annotator was AI and also built the system; these are not validated accuracy scores. Show the population mismatch case and explain why compatibility remains unknown. Run `python -m evidenceatlas.audit E:\EvidenceAtlasFood\experiments\delivery-v1` to demonstrate reproducible source-span validation without model inference. Keep the entire recording within the original 5-8 minute limit.
-
-## Full-text semantic continuation
-Semantic search now uses 37,975 passage vectors. Show the active index and its 2,723 truncated inputs. The original 12-pair AI audit is explicitly historical. Compare lexical and semantic results and open the actual matched passage; show passage-v1 artifacts without claiming accuracy improvement. Encoding is already complete; do not start a build during the recording.
+Prepare a completed summary and source tabs before recording, but state when a cache is used. Do not start acquisition or embedding builds during the demo. The current report is eight pages; historical reports and development records remain available.

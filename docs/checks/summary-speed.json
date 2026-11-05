@@ -1,0 +1,24 @@
+{
+  "measurements": [
+    {
+      "papers": 3,
+      "wall_seconds": 31.2,
+      "scope": "Read 1 full texts and 2 abstracts \u00b7 3 retrieved papers \u00b7 original reading: 26 seconds \u00b7 9 section readings reused"
+    },
+    {
+      "papers": 1,
+      "wall_seconds": 16.4,
+      "scope": "Read 1 full texts and 0 abstracts \u00b7 1 retrieved papers \u00b7 original reading: 13 seconds \u00b7 7 section readings reused"
+    }
+  ],
+  "default": 3,
+  "bounds_validation": true,
+  "paper_count_sent": true,
+  "completed_answer_reused": true,
+  "count_survives_audience_switch": true,
+  "mobile_no_overflow": true,
+  "javascript_errors": [],
+  "tests_passed": 30,
+  "typescript": "passed",
+  "timing_scope": "Warm section readings from the existing cereal audit, not a cold-reading benchmark."
+}

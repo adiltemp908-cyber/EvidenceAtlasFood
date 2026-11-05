@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "pipeline": "local-full-paper-summary-v6",
+  "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+  "query": "Does green tea lower cholesterol?",
+  "live_run": {
+    "papers_read": 10,
+    "paragraphs": 2,
+    "exact_citations_checked": 21,
+    "elapsed": 11.4,
+    "cache_lookup_seconds": 0.61,
+    "status": "answer"
+  },
+  "browser": {
+    "summary_button": true,
+    "completed_answer": true,
+    "source_navigation": true,
+    "mobile_no_horizontal_overflow": true,
+    "javascript_errors": []
+  },
+  "regression": {
+    "passed": 37,
+    "failed": 0,
+    "files": [
+      "test_summarization.py",
+      "test_chunking.py",
+      "test_dense.py",
+      "test_core.py"
+    ]
+  },
+  "typescript_compile": "passed",
+  "independent_scientific_validation": false,
+  "limitations": "One live question; functional checks are not an accuracy benchmark. Small local model interpretations require review.",
+  "timing_scope": "Final run reused identical section extractions from the 167.9-second fresh full-reading run; answer generation and validation were rerun."
+}

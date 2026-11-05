@@ -1,0 +1,320 @@
+{
+  "date": "2026-10-24",
+  "records_added": 476,
+  "searchable_added": 428,
+  "searchable_fulltexts_added": 155,
+  "searchable_total": 3352,
+  "searchable_fulltexts": 1348,
+  "passages": 97245,
+  "new_vectors": 11272,
+  "reused_vectors": 98356,
+  "semantic_vectors": 109628,
+  "topics": [
+    "oat_almond_milk",
+    "collagen_supplements",
+    "psyllium_products",
+    "whey_products",
+    "magnesium_supplements",
+    "omega3_supplements",
+    "probiotic_supplements",
+    "sports_drinks"
+  ],
+  "cutoff": "2026-10-23",
+  "scope_review": [
+    {
+      "id": "MED:18184383",
+      "title": "Evacuation of sand from the equine intestine with mineral oil, with and without psyllium.",
+      "decision": "excluded",
+      "reason": "Veterinary sand-evacuation trial in horses; no human dietary outcome.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:19109261",
+      "title": "Glycosylation and expanded utility of a modified whey protein ingredient via carbohydrate conjugation at low pH.",
+      "decision": "needs_review",
+      "reason": "Whey ingredient glycosylation/thickening experiment; dietary health outcomes not measured.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:19070469",
+      "title": "On the confocal images and the rheology of whey protein isolated and modified pectins associated complex.",
+      "decision": "needs_review",
+      "reason": "Protein-pectin complex imaging and rheology, without dietary health outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:18975141",
+      "title": "Effect of matrix elasticity on the continuous foaming of food models.",
+      "decision": "excluded",
+      "reason": "Industrial foaming experiment; glucose and whey are process ingredients, not nutritional interventions.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:18163564",
+      "title": "Surface hydrophobicity of physicochemically and enzymatically treated milk proteins in relation to techno-functional properties.",
+      "decision": "needs_review",
+      "reason": "Milk-protein hydrophobicity and foaming/emulsion properties; nutritional applicability requires review.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:27733202",
+      "title": "Comparison of psyllium feeding at home and nasogastric intubation of psyllium and magnesium sulfate in the hospital as a treatment for naturally occurring colonic sand (geosediment) accumulations in horses: a retrospective study.",
+      "decision": "excluded",
+      "reason": "Veterinary treatment of sand accumulation in horses; no human dietary outcome.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31845079",
+      "title": "Effects of dietary arachidonic acid in European sea bass (Dicentrarchus labrax) distal intestine lipid classes and gut health.",
+      "decision": "excluded",
+      "reason": "Aquaculture feed requirements and gut physiology in sea bass; no human dietary outcome.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31820306",
+      "title": "Maternal supplementation with fish oil modulates inflammation-related MicroRNAs and genes in suckling lambs.",
+      "decision": "excluded",
+      "reason": "Ewe and lamb feeding study of livestock metabolic health and milk composition.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31797205",
+      "title": "Serum lipidome analysis of healthy beagle dogs receiving different diets.",
+      "decision": "needs_review",
+      "reason": "Canine diet/lipidomics study; applicability as a model of human nutrition is not established.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:30669926",
+      "title": "Knowledge, Perceptions, and Patterns of Fish Oil Use in Cardiac Patients.",
+      "decision": "needs_review",
+      "reason": "Fish-oil knowledge/perception questionnaire; health benefits are reasons for use rather than measured effects.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31830087",
+      "title": "Impact of oral probiotic Lactobacillus acidophilus vaccine strains on the immune response and gut microbiome of mice.",
+      "decision": "needs_review",
+      "reason": "Engineered probiotic vaccine vectors; dietary supplement applicability requires review.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31758235",
+      "title": "Short-term feeding of probiotics and synbiotics modulates caecal microbiota during Salmonella Typhimurium infection but does not reduce shedding and invasion in chickens.",
+      "decision": "excluded",
+      "reason": "Poultry feeding/Salmonella shedding experiment; no human dietary exposure measured.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:32211531",
+      "title": "Effects of dietary probiotic supplementation on the growth, gut health and disease resistance of juvenile Nile tilapia (Oreochromis niloticus).",
+      "decision": "excluded",
+      "reason": "Aquaculture growth, feed conversion and disease-resistance experiment in tilapia.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31307579",
+      "title": "Regulation of butanol biosynthesis in Clostridium acetobutylicum ATCC 824 under the influence of zinc supplementation and magnesium starvation.",
+      "decision": "excluded",
+      "reason": "Industrial butanol fermentation; magnesium is a microbial growth-medium component, not a dietary exposure.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31431020",
+      "title": "Selection of technological parameters for the preparation of the combined oral solution Maglycimet.",
+      "decision": "needs_review",
+      "reason": "Manufacturing conditions for an oral pharmaceutical solution; clinical nutrition outcomes are background only.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31426953",
+      "title": "Encapsulation of Lactobacillus plantarum in cellulose based microgel with controlled release behavior and increased long-term storage stability.",
+      "decision": "needs_review",
+      "reason": "Probiotic capsule-storage and release engineering; dietary health applicability needs review.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31438619",
+      "title": "Heat-Induced Interactions between Whey Protein and Inulin and Changes in Physicochemical and Antioxidative Properties of the Complexes.",
+      "decision": "needs_review",
+      "reason": "Protein-inulin processing and chemical antioxidant assays; no consumer health outcomes measured.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31500127",
+      "title": "Development and Characterization of Whey Protein-Based Nano-Delivery Systems: A Review.",
+      "decision": "needs_review",
+      "reason": "Whey-based nanodelivery engineering review; applicability to ordinary whey intake needs review.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31525263",
+      "title": "Emulsification and oxidation stabilities of DAG-rich algae oil-in-water emulsions prepared with the selected emulsifiers.",
+      "decision": "needs_review",
+      "reason": "Emulsion storage and oxidation experiment; weight/lipid benefits appear in background, not measured outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31689914",
+      "title": "Development and Characterization of Astaxanthin-Containing Whey Protein-Based Nanoparticles.",
+      "decision": "needs_review",
+      "reason": "Astaxanthin nanoparticle delivery development; applicability to ordinary whey consumption needs review.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31699562",
+      "title": "Consequences of superfine grinding treatment on structure, physicochemical and rheological properties of transglutaminase-crosslinked whey protein isolate.",
+      "decision": "needs_review",
+      "reason": "Grinding and protein crosslinking/rheology experiment; no dietary health outcomes measured.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31756970",
+      "title": "The Effect of Dietary Replacement of Fish Meal with Whey Protein Concentrate on the Growth Performance, Fish Health, and Immune Status of Nile Tilapia Fingerlings, Oreochromis niloticus.",
+      "decision": "excluded",
+      "reason": "Fish-feed replacement and aquaculture growth trial, outside human food-health scope.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:31767413",
+      "title": "Alteration of surface pressure of macromolecular monolayer at the air-water interface and electrochemical impedance characteristics.",
+      "decision": "excluded",
+      "reason": "Macromolecular monolayer/electrochemical interface experiment, not a dietary-health study.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:29332893",
+      "title": "Do scleroderma patients look young?: Evaluation by using facial imaging system.",
+      "decision": "excluded",
+      "reason": "Scleroderma skin imaging; oral collagen supplements are background speculation, not a measured dietary exposure.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42069065",
+      "title": "Healthy beverages in a sugary world: Dutch adolescents' perspectives on water and other healthy beverages; a qualitative multi-method study.",
+      "decision": "needs_review",
+      "reason": "Adolescent beverage perceptions and preferences; claimed health effects are not measured outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42775950",
+      "title": "Social cognition pathways linking socio-demographic and individual-level factors to energy drink consumption in undergraduates.",
+      "decision": "needs_review",
+      "reason": "Social determinants of energy-drink use; health effects are background, not study outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:41215005",
+      "title": "Role of particle size and roasted degree modulating the stability of oat milk.",
+      "decision": "needs_review",
+      "reason": "Oat-milk processing/stability experiment; measured emulsification and sedimentation rather than dietary health effects.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:40504613",
+      "title": "Extrinsic Attributes That Drive Oat Milk Purchase.",
+      "decision": "needs_review",
+      "reason": "Purchase-preference survey; health claims are consumer perceptions, not measured nutrition outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:40597531",
+      "title": "Chelation of cerium (III) with fish skin collagen peptides: Improving the in vitro stability and bioavailability of inorganic cerium.",
+      "decision": "needs_review",
+      "reason": "Experimental peptide-cerium cellular delivery; applicability to ordinary nutrition products is not established.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:38635357",
+      "title": "Psyllium husk powder increases defecation frequency and faecal score, bulk and moisture in healthy cats.",
+      "decision": "excluded",
+      "reason": "Veterinary feline constipation study; human nutrition applicability is not studied.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42409142",
+      "title": "Preparation, optimization and characterization of degradable mung bean starch-whey protein-apple polyphenols composite film.",
+      "decision": "excluded",
+      "reason": "Biodegradable packaging-film engineering; weight loss concerns stored blueberries, not consumers.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42285487",
+      "title": "Effects of sodium hyaluronate with different molecular weights on whey protein-sodium hyaluronate complexes and emulsion gels, and their application in yogurt.",
+      "decision": "needs_review",
+      "reason": "Emulsion/gel engineering and yogurt texture; dietary health outcomes are not measured.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42291518",
+      "title": "Effects of clove extract and hydrolyzed whey peptides supplementation on health, performance and blood parameters of suckling dairy calves.",
+      "decision": "excluded",
+      "reason": "Dairy-calf production and veterinary feeding trial, outside human food-health scope.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42472793",
+      "title": "Efficacy of magnesium-calcium ionic oral rinse for primary burning mouth syndrome: a randomized, double-blind, placebo-controlled trial.",
+      "decision": "excluded",
+      "reason": "Topical oral rinse for burning-mouth syndrome, not dietary magnesium ingestion.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:41829054",
+      "title": "Effect of Omega-3 Fatty Acid Supplementation on Broilers' Health and Meat Quality-Systematic Review.",
+      "decision": "excluded",
+      "reason": "Poultry-production review of broiler health/meat quality, not human consumption outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42278060",
+      "title": "The Role of Omega-3 Fatty Acids in Horses' Nutrition-A Review.",
+      "decision": "excluded",
+      "reason": "Equine nutrition review, not a human nutritional intervention.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42881457",
+      "title": "Knowledge, attitudes, and practices of pharmacists and pharmacy students regarding omega-3 fatty acids in Jordan: a cross-sectional study.",
+      "decision": "needs_review",
+      "reason": "Pharmacist/student knowledge survey; claimed health benefits are questionnaire content, not tested outcomes.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42894074",
+      "title": "Effects of feeding a Bacillus-based probiotic to grazing Nellore bulls finished on tropical pasture.",
+      "decision": "excluded",
+      "reason": "Cattle feed-efficiency and production study, outside human food-health scope.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    },
+    {
+      "id": "MED:42636688",
+      "title": "Integrating omega-3 testing into antenatal care: A qualitative study of women's experiences and perspectives of a test-and-treat program in South Australia.",
+      "decision": "needs_review",
+      "reason": "Qualitative uptake study of a testing program; nutrition-benefit claims are background rather than measured effects.",
+      "basis": "AI review of retrieved title and abstract; not expert validation. Raw source and metadata retained."
+    }
+  ],
+  "batch_errors": [],
+  "fulltext_backfill": [
+    {
+      "id": "MED:31339000",
+      "pmcid": "PMC6658129",
+      "status": "failed",
+      "error": "500 Server Error:  for url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6658129/fullTextXML"
+    }
+  ],
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 29587117137,
+    "free_bytes": 232307449856,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  },
+  "network_bytes": 28241763,
+  "verified_searches": 4,
+  "verified_passage_links": 57,
+  "sessions_preserved": 19,
+  "corpus": "dc431830ad305cb66ba4e2513507e9bd093790dcf138bea283304f7ed32444ce",
+  "validation": "Source provenance, section/vector integrity and live search checks; no new precision or scientific-quality estimate."
+}

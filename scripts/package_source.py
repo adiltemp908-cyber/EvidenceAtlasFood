@@ -5,15 +5,17 @@ import hashlib,json,zipfile
 root=Path(__file__).resolve().parents[1]
 folders=('evidenceatlas','web','tests','scripts','docs','evaluation')
 suffixes={'.py','.ts','.js','.html','.css','.svg','.md','.json','.jsonl','.txt','.pdf','.png'}
-files=[root/n for n in ('README.md','run.ps1','Open EvidenceAtlas.cmd','requirements.txt','requirements-models.txt','tsconfig.json','.env.example','.gitignore')]
+files=[root/n for n in ('README.md','run.ps1','Open EvidenceAtlas.cmd','requirements.txt','requirements-models.txt','tsconfig.json','.env.example','.gitignore','.gitattributes')]
+files.extend(root.glob('*.pdf'))
 for folder in folders:
     files.extend(p for p in (root/folder).rglob('*') if p.is_file() and p.suffix in suffixes and '__pycache__' not in p.parts)
 files=sorted(set(files));manifest={p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
+(root/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
 release=root/'releases';release.mkdir(exist_ok=True)
 archive=release/'EvidenceAtlasFood-source.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
     for p in files:z.write(p,'EvidenceAtlasFood/'+p.relative_to(root).as_posix())
-    z.writestr('EvidenceAtlasFood/SOURCE_MANIFEST.json',json.dumps(manifest,indent=2))
+    z.write(root/'SOURCE_MANIFEST.json','EvidenceAtlasFood/SOURCE_MANIFEST.json')
 with zipfile.ZipFile(archive) as z:
     assert z.testzip() is None
     for path,digest in manifest.items():assert hashlib.sha256(z.read('EvidenceAtlasFood/'+path)).hexdigest()==digest

@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 PARSER_VERSION = "jats-section-2"
-SCREENING_VERSION = "nutrition-screen-3"
+SCREENING_VERSION = "nutrition-screen-7"
 
 def clean(value):
     return re.sub(r"\s+", " ", html.unescape(value or "")).strip()
@@ -114,7 +114,7 @@ def screen(record, topic_terms):
     excluded=re.search(r'\b(crop yield|feed conversion|broiler|packaging film|livestock feed|fertilizer|fertiliser)\b',title)
     human=re.search(r'\b(human|patients?|adults?|participants?|volunteers?|clinical|children|women|men)\b',combined)
     food=any(re.search(r'\b'+re.escape(t),combined) for t in topic_terms)
-    health=re.search(r'\b(sleep|insomnia|anxiety|health|kidney|renal|dialysis|hemodialysis|nutritional status|weight|glucose|blood|cardiovascular|nutrient|vitamin|bioavailability|gut|microbi|bowel|cancer|diabet|metabolic|fracture|bone|deficiency|exposure|toxicity|mortality)',combined)
+    health=re.search(r'\b(sleep|insomnia|anxiety|health|muscle|strength|hypertrophy|performance|hydration|endurance|cognition|cramps|migraine|inflammation|joint|skin|triglyceride|cholesterol|lipid|satiety|digest|lactose|kidney|renal|dialysis|hemodialysis|nutritional status|weight|glucose|blood|cardiovascular|nutrient|vitamin|bioavailability|gut|microbi|bowel|cancer|diabet|metabolic|fracture|bone|deficiency|exposure|toxicity|mortality)',combined)
     species="human (MeSH)" if 'Humans' in mesh and 'Animals' not in mesh else "mixed human/animal (MeSH)" if 'Humans' in mesh else "animal (MeSH)" if 'Animals' in mesh else "unknown"
     dietary=re.search(r'\b(dietary|ingestion|oral intake|food intake|feeding|consumption|supplementation|nutrition)\b',combined)
     if re.search(r'\b(topical|ointment|hair growth|skin anti.aging|wound.healing)\b',title) and not dietary:
@@ -123,6 +123,12 @@ def screen(record, topic_terms):
         return 'needs_review','Processing technology; health terms may be background only',species
     if re.search(r'\b(unsaponifiable fraction|anticancer agent|anti.cancer drug)\b',combined) and not dietary:
         return 'needs_review','Isolated pharmacological fraction; dietary relevance not established',species
+    if re.search(r'\b(nanozyme|sensor array|traceability|drug delivery|stability and flavou?r)\b',title) and not re.search(r'\b(randomi[sz]ed|clinical trial|patients?|participants?)\b',title):
+        return 'needs_review','Analytical/processing or drug-delivery focus; direct dietary health relevance needs review',species
+    if re.search(r'\b(osteochondral|allograft|arthroplasty)\b',combined) and not re.search(r'\b(breakfast|cereal|oatmeal|avena|oat bran|oat milk)\b',combined):
+        return 'excluded','Orthopaedic OATS acronym without cereal-food exposure',species
+    if re.search(r'\b(laying (?:hens?|ducks?|chickens?)|egg production|yolk weight|albumen height|egg quality)\b',title) and not re.search(r'\b(humans?|patients?|adults?|volunteers?|clinical|children|women|men)\b',title):
+        return 'needs_review','Poultry production or egg-quality study; human dietary relevance needs review',species
     if excluded and not human:return 'excluded','Title indicates agricultural/industrial scope without explicit human context',species
     if food and health:return 'accepted','Nutrition entity and health/nutrient outcome found in title/abstract; provisional rule screen',species
     return 'needs_review','Metadata does not establish both nutrition exposure and relevant outcome',species

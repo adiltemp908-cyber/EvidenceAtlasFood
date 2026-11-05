@@ -1,0 +1,255 @@
+{
+  "reviewer": "AI-assisted review of titles, abstracts and targeted full-text passages; not a human gold standard.",
+  "rubric": "2 direct, 1 partial, 0 irrelevant; grade 2 alone contributes to precision.",
+  "cases": [
+    {
+      "id": "late-meals",
+      "query": "Is eating late at night bad for health?",
+      "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+      "judgments": [
+        {
+          "rank": 1,
+          "paper_id": "MED:31303526",
+          "grade": 2,
+          "reason": "Human morning/evening meal challenges with glycemic outcomes; meal composition also matters."
+        },
+        {
+          "rank": 2,
+          "paper_id": "MED:28257081",
+          "grade": 2,
+          "reason": "Review includes human evening meal timing and controlled evening feeding findings."
+        },
+        {
+          "rank": 3,
+          "paper_id": "MED:42796993",
+          "grade": 2,
+          "reason": "Review includes night eating and human health findings; bipolar-specific applicability is narrow and uncertain."
+        },
+        {
+          "rank": 4,
+          "paper_id": "MED:42280467",
+          "grade": 2,
+          "reason": "Human evening meal-to-sleep interval and glycemic outcomes."
+        },
+        {
+          "rank": 5,
+          "paper_id": "MED:41470839",
+          "grade": 2,
+          "reason": "Full text discusses human morning-versus-night glucose responses and early/late eating uncertainty."
+        },
+        {
+          "rank": 6,
+          "paper_id": "MED:31482093",
+          "grade": 0,
+          "reason": "Energy surplus and resistance-training hypertrophy, not late meal health effects."
+        },
+        {
+          "rank": 7,
+          "paper_id": "MED:42437713",
+          "grade": 1,
+          "reason": "Later caloric midpoint and diet quality; midpoint after 12:30 is not specifically late-night eating."
+        },
+        {
+          "rank": 8,
+          "paper_id": "MED:42377351",
+          "grade": 2,
+          "reason": "Review directly addresses late-night eating and metabolic outcomes."
+        },
+        {
+          "rank": 9,
+          "paper_id": "MED:30753224",
+          "grade": 1,
+          "reason": "Exposure is social jetlag, with later meals and poorer diet as associated outcomes."
+        },
+        {
+          "rank": 10,
+          "paper_id": "MED:42796929",
+          "grade": 1,
+          "reason": "Energy drinks/sleep debt; late eating is an indirect behavioral pathway, not a meal-timing result."
+        }
+      ],
+      "precision": {
+        "P@3": 1.0,
+        "P@5": 1.0,
+        "P@10": 0.6
+      }
+    },
+    {
+      "id": "breakfast-cereal",
+      "query": "Is breakfast cereal good to eat every day?",
+      "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+      "judgments": [
+        {
+          "rank": 1,
+          "paper_id": "MED:19083483",
+          "grade": 2,
+          "reason": "Cereal breakfast and nutrient/lifestyle outcomes in girls; observational."
+        },
+        {
+          "rank": 2,
+          "paper_id": "MED:18502106",
+          "grade": 2,
+          "reason": "Cereal breakfast and overweight/obesity in children; observational."
+        },
+        {
+          "rank": 3,
+          "paper_id": "MED:19339400",
+          "grade": 2,
+          "reason": "High- versus low-fiber cereal trial with glucose and subsequent energy intake."
+        },
+        {
+          "rank": 4,
+          "paper_id": "MED:31035541",
+          "grade": 2,
+          "reason": "Includes cereal-specific comparator groups and nutrition/diet quality outcomes."
+        },
+        {
+          "rank": 5,
+          "paper_id": "MED:40963358",
+          "grade": 1,
+          "reason": "Bread acceptance intervention; cereal benefits mentioned only as background."
+        },
+        {
+          "rank": 6,
+          "paper_id": "MED:40431420",
+          "grade": 2,
+          "reason": "Systematic review directly addresses ready-to-eat cereals and nutrition/health."
+        },
+        {
+          "rank": 7,
+          "paper_id": "MED:33261155",
+          "grade": 2,
+          "reason": "Cereal versus egg breakfasts under energy restriction; includes null between-group result."
+        },
+        {
+          "rank": 8,
+          "paper_id": "MED:26273900",
+          "grade": 2,
+          "reason": "Ready-to-eat cereal versus oatmeal crossover trial with appetite and intake outcomes."
+        },
+        {
+          "rank": 9,
+          "paper_id": "MED:17558725",
+          "grade": 2,
+          "reason": "Human cereal meal-replacement trial; context differs from a single everyday breakfast."
+        },
+        {
+          "rank": 10,
+          "paper_id": "MED:16019313",
+          "grade": 1,
+          "reason": "Cereal formulation and sensory/nutrient analysis, without a human health consumption outcome."
+        }
+      ],
+      "precision": {
+        "P@3": 1.0,
+        "P@5": 0.8,
+        "P@10": 0.8
+      }
+    },
+    {
+      "id": "creatine",
+      "query": "Does creatine help build muscle?",
+      "corpus": "10800e54e68ce1dbeb033daa23df662a30355a662c1b5a4fc44363a5c0905709",
+      "judgments": [
+        {
+          "rank": 1,
+          "paper_id": "MED:42765482",
+          "grade": 2,
+          "reason": "Meta-analysis includes human lean mass with resistance training plus creatine."
+        },
+        {
+          "rank": 2,
+          "paper_id": "MED:18076246",
+          "grade": 1,
+          "reason": "Muscle damage/recovery outcomes, not muscle growth."
+        },
+        {
+          "rank": 3,
+          "paper_id": "MED:19490606",
+          "grade": 1,
+          "reason": "Force recovery after muscle damage, not hypertrophy."
+        },
+        {
+          "rank": 4,
+          "paper_id": "MED:31652853",
+          "grade": 2,
+          "reason": "Review of human muscle mass and creatine with/without exercise in older adults."
+        },
+        {
+          "rank": 5,
+          "paper_id": "MED:41515221",
+          "grade": 1,
+          "reason": "Streetlifting review mainly about strength/performance; muscle-size claim is an incidental cited assertion."
+        },
+        {
+          "rank": 6,
+          "paper_id": "MED:20034396",
+          "grade": 2,
+          "reason": "Review addresses creatine and muscle hypertrophy in adults."
+        },
+        {
+          "rank": 7,
+          "paper_id": "MED:30978926",
+          "grade": 2,
+          "reason": "Review directly addresses aging muscle mass and creatine."
+        },
+        {
+          "rank": 8,
+          "paper_id": "MED:42578920",
+          "grade": 2,
+          "reason": "Human intervention measures lean tissue mass with/without exercise."
+        },
+        {
+          "rank": 9,
+          "paper_id": "MED:24150561",
+          "grade": 1,
+          "reason": "Muscle damage and force recovery, not measured muscle-size gains."
+        },
+        {
+          "rank": 10,
+          "paper_id": "MED:41870601",
+          "grade": 2,
+          "reason": "Review includes lean body mass and training adaptations across populations."
+        }
+      ],
+      "precision": {
+        "P@3": 0.3333333333333333,
+        "P@5": 0.4,
+        "P@10": 0.6
+      }
+    }
+  ],
+  "external_coverage_probes": [
+    {
+      "pmid": "36198293",
+      "topic": "late-meal randomized crossover study",
+      "present_in_corpus": false
+    },
+    {
+      "pmid": "37432300",
+      "topic": "creatine and directly measured hypertrophy meta-analysis",
+      "present_in_corpus": false
+    },
+    {
+      "pmid": "39074168",
+      "topic": "creatine body composition meta-analysis",
+      "present_in_corpus": false
+    },
+    {
+      "pmid": "37149263",
+      "topic": "cereal and body weight systematic review",
+      "present_in_corpus": true,
+      "in_top_ten": false
+    },
+    {
+      "pmid": "27749919",
+      "topic": "ready-to-eat cereal nutrition/health review",
+      "present_in_corpus": false
+    }
+  ],
+  "macro_precision": {
+    "P@3": 0.7777777777777778,
+    "P@5": 0.7333333333333334,
+    "P@10": 0.6666666666666666
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-05",
+  "scope": "Source consolidation and updated report; no new acquisition or live model benchmark",
+  "tests": {
+    "command": "python -m pytest tests/test_core.py tests/test_dense.py tests/test_incremental.py tests/test_recency.py tests/test_chunking.py tests/test_everyday_topics.py tests/test_summarization.py tests/test_summary_evidence.py tests/test_summary_speed.py -q --basetemp E:/EvidenceAtlasFood/tmp/release-tests-2026-11-05",
+    "passed": 77,
+    "failed": 0,
+    "elapsed_seconds": 1.71,
+    "exit_code": 0,
+    "environment_note": "After pytest passed, the local pyreadline3 console finalizer emitted an ignored Windows handle error; process exit code remained zero.",
+    "excluded": "tests/test_api.py requires a running server, asserts a historical audit matches the live corpus and writes an investigation. It was not run against the expanded user corpus."
+  },
+  "typescript": {
+    "command": "node E:/EvidenceAtlasFood/cache/typescript/package/bin/tsc --noEmit",
+    "exit_code": 0,
+    "compiled_javascript_matches_source": true
+  },
+  "historical_evaluation": {
+    "command": "python scripts/evaluate_report.py",
+    "exit_code": 0,
+    "original_six_mean": {
+      "3": 0.8888888888888888,
+      "5": 0.7666666666666666,
+      "10": 0.6333333333333334
+    },
+    "selected_mean": {
+      "3": 0.8666666666666666,
+      "5": 0.8,
+      "10": 0.76
+    },
+    "reviewer_kind": "AI",
+    "current_corpus_accuracy_claim": false
+  },
+  "report": {
+    "source": "docs/REPORT_2026_11_05.md",
+    "pdf": "docs/EvidenceAtlas_Food_Report_2026_11_05.pdf",
+    "builder": "python scripts/build_report.py",
+    "reportlab_version": "4.4.9",
+    "pages": 8,
+    "rendered_and_visually_reviewed": true,
+    "renderer": "Poppler pdftoppm",
+    "layout_result": "All eight pages inspected; no clipping, overlap or missing content observed."
+  },
+  "current_collection_reference": "docs/checks/coverage-2026-11-04.json",
+  "limitations": "Existing November and October browser/model checks retain their recorded dates. No independent relevance, applicability or summary-accuracy evaluation was added."
+}

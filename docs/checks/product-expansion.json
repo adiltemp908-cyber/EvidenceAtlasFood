@@ -1,0 +1,728 @@
+{
+  "published_at": "2026-10-19T17:42:21.030442+00:00",
+  "corpus": "94f90c6755f3849f08dce16df2ff10ec5edd91f4a53fa1d6eae77032ac36cd9f",
+  "before": {
+    "papers": 1866,
+    "searchable_papers": 1796,
+    "passages": 60420,
+    "availability": {
+      "abstract-only": 1011,
+      "full-text": 839,
+      "metadata-only": 16
+    },
+    "screening": {
+      "accepted": 2122,
+      "excluded": 12,
+      "needs_review": 63
+    },
+    "topics": [
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 183
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "after": {
+    "papers": 2392,
+    "searchable_papers": 2291,
+    "passages": 73347,
+    "availability": {
+      "abstract-only": 1353,
+      "full-text": 1022,
+      "metadata-only": 17
+    },
+    "screening": {
+      "accepted": 2673,
+      "excluded": 15,
+      "needs_review": 94
+    },
+    "topics": [
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 41
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 53
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 183
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 47
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 42
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 48
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "searchable_full_texts": 1000,
+  "dense": {
+    "corpus": "94f90c6755f3849f08dce16df2ff10ec5edd91f4a53fa1d6eae77032ac36cd9f",
+    "source_corpus": "804da5cf31981a0078b5e223a9200c780c374390db2e91023da425fb92147347",
+    "model": [
+      "sentence-transformers/all-MiniLM-L6-v2",
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "max_tokens": 256,
+    "level": "passage",
+    "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+    "dimensions": 384,
+    "passages": 73347,
+    "truncated_passages": 5679,
+    "reused_vectors": 60420,
+    "new_vectors": 12927,
+    "elapsed_seconds": 320.7361599999713,
+    "validation": {
+      "vectors": 73347,
+      "dimensions": 384,
+      "finite": true,
+      "unit_norm_tolerance": 0.0001
+    },
+    "path": "E:\\EvidenceAtlasFood\\indexes\\dense-94f90c6755f3849f",
+    "activation": "staged; activate only with the matching corpus"
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 10336575255,
+    "free_bytes": 251563266048,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  },
+  "product_mentions_before": {
+    "creatine": {
+      "title_hits": 0,
+      "title_abstract_hits": 7
+    },
+    "whey": {
+      "title_hits": 13,
+      "title_abstract_hits": 36
+    },
+    "collagen": {
+      "title_hits": 2,
+      "title_abstract_hits": 12
+    },
+    "probiotic": {
+      "title_hits": 16,
+      "title_abstract_hits": 52
+    },
+    "omega-3": {
+      "title_hits": 1,
+      "title_abstract_hits": 19
+    },
+    "fish oil": {
+      "title_hits": 1,
+      "title_abstract_hits": 2
+    },
+    "magnesium": {
+      "title_hits": 2,
+      "title_abstract_hits": 25
+    },
+    "soy milk": {
+      "title_hits": 0,
+      "title_abstract_hits": 0
+    },
+    "almond": {
+      "title_hits": 1,
+      "title_abstract_hits": 5
+    },
+    "peanut": {
+      "title_hits": 0,
+      "title_abstract_hits": 0
+    },
+    "walnut": {
+      "title_hits": 0,
+      "title_abstract_hits": 0
+    },
+    "chia": {
+      "title_hits": 2,
+      "title_abstract_hits": 3
+    },
+    "flax": {
+      "title_hits": 0,
+      "title_abstract_hits": 1
+    },
+    "psyllium": {
+      "title_hits": 2,
+      "title_abstract_hits": 5
+    },
+    "electrolyte": {
+      "title_hits": 0,
+      "title_abstract_hits": 8
+    },
+    "energy drink": {
+      "title_hits": 4,
+      "title_abstract_hits": 11
+    },
+    "protein bar": {
+      "title_hits": 0,
+      "title_abstract_hits": 0
+    }
+  },
+  "product_mentions_after": {
+    "creatine": {
+      "title_hits": 53,
+      "title_abstract_hits": 68
+    },
+    "whey": {
+      "title_hits": 48,
+      "title_abstract_hits": 85
+    },
+    "collagen": {
+      "title_hits": 40,
+      "title_abstract_hits": 54
+    },
+    "probiotic": {
+      "title_hits": 40,
+      "title_abstract_hits": 108
+    },
+    "omega-3": {
+      "title_hits": 29,
+      "title_abstract_hits": 68
+    },
+    "fish oil": {
+      "title_hits": 10,
+      "title_abstract_hits": 25
+    },
+    "magnesium": {
+      "title_hits": 48,
+      "title_abstract_hits": 81
+    },
+    "soy milk": {
+      "title_hits": 6,
+      "title_abstract_hits": 15
+    },
+    "almond": {
+      "title_hits": 6,
+      "title_abstract_hits": 26
+    },
+    "peanut": {
+      "title_hits": 4,
+      "title_abstract_hits": 13
+    },
+    "walnut": {
+      "title_hits": 11,
+      "title_abstract_hits": 21
+    },
+    "chia": {
+      "title_hits": 9,
+      "title_abstract_hits": 12
+    },
+    "flax": {
+      "title_hits": 0,
+      "title_abstract_hits": 4
+    },
+    "psyllium": {
+      "title_hits": 31,
+      "title_abstract_hits": 49
+    },
+    "electrolyte": {
+      "title_hits": 1,
+      "title_abstract_hits": 15
+    },
+    "energy drink": {
+      "title_hits": 11,
+      "title_abstract_hits": 29
+    },
+    "protein bar": {
+      "title_hits": 1,
+      "title_abstract_hits": 2
+    }
+  },
+  "mention_metric": "Exact phrase matches in searchable titles/abstracts; coverage diagnostic, not relevance labels or exhaustive synonym counts",
+  "acquisition_errors": [],
+  "screening_changes": [
+    {
+      "id": "MED:17329047",
+      "title": "Psyllium as therapeutic and drug delivery agent.",
+      "topic": "psyllium_products",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Analytical/processing or drug-delivery focus; direct dietary health relevance needs review"
+    },
+    {
+      "id": "MED:42425358",
+      "title": "Stability and flavor of quinoa milk with different pretreatments: Insights into protein characteristics.",
+      "topic": "plant_milks",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Analytical/processing or drug-delivery focus; direct dietary health relevance needs review"
+    },
+    {
+      "id": "MED:42702476",
+      "title": "Imidazole derivative-regulated Cu-MOF nanozyme sensor array integrating machine learning for flavonoids detection and soy milk traceability.",
+      "topic": "plant_milks",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Analytical/processing or drug-delivery focus; direct dietary health relevance needs review"
+    },
+    {
+      "id": "MED:42857723",
+      "title": "Liposomal and Polymeric Drug Delivery of Creatine: Exploring a Multifaceted Molecule for Neurodegenerative Diseases and Beyond.",
+      "topic": "creatine_supplements",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Analytical/processing or drug-delivery focus; direct dietary health relevance needs review"
+    }
+  ],
+  "tests_passed": 32,
+  "evaluation": "Functional checks only; no new accuracy estimate",
+  "recency": {
+    "max_fraction": 0.03,
+    "half_life_years": 5,
+    "scope": "interactive /api/search after relevance ranking",
+    "default": true,
+    "disable": "recency=false"
+  }
+}

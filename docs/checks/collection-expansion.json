@@ -1,0 +1,663 @@
+{
+  "run": "expansion-2026-10-13",
+  "published_at": "2026-10-19T17:16:07.543115+00:00",
+  "before": {
+    "papers": 973,
+    "searchable_papers": 950,
+    "passages": 37975,
+    "availability": {
+      "abstract-only": 473,
+      "full-text": 494,
+      "metadata-only": 6
+    },
+    "screening": {
+      "accepted": 1079,
+      "excluded": 5,
+      "needs_review": 20
+    },
+    "topics": [
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 27
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 123
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "counts": {
+    "papers": 1866,
+    "searchable_papers": 1796,
+    "passages": 60420,
+    "availability": {
+      "abstract-only": 1011,
+      "full-text": 839,
+      "metadata-only": 16
+    },
+    "screening": {
+      "accepted": 2122,
+      "excluded": 12,
+      "needs_review": 63
+    },
+    "topics": [
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 73
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 25
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 183
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 29
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 85
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 1
+  },
+  "corpus": "804da5cf31981a0078b5e223a9200c780c374390db2e91023da425fb92147347",
+  "dense": {
+    "corpus": "804da5cf31981a0078b5e223a9200c780c374390db2e91023da425fb92147347",
+    "source_corpus": "eb8022c2e62857317677b2b1b7fb42f40c62777435a0ddada3b3ca6d565534df",
+    "model": [
+      "sentence-transformers/all-MiniLM-L6-v2",
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "max_tokens": 256,
+    "level": "passage",
+    "input": "each normalized section passage; first 256 model tokens; full paragraph retained in lexical index",
+    "dimensions": 384,
+    "passages": 60420,
+    "truncated_passages": 4662,
+    "reused_vectors": 37975,
+    "new_vectors": 22445,
+    "elapsed_seconds": 7563.377267000033,
+    "validation": {
+      "vectors": 60420,
+      "dimensions": 384,
+      "finite": true,
+      "unit_norm_tolerance": 0.0001
+    },
+    "path": "E:\\EvidenceAtlasFood\\indexes\\dense-804da5cf31981a00",
+    "activation": "staged; activate only with the matching corpus"
+  },
+  "lexical": {
+    "version": "positional-lexical-1",
+    "corpus": "804da5cf31981a0078b5e223a9200c780c374390db2e91023da425fb92147347",
+    "built_seconds": 130.26750189997256,
+    "weights": {
+      "title": 1.4,
+      "abstract": 1.0,
+      "methods": 0.85,
+      "results": 1.25,
+      "discussion": 1.0,
+      "conclusion": 1.1,
+      "limitations": 1.05,
+      "background": 0.6,
+      "table": 1.0,
+      "body": 1.0
+    },
+    "weights_status": "hypothesis; not tuned or validated"
+  },
+  "storage": {
+    "root": "E:\\EvidenceAtlasFood",
+    "project_bytes": 6442574377,
+    "free_bytes": 255458033664,
+    "budget_bytes": 160000000000,
+    "reserve_bytes": 40000000000
+  },
+  "fulltext_backfill": [
+    {
+      "id": "MED:31339000",
+      "pmcid": "PMC6658129",
+      "status": "failed",
+      "error": "500 Server Error:  for url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6658129/fullTextXML"
+    },
+    {
+      "id": "MED:40011815",
+      "pmcid": "PMC11866819",
+      "status": "recovered",
+      "paragraphs": 33
+    },
+    {
+      "id": "MED:41334329",
+      "pmcid": "PMC12665531",
+      "status": "recovered",
+      "paragraphs": 84
+    },
+    {
+      "id": "MED:41908614",
+      "pmcid": "PMC13019555",
+      "status": "recovered",
+      "paragraphs": 45
+    },
+    {
+      "id": "MED:42525444",
+      "pmcid": "PMC13469835",
+      "status": "recovered",
+      "paragraphs": 36
+    }
+  ],
+  "acquisition_errors": [
+    {
+      "topic": "protein_muscle",
+      "since": "2026-01-01",
+      "until": "2026-10-13",
+      "error": "PubMed search error: {'header': {'type': 'esearch', 'version': '0.3'}, 'esearchresult': {'ERROR': 'Search Backend failed: An error occurred while processing request. Status: 500. Source: /api/search/?r= Details: Search is temporarily unavailable. Please try again later. Details: Cannot connect to SOLR : null'}}"
+    }
+  ],
+  "screening_changes": [
+    {
+      "id": "MED:19762866",
+      "title": "Genistein supplementation to the quail: effects on egg production and egg yolk genistein, daidzein, and lipid peroxidation levels.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:19882229",
+      "title": "Effect of different levels of dried citrus pulp on performance, egg quality, and blood parameters of laying hens in early phase of production.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:19946823",
+      "title": "Effect of different dietary levels of mangrove (Laguncularia racemosa) leaves and spice supplementation on productive performance, egg quality, lipid metabolism and metabolic profiles in laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:31595724",
+      "title": "Effects of dietary glycerol monolaurate on productive performance, egg quality, serum biochemical indices, and intestinal morphology of laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:31657749",
+      "title": "Oregano essential oil in the diet of laying hens in winter reduces lipid peroxidation in yolks and increases shelf life in eggs.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:31780225",
+      "title": "Production performance, egg quality, blood biochemical constituents, egg yolk lipid profile and lipid peroxidation of laying hens fed sugar beet pulp.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:40992328",
+      "title": "Dietary pantethine improved egg quality and lipid metabolism via bilateral cooperation of hepatic genes and intestinal microbiota in the laying hens: Effect of pantethine on laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41030481",
+      "title": "Effect of dietary wine lees on oxidative stress, egg quality and yolk lipid stability in laying hens fed with a diet rich in n-3 polyunsaturated fats.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41144688",
+      "title": "Effects of the Different Dietary Fish Oil Calcium Salt on Production Performance, Blood Biochemical Parameters, Egg Quality Traits and Yolk Fatty Acid Profile in Laying Hens at Peak Production Period.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41161286",
+      "title": "Zanthoxylum bungeanum leaf enhanced yolk color and egg flavor in laying hens by altering yolk lipid composition.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41193679",
+      "title": "The effect of probiotic baker's yeast on egg quality, tibia characteristics, and hepatic lipid peroxidation in laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41225553",
+      "title": "Dose-dependent effects of cannabidiol in drinking water on yolk fatty acid profile and hepatic expression of polyunsaturated fatty acids (PUFAs) -related genes in laying hens: insights into the cannabidiol (CBD) systemic and molecular mechanisms of action.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41364256",
+      "title": "Effects of dietary niacin supplementation on performance, egg quality and yolk antioxidant status in laying quails.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41366225",
+      "title": "Genetic response and metabolic adaptation to partial-record selection for egg production in Dokki-4 laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41369805",
+      "title": "Effect of pomegranate peel powder extract (ethanolic) on performance, egg quality, thyroid hormones, antioxidant parameters, interferon \u00ce\u00b3, lipid and protein profiles of aged laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41437680",
+      "title": "Cineole alters liver fat metabolism and enriches the fatty acid content of eggs in laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41461717",
+      "title": "Effects of microalgae supplementation on performance, egg quality, yolk fatty acid levels, and blood parameters in laying hens: a meta-analysis.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41477963",
+      "title": "Exploration of a novel indicator for duck egg quality (yolk weight-to-albumen height ratio): Its impact on egg quality and serum parameters, and correlation analysis.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:41684433",
+      "title": "Femoral head osteochondral allograft transplantation with and without simultaneous periacetabular osteotomy: a case series.",
+      "topic": "breakfast_cereal",
+      "from": "accepted",
+      "to": "excluded",
+      "reason": "Orthopaedic OATS acronym without cereal-food exposure"
+    },
+    {
+      "id": "MED:42171917",
+      "title": "Rehabilitation and Return to Play Protocols Following Osteochondral Autograft and Allograft Transplantation for Knee Chondral Lesions in Athletic Populations.",
+      "topic": "breakfast_cereal",
+      "from": "accepted",
+      "to": "excluded",
+      "reason": "Orthopaedic OATS acronym without cereal-food exposure"
+    },
+    {
+      "id": "MED:42375563",
+      "title": "Genotype-Dependent Variations in Egg Quality and Nutritional Composition of Thermotolerant Chickens Under Hot-Climate Conditions.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42406331",
+      "title": "Effects of Dietary Boron Supplementation on Performance, Egg Quality, and Physiological Responses in Late-Laying Hens Subjected to Feed Restriction.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42472499",
+      "title": "Effects of naturally oxidized n-3 oil sources on performance, egg quality, yolk fatty acid profile, serum biochemical parameters and liver histopathology in laying Japanese quail.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42497795",
+      "title": "Dietary fish oil, microalgae, and plant oils differentially influence egg quality, yolk fatty acid composition, nutritional lipid quality indices, and fatty acid transfer efficiency in laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42556886",
+      "title": "Impact of production systems and feeding strategies on milk, meat and egg production: Nutritional status, food safety and preservative aspects.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42589516",
+      "title": "Dietary Acidifier Modulates the Gut Microbiota-Metabolic Axis to Improve Intestinal Health, Yolk Fatty Acid Profiles, and Egg Quality in Laying Hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42651912",
+      "title": "Effects of Selenium-Enriched Yeast on Laying Performance, Egg Quality, Selenium Deposition, and Serum Biochemical Parameters in Laying Hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42662566",
+      "title": "Effects of mineral-modified and diluted deep-sea water on laying performance, nutrient utilization, egg quality, yolk lipid composition, oxidative stability, immunoglobulin Y, and mineral composition in laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    },
+    {
+      "id": "MED:42736227",
+      "title": "The storage condition and duration differentially affect the internal quality and oxidative stability of eggs from aged laying hens.",
+      "topic": "egg_cholesterol",
+      "from": "accepted",
+      "to": "needs_review",
+      "reason": "Poultry production or egg-quality study; human dietary relevance needs review"
+    }
+  ],
+  "functional_queries": 4,
+  "tests_passed": 26,
+  "evaluation": "No new precision or scientific-accuracy claim; historical report rankings preserved"
+}

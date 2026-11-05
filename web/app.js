@@ -17,7 +17,7 @@ function render() {
     $('#explore').classList.add('has-results');
     const run = current;
     const studies = Object.fromEntries(run.evidence.studies.map(s => [s.paper_id, s]));
-    $('#resultsarea').innerHTML = `<div class="resultshead"><div><h2>Evidence to explore <span class="meta">${run.results.length} papers</span></h2><p>${esc(run.query)}</p></div><div class="actions"><button id="comparebtn">Compare selected (${selected.size})</button><button id="savebtn">Save investigation</button><button id="exportbtn">Export evidence</button></div></div><div class="resultsgrid"><div>${run.results.length ? run.results.map(p => `<article class="paper"><div class="tags"><span class="tag ${p.availability === 'full-text' ? '' : 'abstract'}">${p.availability === 'full-text' ? 'FULL TEXT' : 'ABSTRACT ONLY'}</span><span class="tag">${esc(p.species)}</span><span class="tag">${esc(p.year || 'Year unknown')}</span></div><h3>${sectionLink(p.id, null, p.title)}</h3><p class="meta">PMID ${esc(p.pmid || 'unavailable')} · Stance unassessed · Applicability unknown</p>${p.passages.slice(0, audience === 'everyday' ? 1 : 2).map(v => `<blockquote><span class="source-label">Source excerpt · ${esc(v.section)}</span>${highlight(v.text.slice(0, 650), run.query)}${v.text.length > 650 ? '…' : ''}</blockquote>${sectionLink(p.id, v.id, 'Read in context ↗')}`).join('')}${audience !== 'everyday' ? `<details><summary>Study context & source-linked mentions</summary>${fieldsHTML(studies[p.id])}</details>` : ''}${audience === 'research' ? `<details><summary>Retrieval score ${p.score.toFixed(4)} · inspect contributions</summary><pre>${esc(JSON.stringify(p.score_components, null, 2))}</pre></details>` : ''}<div class="paperbottom"><p class="meta">${p.rank}. Ranked for relevance</p><label><input type="checkbox" class="selectpaper" value="${esc(p.id)}" ${selected.has(p.id) ? 'checked' : ''}> Compare study</label></div></article>`).join('') : '<div class="empty">Try a more specific food and outcome, or broaden your filters. Absence from this collection is not evidence that a claim is false.</div>'}</div><aside class="sidebar"><div class="sidecard"><h3>Conditions matter</h3><p>Look for the population, amount, timing and comparator before applying a finding.</p><ul><li>Association does not establish causation.</li><li>A null result does not prove no effect.</li><li>Reviews can include the same primary studies.</li></ul><small>Study counts are not votes for a claim.</small></div><div class="sidecard"><h3>Your investigation</h3><label for="notes">Private notes</label><textarea class="note" id="notes" placeholder="Keep observations and questions here. Avoid personal health identifiers."></textarea><button id="risbtn">Export citations (.ris)</button><small>Notes persist when you save an investigation.</small></div></aside></div><form id="followform" class="followup"><label class="sr" for="followquery">Follow-up conditions</label><input id="followquery" placeholder="Add a condition, e.g. healthy adults, afternoon, 100 mg" required><button>Explore follow-up</button></form>${audience === 'research' ? `<details open><summary>Reproducible retrieval trace</summary><pre>${esc(JSON.stringify(run.trace, null, 2))}</pre></details>` : ''}`;
+    $('#resultsarea').innerHTML = `<div class="resultshead"><div><h2>Evidence to explore <span class="meta">${run.results.length} papers</span></h2><p>${esc(run.query)}</p></div><div class="actions"><button id="comparebtn">Compare selected (${selected.size})</button><button id="savebtn">Save investigation</button><button id="exportbtn">Export evidence</button></div></div><div class="resultsgrid"><div>${run.results.length ? run.results.map(p => `<article class="paper"><div class="tags"><span class="tag ${p.availability === 'full-text' ? '' : 'abstract'}">${p.availability === 'full-text' ? 'FULL TEXT' : 'ABSTRACT ONLY'}</span><span class="tag">${esc(p.species)}</span><span class="tag">${esc(p.year || 'Year unknown')}</span></div><h3>${sectionLink(p.id, null, p.title)}</h3><p class="meta">PMID ${esc(p.pmid || 'unavailable')} · Stance unassessed · Applicability unknown</p>${p.passages.slice(0, audience === 'everyday' ? 1 : 2).map(v => `<blockquote><span class="source-label">Source excerpt · ${esc(v.section)}</span>${highlight((p.semantic_match?.passage_id === v.id ? p.semantic_match.text : v.text).slice(0, 650), run.query)}${(p.semantic_match?.passage_id === v.id ? p.semantic_match.text : v.text).length > 650 ? '…' : ''}</blockquote>${sectionLink(p.id, v.id, 'Read in context ↗')}`).join('')}${audience !== 'everyday' ? `<details><summary>Study context & source-linked mentions</summary>${fieldsHTML(studies[p.id])}</details>` : ''}${audience === 'research' ? `<details><summary>Retrieval score ${p.score.toFixed(4)} · inspect contributions</summary><pre>${esc(JSON.stringify(p.score_components, null, 2))}</pre></details>` : ''}<div class="paperbottom"><p class="meta">${p.rank}. Ranked for relevance</p><label><input type="checkbox" class="selectpaper" value="${esc(p.id)}" ${selected.has(p.id) ? 'checked' : ''}> Compare study</label></div></article>`).join('') : '<div class="empty">Try a more specific food and outcome, or broaden your filters. Absence from this collection is not evidence that a claim is false.</div>'}</div><aside class="sidebar"><div class="sidecard"><h3>Conditions matter</h3><p>Look for the population, amount, timing and comparator before applying a finding.</p><ul><li>Association does not establish causation.</li><li>A null result does not prove no effect.</li><li>Reviews can include the same primary studies.</li></ul><small>Study counts are not votes for a claim.</small></div><div class="sidecard"><h3>Your investigation</h3><label for="notes">Private notes</label><textarea class="note" id="notes" placeholder="Keep observations and questions here. Avoid personal health identifiers."></textarea><button id="risbtn">Export citations (.ris)</button><small>Notes persist when you save an investigation.</small></div></aside></div><form id="followform" class="followup"><label class="sr" for="followquery">Follow-up conditions</label><input id="followquery" placeholder="Add a condition, e.g. healthy adults, afternoon, 100 mg" required><button>Explore follow-up</button></form>${audience === 'research' ? `<details open><summary>Reproducible retrieval trace</summary><pre>${esc(JSON.stringify(run.trace, null, 2))}</pre></details>` : ''}`;
     $('#comparebtn').onclick = compare;
     $('#savebtn').onclick = save;
     $('#exportbtn').onclick = () => download(snapshot(), 'evidenceatlas-investigation.json');
@@ -34,6 +34,7 @@ function render() {
         if (passage)
             lines.push(`Section: ${passage.section}`, `Passage: ${passage.id}`, '', `> ${passage.text.replaceAll('\n', '\n> ')}`);
     } lines.push('', '## Private notes', $('#notes')?.value || '(none)'); download(lines.join('\n'), 'evidenceatlas-card.md', 'text/markdown'); };
+    installSummary();
     if (audience === 'research') {
         const panel = document.createElement('details');
         panel.innerHTML = '<summary>Experimental passage stance & alternative findings</summary><p class="meta">Use a declarative claim. This local model has not been validated on the food benchmark. Its labels do not establish study applicability or scientific certainty.</p><label for="stanceclaim">Claim to assess</label><textarea class="note" id="stanceclaim" maxlength="1000"></textarea><button type="button" id="analyzebtn">Analyze source passages</button><div id="analysisresult" role="status"></div>';
@@ -55,7 +56,7 @@ function render() {
 }
 function bindInspect(root) { root.querySelectorAll('.inspect').forEach(b => b.onclick = () => openSource(b.dataset.paper, b.dataset.passage)); }
 async function runSearch() { const query = $('#query').value.trim(); if (!query)
-    return; $('#searchbutton').disabled = true; status('Searching the local collection and locating source passages…'); const params = new URLSearchParams({ q: query, method: $('#method').value === 'hybrid_rerank' ? 'hybrid' : $('#method').value, rerank: String($('#method').value === 'hybrid_rerank'), fulltext: String($('#fulltext').checked), human: String($('#human').checked), expand: String($('#expand').checked), section: $('#section').value, year_min: $('#year_min').value }); try {
+    return; $('#searchbutton').disabled = true; status('Searching the local collection and locating source passages…'); const params = new URLSearchParams({ q: query, method: $('#method').value === 'hybrid_rerank' ? 'hybrid' : $('#method').value, rerank: String($('#method').value === 'hybrid_rerank'), fulltext: String($('#fulltext').checked), human: String($('#human').checked), expand: String($('#expand').checked), recency: String($('#recency').checked), section: $('#section').value, year_min: $('#year_min').value }); try {
     current = await api('/api/search?' + params);
     selected = new Set();
     lastSession = null;
@@ -119,7 +120,7 @@ function denseIndexPanel(d) {
     const passage = d.level === 'passage';
     const n = passage ? d.passages : d.papers;
     const truncated = passage ? d.truncated_passages : d.truncated_inputs;
-    return `<section id="dense-index"><h2>Active semantic index</h2><p><b>${number(n)} ${passage ? 'section passages' : 'title/abstract records'}</b> · ${d.dimensions} dimensions · ${d.max_tokens} model tokens per input.</p><p class="meta">${number(truncated)} inputs exceed the model limit and are truncated for embedding. Complete paragraphs remain available to lexical search and source inspection. ${passage ? 'Results link to the actual semantic-match passage.' : 'Displayed passages are chosen by term overlap after paper-level retrieval.'} This changes retrieval coverage, not scientific certainty.</p></section>`;
+    return `<section id="dense-index"><h2>Active semantic index</h2><p><b>${number(n)} ${passage ? (d.chunking ? 'semantic chunks' : 'section passages') : 'title/abstract records'}</b> · ${d.dimensions} dimensions · ${d.max_tokens} model tokens per input.</p><p class="meta">${d.chunking ? `${number(d.split_passages)} long source passages were split with ${d.overlap_tokens}-token overlap. All chunks fit the model input limit.` : `${number(truncated)} inputs exceed the model limit and are truncated for embedding.`} Complete paragraphs remain available to lexical search and source inspection. ${passage ? 'Results link to the actual semantic-match passage.' : 'Displayed passages are chosen by term overlap after paper-level retrieval.'} This changes retrieval coverage, not scientific certainty.</p></section>`;
 }
 async function coverage() { const root = $('#coveragebody'); root.textContent = 'Measuring the collection…'; try {
     const [data, evaluation] = await Promise.all([api('/api/coverage'), api('/api/evaluation')]);
@@ -142,12 +143,190 @@ document.querySelectorAll('[data-audience]').forEach(b => b.onclick = () => { co
 $('#filtertoggle').onclick = () => { const filters = $('#filters'); filters.hidden = !filters.hidden; $('#filtertoggle').setAttribute('aria-expanded', String(!filters.hidden)); };
 $('#closesource').onclick = () => $('#source').close();
 $('#closecompare').onclick = () => $('#compare').close();
-api('/api/coverage').then(d => { $('#overviewpapers').textContent = number(d.counts.searchable_papers); $('#overviewfulltexts').textContent = number(d.counts.availability['full-text']); $('#overviewpassages').textContent = number(d.counts.passages); $('#connectionstatus').textContent = 'Connected to your collection'; $('#smallcoverage').textContent = `${number(d.counts.papers)} records · ${number(d.counts.availability['full-text'])} full texts`; if (d.capabilities?.dense) {
-    for (const [value, label] of [['dense', d.dense_index?.level === 'passage' ? 'Semantic (full-text passages)' : 'Semantic (title + abstract)'], ['hybrid', 'Hybrid (full text + semantic)'], ['hybrid_rerank', 'Hybrid + relevance reranking']]) {
-        const option = document.createElement('option');
-        option.value = value;
-        option.textContent = label;
-        $('#method').append(option);
+api('/api/coverage').then(d => {
+    $('#overviewpapers').textContent = number(d.counts.searchable_papers);
+    $('#overviewfulltexts').textContent = number(d.counts.availability['full-text']);
+    $('#overviewpassages').textContent = number(d.counts.passages);
+    $('#connectionstatus').textContent = 'Connected to your collection';
+    $('#smallcoverage').textContent = `${number(d.counts.papers)} records · ${number(d.counts.availability['full-text'])} full texts`;
+    const method = $('#method');
+    for (const option of Array.from(method.options)) {
+        if (['dense', 'hybrid', 'hybrid_rerank'].includes(option.value)) {
+            option.disabled = !d.capabilities?.dense || (option.value === 'hybrid_rerank' && !d.capabilities?.reranker);
+            if (option.value === 'dense')
+                option.textContent = d.dense_index?.level === 'passage' ? 'Semantic (full-text passages)' : 'Semantic (title + abstract)';
+        }
     }
-} }).catch(() => { $('#smallcoverage').textContent = 'Collection unavailable'; $('#connectionstatus').textContent = 'Collection unavailable'; });
+    if (method.selectedOptions[0]?.disabled)
+        method.value = d.capabilities?.dense ? 'hybrid' : 'structure';
+}).catch(() => { $('#smallcoverage').textContent = 'Collection unavailable'; $('#connectionstatus').textContent = 'Collection unavailable'; });
+let preferredSummaryCount = 3;
+let summaryTask = null;
+let summaryTimer = null;
+function summaryMatches() {
+    const n = current?.summary_count || preferredSummaryCount;
+    return !!current?.summary_result && current.summary_result.pipeline === 'local-full-paper-summary-v9' && current.summary_result.papers.length === n &&
+        current.summary_result.papers.every((p, i) => p.id === current.results[i]?.id);
+}
+function updateSummaryControl() {
+    const input = document.querySelector('#summarycount');
+    const button = document.querySelector('#summarybutton');
+    if (!input || !button)
+        return;
+    const valid = input.checkValidity() && Number.isInteger(input.valueAsNumber);
+    input.disabled = !!summaryTask;
+    button.disabled = !!summaryTask || !valid;
+    if (valid) {
+        current.summary_count = input.valueAsNumber;
+        preferredSummaryCount = input.valueAsNumber;
+        button.textContent = summaryMatches() ? 'Show summary' : `Summarize top ${input.value} ${input.value === '1' ? 'paper' : 'papers'}`;
+    }
+    button.onclick = startSummary;
+}
+function installSummary() {
+    if (!current?.results.length)
+        return;
+    const max = Math.min(10, current.results.length);
+    current.summary_count = Math.min(current.summary_count || preferredSummaryCount, max);
+    const controls = document.createElement('div');
+    controls.className = 'summary-controls';
+    controls.innerHTML = `<div class="summary-options"><label for="summarycount">Papers</label><input id="summarycount" type="number" min="1" max="${max}" step="1" required value="${current.summary_count}" aria-describedby="summaryhint"><button id="summarybutton" class="summary-trigger">Summarize</button></div><small id="summaryhint">Top-ranked papers · fewer is faster · full texts when available</small>`;
+    $('.resultshead .actions').prepend(controls);
+    const panel = document.createElement('section');
+    panel.id = 'summarypanel';
+    panel.className = 'answer-card';
+    panel.hidden = true;
+    panel.setAttribute('aria-label', 'Answer from retrieved papers');
+    $('.resultshead').insertAdjacentElement('afterend', panel);
+    document.querySelector('#summarycount').oninput = () => {
+        updateSummaryControl();
+        if (!summaryTask) {
+            if (summaryMatches())
+                showSummary(current.summary_result);
+            else
+                panel.hidden = true;
+        }
+    };
+    updateSummaryControl();
+    if (summaryTask) {
+        panel.hidden = false;
+        panel.innerHTML = `<div class="answer-heading"><div><p class="eyebrow">LOCAL READING IN PROGRESS</p><h3>${summaryTask.run === current ? 'Reading these papers' : 'Finishing your previous question'}</h3></div><button id="cancelsummary">Stop reading</button></div><p id="summarymessage" role="status">Reading available full texts and abstracts. Completed sections are cached.</p><progress id="summaryprogress"></progress>`;
+        bindSummaryCancel();
+    }
+    else if (summaryMatches())
+        showSummary(current.summary_result);
+}
+function bindSummaryCancel() {
+    const button = document.querySelector('#cancelsummary');
+    if (button)
+        button.onclick = async () => { if (!summaryTask)
+            return; button.disabled = true; try {
+            await api('/api/summaries/' + summaryTask.id + '/cancel', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+            $('#summarymessage').textContent = 'Stopping after the current section. Completed work will be kept.';
+        }
+        catch (e) {
+            $('#summarymessage').textContent = e.message;
+        } };
+}
+async function startSummary() {
+    const run = current;
+    if (!run || summaryTask)
+        return;
+    const countInput = document.querySelector('#summarycount');
+    if (!countInput.reportValidity() || !Number.isInteger(countInput.valueAsNumber))
+        return;
+    const count = countInput.valueAsNumber;
+    run.summary_count = count;
+    if (summaryMatches()) {
+        showSummary(run.summary_result);
+        $('#summarypanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+    }
+    countInput.disabled = true;
+    const panel = $('#summarypanel');
+    panel.hidden = false;
+    const button = document.querySelector('#summarybutton');
+    button.disabled = true;
+    panel.innerHTML = '<div class="answer-heading"><div><p class="eyebrow">ON YOUR DEVICE</p><h3>Reading the evidence</h3></div></div><p id="summarymessage" role="status">Preparing the local model. Full-paper reading may take several minutes; ordinary search remains available.</p><progress id="summaryprogress"></progress>';
+    try {
+        const job = await api('/api/summaries', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: run.query, paper_ids: run.results.slice(0, count).map(p => p.id), corpus: run.trace.index.corpus }) });
+        summaryTask = { id: job.id, run };
+        run.summary_job = job.id;
+        const cancel = document.createElement('button');
+        cancel.id = 'cancelsummary';
+        cancel.textContent = 'Stop reading';
+        panel.querySelector('.answer-heading').append(cancel);
+        bindSummaryCancel();
+        pollSummary();
+    }
+    catch (e) {
+        panel.innerHTML = `<h3>Summary unavailable</h3><p role="alert">${esc(e.message)}</p>`;
+        button.disabled = false;
+        countInput.disabled = false;
+    }
+}
+async function pollSummary() {
+    if (!summaryTask)
+        return;
+    const task = summaryTask;
+    try {
+        const state = await api('/api/summaries/' + task.id);
+        if (state.status === 'complete') {
+            task.run.summary_result = state.result;
+            summaryTask = null;
+            if (current === task.run)
+                showSummary(state.result);
+            else
+                resetSummaryButton('The previous summary is ready. It is cached for that search.');
+            return;
+        }
+        if (['failed', 'cancelled', 'interrupted'].includes(state.status)) {
+            summaryTask = null;
+            resetSummaryButton(state.message);
+            return;
+        }
+        const message = document.querySelector('#summarymessage');
+        if (message)
+            message.textContent = state.message;
+        const progress = document.querySelector('#summaryprogress');
+        if (progress && state.total) {
+            progress.max = state.total;
+            progress.value = state.completed;
+        }
+        summaryTimer = setTimeout(pollSummary, 2000);
+    }
+    catch (e) {
+        summaryTask = null;
+        resetSummaryButton('Could not check progress. Click summarize again to reconnect or resume.');
+    }
+}
+function resetSummaryButton(message) {
+    updateSummaryControl();
+    const button = document.querySelector('#summarybutton');
+    if (button)
+        button.disabled = false;
+    const panel = document.querySelector('#summarypanel');
+    if (panel) {
+        panel.hidden = false;
+        panel.innerHTML = `<p role="status">${esc(message)}</p>`;
+    }
+}
+function showSummary(result) {
+    const panel = $('#summarypanel');
+    panel.hidden = false;
+    const full = result.papers.filter(p => p.availability === 'full-text').length;
+    const abstracts = result.papers.filter(p => p.availability === 'abstract-only').length;
+    const titleOnly = result.papers.length - full - abstracts;
+    const byId = Object.fromEntries(result.citations.map((n, i) => [n.id, { ...n, number: i + 1 }]));
+    const used = new Set(result.paragraphs.flatMap(p => p.citations));
+    const evidence = result.citations.filter(n => used.has(n.id) || !result.paragraphs.length);
+    panel.innerHTML = `<div class="answer-heading"><div><p class="eyebrow">${result.status === 'insufficient' ? 'EVIDENCE CHECK' : 'AN ANSWER FROM THESE PAPERS'}</p><h3>${result.insufficiency_reason === 'no_direct_evidence' ? 'No direct evidence found' : result.status === 'insufficient' ? 'Insufficient evidence for an answer' : 'Your question, in context'}</h3></div><span class="answer-badge">Local AI summary</span></div>
+ <p class="answer-scope">Read ${full} full texts and ${abstracts} abstracts${titleOnly ? `, plus ${titleOnly} title-only records` : ''} · ${result.papers.length} retrieved papers · original reading: ${Math.round(result.elapsed_seconds)} seconds${result.cached_section_groups ? ` · ${result.cached_section_groups} section readings reused` : ''}</p>
+ <div class="answer-prose">${result.paragraphs.length ? result.paragraphs.map(p => `<p>${esc(p.text)} <span class="answer-citations">${p.citations.map(id => { const n = byId[id]; return n ? sectionLink(n.paper_id, n.passage_id, `[${n.number}]`) : ''; }).join(' ')}</span></p>`).join('') : `<p>${esc(result.message)}</p>`}</div>
+ <p class="answer-caution">Based on these retrieved papers, not a systematic review. Source quotations and links were checked; the AI interpretation has not been independently reviewed.</p>
+ <details class="answer-evidence"><summary>${result.status === 'insufficient' ? 'Related source findings — not a direct answer' : 'Evidence behind this answer'} (${evidence.length} source quotations)</summary>${evidence.map(n => `<article><p class="meta">[${byId[n.id].number}] ${esc(n.availability)} · ${esc(n.study_type || n.species)} · ${esc(n.section)}</p><h4>${sectionLink(n.paper_id, n.passage_id, n.title)}</h4><blockquote>${esc(n.quote)}</blockquote>${(n.context_quotes || []).map(c => `<p class="meta">Study context · ${sectionLink(n.paper_id, c.passage_id, c.section)}</p><blockquote>${esc(c.quote)}</blockquote>`).join('')}</article>`).join('')}</details>
+ <details class="answer-evidence"><summary>What was read</summary><p>All stored sections were processed. A concise selection of extracted findings was used to compose the answer.</p><ul>${result.papers.map(p => `<li>${sectionLink(p.id, null, p.title)} <span class="meta">— ${esc(p.availability)}, ${p.passages_read} source passages</span></li>`).join('')}</ul><p class="meta">${esc(result.model)} · ${esc(result.quantization)} · ${esc(result.pipeline)}${result.rejected_items ? ` · ${result.rejected_items} generated items rejected during checks` : ''}</p></details>`;
+    bindInspect(panel);
+    updateSummaryControl();
+}
 export {};

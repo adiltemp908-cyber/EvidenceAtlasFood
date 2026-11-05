@@ -1,0 +1,835 @@
+{
+  "date": "2026-11-04",
+  "status": "published",
+  "records_added": 189,
+  "searchable_added": 141,
+  "searchable_fulltexts_added": 81,
+  "water_papers_added": 28,
+  "held_from_search": 48,
+  "counts": {
+    "papers": 3723,
+    "searchable_papers": 3493,
+    "passages": 102752,
+    "availability": {
+      "abstract-only": 2222,
+      "full-text": 1475,
+      "metadata-only": 26
+    },
+    "screening": {
+      "accepted": 4540,
+      "excluded": 47,
+      "needs_review": 233
+    },
+    "topics": [
+      {
+        "topic": "added_sugar_intake",
+        "decision": "accepted",
+        "papers": 14
+      },
+      {
+        "topic": "added_sugar_intake",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "audit-gap-repair",
+        "decision": "accepted",
+        "papers": 4
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "breakfast_habits",
+        "decision": "accepted",
+        "papers": 18
+      },
+      {
+        "topic": "breakfast_habits",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "coffee_intake",
+        "decision": "accepted",
+        "papers": 15
+      },
+      {
+        "topic": "coffee_intake",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 76
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_tolerance",
+        "decision": "accepted",
+        "papers": 13
+      },
+      {
+        "topic": "dairy_tolerance",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "needs_review",
+        "papers": 7
+      },
+      {
+        "topic": "fermented_products",
+        "decision": "accepted",
+        "papers": 62
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fiber_requirements",
+        "decision": "accepted",
+        "papers": 11
+      },
+      {
+        "topic": "fiber_requirements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 74
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_vegetable_servings",
+        "decision": "accepted",
+        "papers": 23
+      },
+      {
+        "topic": "fruit_vegetable_servings",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "green_tea",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "green_tea",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "green_tea",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "accepted",
+        "papers": 72
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 110
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 225
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 84
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "accepted",
+        "papers": 45
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 106
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "plain_water_health",
+        "decision": "accepted",
+        "papers": 13
+      },
+      {
+        "topic": "plain_water_health",
+        "decision": "needs_review",
+        "papers": 17
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 110
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "protein_requirements",
+        "decision": "accepted",
+        "papers": 16
+      },
+      {
+        "topic": "protein_requirements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 125
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "salt_intake",
+        "decision": "accepted",
+        "papers": 17
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 112
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "staple_grains",
+        "decision": "accepted",
+        "papers": 15
+      },
+      {
+        "topic": "staple_grains",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 127
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "water_requirements",
+        "decision": "accepted",
+        "papers": 18
+      },
+      {
+        "topic": "water_requirements",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 143
+      },
+      {
+        "topic": "whey_products",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "whey_products",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 2
+  },
+  "searchable_fulltexts": 1429,
+  "corpus": "a524efa0f09a93ac6aba5c4d4f7608d6b01e9e410b6b98fad2453e2d72998216",
+  "semantic_vectors": 115883,
+  "new_vectors": 6255,
+  "reused_vectors": 109628,
+  "topics": [
+    {
+      "topic": "added_sugar_intake",
+      "added": 14
+    },
+    {
+      "topic": "breakfast_habits",
+      "added": 17
+    },
+    {
+      "topic": "coffee_intake",
+      "added": 14
+    },
+    {
+      "topic": "dairy_tolerance",
+      "added": 11
+    },
+    {
+      "topic": "fiber_requirements",
+      "added": 8
+    },
+    {
+      "topic": "fruit_vegetable_servings",
+      "added": 22
+    },
+    {
+      "topic": "plain_water_health",
+      "added": 13
+    },
+    {
+      "topic": "protein_requirements",
+      "added": 15
+    },
+    {
+      "topic": "salt_intake",
+      "added": 6
+    },
+    {
+      "topic": "staple_grains",
+      "added": 8
+    },
+    {
+      "topic": "water_requirements",
+      "added": 17
+    }
+  ],
+  "sessions_preserved": 19,
+  "functional_tests_passed": 36,
+  "live_verification": {
+    "queries_checked": 6,
+    "papers_checked": 29,
+    "exact_source_passages_checked": 82,
+    "corpus": "a524efa0f09a93ac6aba5c4d4f7608d6b01e9e410b6b98fad2453e2d72998216",
+    "runs": [
+      {
+        "query": "How much water should I drink daily",
+        "results": [
+          {
+            "id": "MED:42479717",
+            "title": "Effect of intentional daily liter of plain water on total fluid and caloric intake among free-living adults.",
+            "rank": 1,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:42738956",
+            "title": "Beverage Consumption Patterns, Beverage-Derived Energy Intake, and Adherence to Fluid Intake Recommendations Among Polish Adolescents: A Cross-Sectional Study Using the BEVQ-PL Questionnaire.",
+            "rank": 2,
+            "availability": "full-text",
+            "species": "mixed human/animal (MeSH)"
+          },
+          {
+            "id": "MED:19066876",
+            "title": "Effect of two sports drinks on urinary lithogenicity.",
+            "rank": 3,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:30563134",
+            "title": "Water Intake, Water Balance, and the Elusive Daily Water Requirement.",
+            "rank": 4,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:41283025",
+            "title": "Hydration and health at ages 40-70 years in Salzburg Austria is associated with a median total water intake over 40 mL/kg including at least 1 L/d plain drinking water.",
+            "rank": 5,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          }
+        ]
+      },
+      {
+        "query": "How many portions of fruit and vegetables should I eat daily?",
+        "results": [
+          {
+            "id": "MED:19288973",
+            "title": "Effects of chronic and acute consumption of fruit- and vegetable-puree-based drinks on vasodilation, risk factors for CVD and the response as a result of the eNOS G298T polymorphism.",
+            "rank": 1,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:31504822",
+            "title": "Role of fruit juice in achieving the 5-a-day recommendation for fruit and vegetable intake.",
+            "rank": 2,
+            "availability": "full-text",
+            "species": "mixed human/animal (MeSH)"
+          },
+          {
+            "id": "MED:31367380",
+            "title": "Daily fruit and vegetable consumption and diabetes status in middle-aged females in the general US population.",
+            "rank": 3,
+            "availability": "full-text",
+            "species": "unknown"
+          },
+          {
+            "id": "MED:18390796",
+            "title": "Intake of fruit, vegetables, and fruit juices and risk of diabetes in women.",
+            "rank": 4,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:42942926",
+            "title": "School-Based Rescued Produce Distribution, and Changes in Parental Fruit Intake and Household Dietary Behaviors: A Non-Randomized Controlled Cluster Trial.",
+            "rank": 5,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          }
+        ]
+      },
+      {
+        "query": "How much protein do adults need each day?",
+        "results": [
+          {
+            "id": "MED:40806046",
+            "title": "Protein and Aging: Practicalities and Practice.",
+            "rank": 1,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:40275632",
+            "title": "Investigating muscle protein synthesis using deuterium oxide: The impact of dietary protein interventions across the lifespan.",
+            "rank": 2,
+            "availability": "full-text",
+            "species": "mixed human/animal (MeSH)"
+          },
+          {
+            "id": "MED:42365349",
+            "title": "Interpreting protein dose trials in critical illness: a guide for the bedside clinician.",
+            "rank": 3,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:31835510",
+            "title": "A Comparison of Dietary Protein Digestibility, Based on DIAAS Scoring, in Vegetarian and Non-Vegetarian Athletes.",
+            "rank": 4,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:41871332",
+            "title": "Nutritional paradoxes of the new Dietary Guidelines for Americans (2025-2030): a critical analysis.",
+            "rank": 5,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          }
+        ]
+      },
+      {
+        "query": "Does skipping breakfast affect weight?",
+        "results": [
+          {
+            "id": "MED:37149263",
+            "title": "The Relationship of Ready-to-Eat Cereal Intake and Body Weight in Adults: A Systematic Review of Observational Studies and Controlled Trials.",
+            "rank": 1,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:42788505",
+            "title": "Association between skipping and replacing meals and excess weight in adolescents in Rio de Janeiro, Brazil.",
+            "rank": 2,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:25458992",
+            "title": "Nutrient intake, diet quality, and weight/adiposity parameters in breakfast patterns compared with no breakfast in adults: National Health and Nutrition Examination Survey 2001-2008.",
+            "rank": 3,
+            "availability": "abstract-only",
+            "species": "mixed human/animal (MeSH)"
+          },
+          {
+            "id": "MED:42120595",
+            "title": "Meal time and meal regularity: is it associated with pediatric obesity? A systematic review and meta-analysis.",
+            "rank": 4,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:41451998",
+            "title": "Breakfast skipping and steroid withdrawal in ulcerative colitis: A population-based study in Japan.",
+            "rank": 5,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          }
+        ]
+      },
+      {
+        "query": "Is brown rice healthier than white rice?",
+        "results": [
+          {
+            "id": "MED:42969183",
+            "title": "Effects of instant white rice, instant brown rice, and glucose solution on glycemic responses in individuals with and without postprandial distress syndrome: a randomized crossover trial with exploratory subgroup analyses.",
+            "rank": 1,
+            "availability": "abstract-only",
+            "species": "unknown"
+          },
+          {
+            "id": "MED:40754442",
+            "title": "[Whole grain consumption in Japan, with a focus on brown rice: Current status and challenges from a public health and health economic perspective].",
+            "rank": 2,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:41038679",
+            "title": "Postprandial glycemic response, sensory, and appetite evaluation of highland barley-multigrain rice versus white rice in healthy Chinese adults: A randomized crossover study.",
+            "rank": 3,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:42564435",
+            "title": "Germinated Brown Rice: A Natural Source of Bioactive Compounds Boosting Human Health.",
+            "rank": 4,
+            "availability": "full-text",
+            "species": "unknown"
+          },
+          {
+            "id": "MED:35852223",
+            "title": "White rice consumption and risk of cardiometabolic and cancer outcomes: A systematic review and dose-response meta-analysis of prospective cohort studies.",
+            "rank": 5,
+            "availability": "abstract-only",
+            "species": "human (MeSH)"
+          }
+        ]
+      },
+      {
+        "query": "How much added sugar should I eat each day?",
+        "results": [
+          {
+            "id": "MED:41683344",
+            "title": "The Influence of Daily Honey-Sweetened Yogurt Intake on Outcomes of Low-Grade Inflammation and Microbial Metabolites in Postmenopausal Women.",
+            "rank": 1,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:42928362",
+            "title": "Sugar intake from various food and beverage sources among the Indonesian population: a cross-sectional study.",
+            "rank": 2,
+            "availability": "full-text",
+            "species": "unknown"
+          },
+          {
+            "id": "MED:31639162",
+            "title": "Electronic device use and beverage related sugar and caffeine intake in US adolescents.",
+            "rank": 3,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          },
+          {
+            "id": "MED:31504822",
+            "title": "Role of fruit juice in achieving the 5-a-day recommendation for fruit and vegetable intake.",
+            "rank": 4,
+            "availability": "full-text",
+            "species": "mixed human/animal (MeSH)"
+          },
+          {
+            "id": "MED:42650768",
+            "title": "Added Sugar Intake Is Associated with Altered Plasma miR-143-5p and miR-223-3p Expression and Fasting Glucose Concentrations in Children from Mexico City.",
+            "rank": 5,
+            "availability": "full-text",
+            "species": "human (MeSH)"
+          }
+        ]
+      }
+    ],
+    "interpretation": "Functional checks and ungraded development rankings, not a precision or scientific-accuracy benchmark."
+  },
+  "scope": "Targeted development coverage expansion; AI-assisted screening, not independent scientific validation or a retrieval-accuracy benchmark."
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "Synthetic prompt smoke checks with installed local model; not scientific accuracy validation.",
+  "model": "Qwen3-4B-Instruct-2507",
+  "results": [
+    {
+      "case": "direct",
+      "expected_direct": true,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcome: blood pressure; population: adults; comparison: usual intake; timing: not specified; dose: not specified; preparation: not specified; setting: not specified",
+        "assessment": "The evidence note directly addresses sodium reduction as the exposure, blood pressure as the outcome, specifies the population as adults, and compares sodium reduction to usual intake. All required elements of the question are explicitly covered in the quote. The study is an intervention study, which supports the validity of the finding. No missing or conflicting elements are present that would render the finding indirect or irrelevant.",
+        "selected_note_ids": [
+          "N1"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case": "null_result",
+      "expected_direct": true,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcome: blood pressure; population: adults; comparison: usual intake; timing: not specified; dose: not specified; preparation: not specified; context: human intervention study",
+        "assessment": "The evidence note directly addresses sodium reduction as an exposure, blood pressure as the outcome, specifies the population as adults, and compares sodium reduction to usual intake. All required elements of the question are explicitly covered in the quote. The study is an intervention study in humans, which matches the context of the question. There is no missing or conflicting information that would render this finding indirect or irrelevant.",
+        "selected_note_ids": [
+          "N1"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_outcome",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcome: improvement in sleep; population: adults; timing: not specified; comparison: usual intake; unit: not specified",
+        "assessment": "The evidence note discusses sodium reduction improving blood pressure, not sleep. There is no mention of sleep as an outcome. The exposure (sodium reduction) is present, but the outcome (sleep improvement) is missing. The population is specified (adults), but the outcome is not relevant to the question. Therefore, this finding does not directly address the question.",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_population",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcome: lower blood pressure; population: children",
+        "assessment": "The evidence note discusses sodium reduction lowering blood pressure, but the population specified is adults aged 40 to 6",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "animal_only",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcome: lower blood pressure; population: people; timing: not specified; comparison: not specified; dose: not specified; preparation: not specified; comparator: not specified",
+        "assessment": "The evidence note describes a study in rats, not people. The exposure and outcome are present, but the population is not 'people' as required. The finding is in a different species (rats), which does not directly answer the question about people. Therefore, it fails to meet the required population specification.",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "missing_dose",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: reducing sodium by 500 mg daily, outcome: lower blood pressure, population: adults, dose: 500 mg, timing: not specified, comparison: not specified",
+        "assessment": "The evidence note states that 'in adults, sodium reduction lowered blood pressure' but does not specify a dose of 50",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "wrong_comparator",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: green tea vs. black tea, outcome: lowering LDL cholesterol, population: adults, comparison: green tea vs. black tea, timing: not specified, dose: not specified, preparation: not specified",
+        "assessment": "The evidence note mentions green tea lowering LDL cholesterol compared with placebo, but does not compare green tea to black tea. The comparison required in the question (green tea vs. black tea) is missing. The population is specified (adults), but the exposure comparison is not. Therefore, this finding does not directly answer the question.",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "partial_question",
+      "expected_direct": false,
+      "selection": {
+        "question_requirements": "exposure: sodium reduction; outcomes: improve sleep, lower blood pressure; population: adults; timing: not specified; comparison: not specified; dose: not specified; preparation: not specified",
+        "assessment": "The evidence note reports that sodium reduction lowered blood pressure in adults. However, it does not mention anything about sleep. Therefore, it fails to address the exposure-outcome pair for sleep. The outcome of blood pressure reduction is partially addressed, but the question asks about both sleep and blood pressure. Since sleep is not mentioned, the finding does not directly answer the full question.",
+        "selected_note_ids": []
+      },
+      "passed": true
+    },
+    {
+      "case": "faithful_but_irrelevant_verifier",
+      "verdict": {
+        "reason": "The answer discusses sodium reduction improving blood pressure, not sleep. The question asks about sleep, and no information in the source relates to sleep. Therefore, the factual assertion in the answer is not supported as a response to the question about sleep. The evidence is irrelevant to the\u7761\u7720/",
+        "supported": false,
+        "directly_answers": false
+      },
+      "passed": false
+    },
+    {
+      "case": "direct_verifier",
+      "verdict": {
+        "reason": "The factual assertion in the answer \u2014 'In adults, sodium reduction lowered blood pressure compared with usual intake' \u2014 is directly supported by the source quote. The source specifies an intervention study finding that sodium reduction leads to lower blood pressure in adults relative to usual sodium",
+        "supported": true,
+        "directly_answers": true
+      },
+      "passed": true
+    }
+  ],
+  "verifier_before_clarification": {
+    "case": "faithful_but_irrelevant_verifier",
+    "verdict": {
+      "reason": "The source states that sodium reduction lowered blood pressure in adults, but it does not mention any effect on sleep. Therefore, the evidence does not support the claim that sodium reduction improves sleep.",
+      "supported": false,
+      "directly_answers": false
+    },
+    "passed": false
+  }
+}

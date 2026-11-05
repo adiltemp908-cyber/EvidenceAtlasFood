@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+*.sqlite*
+*.npy
+*.npz
+node_modules/
+data/
+models/
+cache/
+/indexes/
+/experiments/
+/tmp/
+/releases/
+*.log

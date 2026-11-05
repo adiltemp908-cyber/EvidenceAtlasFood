@@ -1,0 +1,272 @@
+[
+  {
+    "method": "dense",
+    "rerank": false,
+    "recency": {
+      "enabled": true,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 0.8003130555152893,
+      "candidate_count": 40,
+      "max_absolute_bonus": 0.02400939166545868,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 0.8212144449540516
+      },
+      {
+        "id": "MED:42765482",
+        "year": 2026,
+        "score": 0.7986456006765366
+      },
+      {
+        "id": "MED:41870601",
+        "year": 2026,
+        "score": 0.7937759608030319
+      },
+      {
+        "id": "MED:42158825",
+        "year": 2026,
+        "score": 0.7804329842329025
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 0.7773405422528963
+      }
+    ]
+  },
+  {
+    "method": "dense",
+    "rerank": false,
+    "recency": {
+      "enabled": false,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 0.8003130555152893,
+      "candidate_count": 5,
+      "max_absolute_bonus": 0.0,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 0.8003130555152893
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 0.775066077709198
+      },
+      {
+        "id": "MED:42765482",
+        "year": 2026,
+        "score": 0.7746362090110779
+      },
+      {
+        "id": "MED:41870601",
+        "year": 2026,
+        "score": 0.7697665691375732
+      },
+      {
+        "id": "MED:19242554",
+        "year": 2009,
+        "score": 0.7679873704910278
+      }
+    ]
+  },
+  {
+    "method": "hybrid",
+    "rerank": false,
+    "recency": {
+      "enabled": true,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 0.03125763125763126,
+      "candidate_count": 40,
+      "max_absolute_bonus": 0.0009377289377289377,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:19242554",
+        "year": 2009,
+        "score": 0.0313464644629945
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 0.03092374781636894
+      },
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 0.030723296591423338
+      },
+      {
+        "id": "MED:42765482",
+        "year": 2026,
+        "score": 0.03050937494773111
+      },
+      {
+        "id": "MED:30978926",
+        "year": 2019,
+        "score": 0.02998658830872252
+      }
+    ]
+  },
+  {
+    "method": "hybrid",
+    "rerank": false,
+    "recency": {
+      "enabled": false,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 0.03125763125763126,
+      "candidate_count": 5,
+      "max_absolute_bonus": 0.0,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:19242554",
+        "year": 2009,
+        "score": 0.03125763125763126
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 0.030834914611005692
+      },
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 0.029906956136464335
+      },
+      {
+        "id": "MED:30978926",
+        "year": 2019,
+        "score": 0.029631255487269532
+      },
+      {
+        "id": "MED:42765482",
+        "year": 2026,
+        "score": 0.029571646010002173
+      }
+    ]
+  },
+  {
+    "method": "hybrid",
+    "rerank": true,
+    "recency": {
+      "enabled": true,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 5.128389358520508,
+      "candidate_count": 20,
+      "max_absolute_bonus": 0.15385168075561523,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:19242554",
+        "year": 2009,
+        "score": 5.14296407985218
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 4.879939272875862
+      },
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 4.62209389335904
+      },
+      {
+        "id": "MED:30958973",
+        "year": 2019,
+        "score": 4.493864833813017
+      },
+      {
+        "id": "MED:30978926",
+        "year": 2019,
+        "score": 4.194703876476591
+      }
+    ]
+  },
+  {
+    "method": "hybrid",
+    "rerank": true,
+    "recency": {
+      "enabled": false,
+      "as_of": "2026-10-20",
+      "date_precision": "publication year",
+      "max_bonus_fraction": 0.03,
+      "half_life_years": 5,
+      "reference_score": 5.128389358520508,
+      "candidate_count": 5,
+      "max_absolute_bonus": 0.0,
+      "formula": "0.03 * abs(best relevance score) * 2^(-age_years/5)",
+      "missing_or_future_year": "no bonus",
+      "stage": "once, after relevance reranking and before displayed top-k",
+      "validation": "user-requested ranking preference; no demonstrated accuracy or evidence-quality improvement"
+    },
+    "results": [
+      {
+        "id": "MED:19242554",
+        "year": 2009,
+        "score": 5.128389358520508
+      },
+      {
+        "id": "MED:20034396",
+        "year": 2009,
+        "score": 4.8653645515441895
+      },
+      {
+        "id": "MED:41515221",
+        "year": 2025,
+        "score": 4.488158226013184
+      },
+      {
+        "id": "MED:30958973",
+        "year": 2019,
+        "score": 4.435565948486328
+      },
+      {
+        "id": "MED:18076246",
+        "year": 2007,
+        "score": 4.171990871429443
+      }
+    ]
+  }
+]
