@@ -1,11 +1,11 @@
 # EvidenceAtlas Food
 
-**Scientific literature retrieval for everyday food and nutrition questions**
+**Scientific literature retrieval and source-grounded summaries for everyday food and nutrition questions**
 
 **[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
 **[Read Final Report](https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/docs/EvidenceAtlas_Food_Report_2026_11_05.pdf)**
 
-EvidenceAtlas Food is a local information-retrieval and study-comparison system developed to answer nutrition-related questions using evidence from research papers, helping users distinguish scientifically supported findings from common misconceptions and misinformation circulated online. This can be used by students and researchers studying nutrition, healthcare professionals and dieticians seeking research-backed insights, and members of the public looking to make informed dietary choices.
+EvidenceAtlas Food is a local information-retrieval and study-comparison system with source-grounded summaries, developed to answer nutrition-related questions using evidence from research papers, helping users distinguish scientifically supported findings from common misconceptions and misinformation circulated online. This can be used by students and researchers studying nutrition, healthcare professionals and dieticians seeking research-backed insights, and members of the public looking to make informed dietary choices.
 
 It turns everyday food and nutrition questions into searches across scientific literature and helps users inspect the evidence behind the retrieved results rather than only returning paper titles.
 
@@ -17,8 +17,9 @@ The system combines:
 - semantic vector search
 - hybrid retrieval
 - relevance reranking
+- source-grounded summaries with a local LLM
 
-Retrieved papers can be opened at relevant source passages, compared side by side, saved into investigations and exported for later use.
+Retrieved papers can be opened at relevant source passages, compared side by side, summarised with links to exact source quotations, saved into investigations and exported for later use.
 
 ---
 
@@ -49,7 +50,12 @@ EvidenceAtlas Food was designed around a simple workflow:
    - Compare studies.
    - Save investigations and export evidence.
 
-6. **Evaluate retrieval quality**
+6. **Summarise selected papers**
+   - Use a local LLM to read the stored sections of the selected papers.
+   - Generate a short answer linked to exact source quotations.
+   - Check quotation support and direct applicability; state when no direct answer is identified in the selected evidence.
+
+7. **Evaluate retrieval quality**
    - Review ranked papers.
    - Measure Precision@3, Precision@5 and Precision@10.
 
@@ -84,7 +90,7 @@ When open-access full text is available, JATS XML is downloaded and parsed. Each
 
 ## Search methods
 
-EvidenceAtlas Food implements **six selectable retrieval techniques**.
+EvidenceAtlas Food implements **six selectable retrieval techniques**. An optional local LLM summary step reads selected papers after retrieval without changing their search rankings.
 
 ### 1. Section-Aware BM25
 
@@ -139,7 +145,7 @@ Hybrid + relevance ranking is now the opening default when available, with fallb
 
 ## Using the application
 
-EvidenceAtlas Food provides a local browser interface for searching and inspecting scientific evidence.
+EvidenceAtlas Food provides a local browser interface for searching, inspecting and summarising scientific evidence.
 
 A result card shows the paper together with its evidence availability.
 
@@ -153,6 +159,8 @@ The interface also supports:
 - notes
 - evidence export
 - retrieval diagnostics
+- source-grounded summaries with inspectable quotations
+- summary paper-count selection, reading progress, cancellation and cached results
 
 Up to **four papers** can be compared together.
 
@@ -162,7 +170,7 @@ The application is intended to support several levels of use:
 
 ### Everyday users
 
-Ask a food or nutrition question and inspect scientific papers related to it.
+Ask a food or nutrition question, read a source-grounded summary and inspect the papers and quotations behind it.
 
 ### Dietitians
 
@@ -170,7 +178,7 @@ Review study context and compare multiple papers addressing the same question.
 
 ### Researchers
 
-Inspect retrieval traces, ranking behaviour and experimental model diagnostics.
+Inspect retrieval traces, ranking behaviour, summary source quotations and experimental model diagnostics.
 
 ---
 
@@ -573,7 +581,7 @@ Possible improvements include:
 
 ---
 
-## Local LLM layer
+## Local LLM summaries
 
 An optional **local large language model**, Qwen3-4B-Instruct-2507, now operates above the retrieval system.
 
@@ -595,17 +603,17 @@ Local LLM
 Evidence-grounded explanation
 ```
 
-Further improvements to the local model could help with:
+The local model currently supports:
 
-- explaining retrieved evidence
-- comparing findings across studies
-- summarising agreements and disagreements
-- generating evidence-grounded responses
-- assisting with query reformulation
+- reading every stored section of the selected papers in bounded groups
+- extracting findings with exact source quotations
+- generating short answers from findings judged directly applicable to the question
+- checking quotation support and suppressing answers that fail verification
+- reusing completed summaries and matching section readings
 
 Keeping the model local preserves the project's current local-first architecture and avoids requiring a paid inference API.
 
-Generated answers remain linked to inspectable source passages. The current pipeline checks quotation support and direct applicability, and abstains when it cannot identify a direct answer in the selected papers. These checks can still miss errors or relevant findings; independent summary-accuracy validation remains outstanding.
+Generated answers remain linked to inspectable source passages. The current pipeline checks quotation support and direct applicability, and abstains when it cannot identify a direct answer in the selected papers. These checks can still miss errors or relevant findings; independent summary-accuracy validation remains outstanding. Abstract-only papers supply only their available text, and reading all stored sections does not guarantee that every finding survives the summary. First uncached readings can take several minutes.
 
 ---
 
@@ -621,7 +629,7 @@ Future versions could improve the selection of evidence passages or allow multip
 
 ## Scientific interpretation
 
-EvidenceAtlas Food ranks literature according to relevance.
+EvidenceAtlas Food ranks literature according to relevance and can summarise selected evidence with source quotations.
 
 It does not independently determine:
 
@@ -661,10 +669,10 @@ A larger model alone will not solve missing evidence. Retrieval quality depends 
 
 | Folder | Contents |
 |---|---|
-| `evidenceatlas/` | Python retrieval, ingestion and local API |
+| `evidenceatlas/` | Python retrieval, ingestion, local LLM summaries and local API |
 | `web/` | HTML/CSS and TypeScript interface; compiled JavaScript included |
 | `scripts/` | Launch, evaluation, packaging and report utilities |
-| `tests/` | Retrieval and interface checks |
+| `tests/` | Retrieval, summary evidence, caching and interface checks |
 | `evaluation/` | Protocols, queries, saved rankings and review materials |
 | `docs/` | Project documentation, report and demonstration material |
 | `docs/checks/` | Development and verification results |
@@ -687,7 +695,7 @@ These are excluded from the source repository.
 
 The data root should remain on `E:` for the original project configuration.
 
-Do not commit private saved investigations.
+Do not commit private saved investigations, generated summaries or local model authentication material.
 
 ---
 
@@ -759,6 +767,7 @@ Important files include:
 - [Agreed delivery scope](docs/DELIVERY_SCOPE.md)
 - [Project status](docs/STATUS.md)
 - [Open issues](docs/OPEN_ISSUES.md)
+- [Local summaries and limitations](docs/LOCAL_SUMMARIES.md)
 - [Evaluation protocol](evaluation/PROTOCOL.md)
 
 ---
@@ -778,7 +787,7 @@ Rather than indexing unrestricted web pages, it operates specifically on food an
 
 The system can support professional users such as dietitians and researchers while remaining accessible to people asking everyday food questions.
 
-The project also incorporates elements associated with retrieval and machine-learning systems, including embeddings, vector similarity, hybrid ranking and neural relevance reranking.
+The project also incorporates elements associated with retrieval and machine-learning systems, including embeddings, vector similarity, hybrid ranking, neural relevance reranking and source-grounded summaries generated by a local LLM.
 
 ---
 
