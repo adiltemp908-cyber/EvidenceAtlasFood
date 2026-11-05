@@ -639,9 +639,6 @@ It does not independently determine:
 - the certainty of a scientific conclusion
 - whether medical or nutritional advice should be followed
 
-Automated stance and claim analysis remains experimental.
-
-Small AI-assisted relevance audits are diagnostic tools rather than independent human scientific validation.
 
 ---
 
@@ -654,14 +651,10 @@ The main next steps are:
 - continue incremental embedding updates as the corpus grows
 - improve passage selection
 - experiment with stronger reranking models
-- independently evaluate and improve the local LLM summaries above hybrid + relevance ranking
 - improve scientific query rewriting
 - evaluate more questions across different nutrition topics
-- use independent human reviewers
 - construct a larger relevance benchmark
 - compare additional retrieval and reranking models
-
-A larger model alone will not solve missing evidence. Retrieval quality depends on both the quality of the ranking system and the coverage of the underlying corpus.
 
 ---
 
@@ -691,11 +684,6 @@ experiments/
 tmp/
 ```
 
-These are excluded from the source repository.
-
-The data root should remain on `E:` for the original project configuration.
-
-Do not commit private saved investigations, generated summaries or local model authentication material.
 
 ---
 
@@ -772,9 +760,6 @@ Important files include:
 
 ---
 
-# Track T6
-
-EvidenceAtlas Food fits **CSD358 Track T6** because it is a search system built for a specialised professional domain.
 
 Rather than indexing unrestricted web pages, it operates specifically on food and nutrition research literature and makes use of scientific-document structure including:
 
@@ -797,4 +782,3 @@ The project also incorporates elements associated with retrieval and machine-lea
 *From food questions to scientific evidence.*
 
 **Adil Muhammed**  
-**Roll No: 2410110018**
