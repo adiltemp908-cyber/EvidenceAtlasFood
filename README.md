@@ -221,204 +221,22 @@ Each score is the mean across all ten questions. Recall, F1 and MAP use the pool
 
 ---
 
-# Running EvidenceAtlas Food
-
 ## Quick start
 
-If the project has already been configured on the development machine, double-click:
+**Already configured on Windows?** Double-click **Open EvidenceAtlas.cmd** to start the server and open the app.
 
-```text
-Open EvidenceAtlas.cmd
-```
-
-The launcher can be located in the `app` folder or its parent `EvidenceAtlasFood` folder.
-
-The application opens at:
-
-```text
-http://127.0.0.1:8765/
-```
-
-Python must be available. The original installation uses an existing Anaconda environment.
-
-The equivalent manual command is:
+**First installation:** Open PowerShell in the cloned repository with Python 3.13 available. Choose a data folder on a drive other than C: with at least 40 GB free after setup. The following commands download a starter collection, build its lexical index, and start the server.
 
 ```powershell
 $env:EAF_ROOT = 'E:\EvidenceAtlasFood'
-python -m evidenceatlas.cli serve --port 8765
-```
-
-Run the command from the `app` directory.
-
-Requirements are recorded in:
-
-```text
-requirements.txt
-requirements-models.txt
-```
-
-Detailed reproduction information is also available in:
-
-```text
-docs/SETUP_REFERENCE.md
-```
-
----
-
-## First installation — Windows / PowerShell
-
-Download or clone the repository and open PowerShell inside the source directory.
-
-Python **3.13** was used during development.
-
-The recommended layout is:
-
-```text
-E:\EvidenceAtlasFood\
-│
-├── app\
-├── data\
-├── indexes\
-├── models\
-├── cache\
-├── experiments\
-└── tmp\
-```
-
-The Git repository should contain the `app` directory.
-
-Large corpora, indexes, downloaded models and caches should remain outside the repository.
-
-### 1. Configure the data root
-
-```powershell
-$env:EAF_ROOT = 'E:\EvidenceAtlasFood'
-```
-
-### 2. Prepare cache and temporary directories
-
-```powershell
-New-Item -ItemType Directory -Force "$env:EAF_ROOT\cache\pip", "$env:EAF_ROOT\tmp" | Out-Null
-
-$env:PIP_CACHE_DIR = "$env:EAF_ROOT\cache\pip"
-$env:TEMP = "$env:EAF_ROOT\tmp"
-$env:TMP = $env:TEMP
-```
-
-### 3. Create the Python environment
-
-```powershell
 python -m venv "$env:EAF_ROOT\.venv"
-
 $py = "$env:EAF_ROOT\.venv\Scripts\python.exe"
-```
-
-### 4. Install dependencies
-
-```powershell
 & $py -m pip install -r requirements.txt -r requirements-models.txt
-```
-
-For optional local summaries on Windows x64 with a compatible NVIDIA/Vulkan GPU, also run:
-
-```powershell
-& $py scripts/setup_summarizer.py
-```
-
-This downloads approximately 2.5 GB of model/runtime files to `EAF_ROOT`. See [local summary setup and limitations](docs/LOCAL_SUMMARIES.md).
-
----
-
-## Building a fresh corpus
-
-If the configured data root already contains the corpus, indexes and models, this section can be skipped.
-
-For a fresh installation, begin by acquiring papers:
-
-```powershell
 & $py -m evidenceatlas.cli ingest --pages 1 --page-size 25
-```
-
-Build the lexical indexes:
-
-```powershell
-& $py -m evidenceatlas.cli index
-```
-
-Download or initialize the embedding and reranking models:
-
-```powershell
-& $py -m evidenceatlas.models embedding reranker
-```
-
-Build the dense semantic index:
-
-```powershell
-& $py -m evidenceatlas.cli dense-index
-```
-
-For the optional research stance diagnostic:
-
-```powershell
-& $py -m evidenceatlas.models nli
-```
-
-Acquisition and model downloads require internet access.
-
-Paper acquisition and dense embedding generation can take significant time depending on the number of papers being processed.
-
----
-
-## Expanding the corpus
-
-The ingestion command is an initial batch operation rather than a fixed corpus-size limit.
-
-Running ingestion again resumes discovery.
-
-For a larger time-budgeted acquisition:
-
-```powershell
-& $py -m evidenceatlas.cli ingest --pages 0 --seconds 1800
-```
-
-After adding new material, rebuild the required indexes.
-
-```powershell
-& $py -m evidenceatlas.cli index
-& $py -m evidenceatlas.cli dense-index
-```
-
-The storage guard reserves **40 GB of free space by default**.
-
-Newly downloaded corpora may differ from the frozen collection used for the report evaluation.
-
-Incremental indexing reuses matching vectors and encodes new or changed passages. For staged collection runs, checks and activation, see [collection continuation](docs/COLLECTION_CONTINUATION.md).
-
----
-
-## Starting the server
-
-With the virtual environment configured:
-
-```powershell
 & $py -m evidenceatlas.cli serve --port 8765
 ```
 
-Then open:
-
-```text
-http://127.0.0.1:8765/
-```
-
-Stop the server using:
-
-```text
-Ctrl+C
-```
-
-Do **not** open `web/index.html` directly. The interface depends on the local Python API and therefore requires the EvidenceAtlas server to be running.
-
-If using a custom Python environment rather than the original project environment, prefer the explicit serve command instead of the convenience launcher.
+Open [the local app](http://127.0.0.1:8765/). For semantic search and reranking, follow the [model setup](docs/SETUP_REFERENCE.md#optional-experimental-models). For generated answers, see [local summary setup](docs/LOCAL_SUMMARIES.md#setup-and-troubleshooting).
 
 ---
 
