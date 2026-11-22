@@ -3,7 +3,7 @@
 **Scientific literature retrieval and source-grounded summaries for everyday food and nutrition questions**
 
 **[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
-**[Read Final Report](report.pdf)**
+**[Read Final Report](academic-report.pdf)**
 
 EvidenceAtlas Food is a local information-retrieval and study-comparison system with source-grounded summaries, developed to answer nutrition-related questions using evidence from research papers, helping users distinguish scientifically supported findings from common misconceptions and misinformation circulated online. This can be used by students and researchers studying nutrition, healthcare professionals and dieticians seeking research-backed insights, and members of the public looking to make informed dietary choices.
 
