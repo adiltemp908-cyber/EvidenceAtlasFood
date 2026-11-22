@@ -28,13 +28,11 @@ The answer step receives an exact outcome quotation plus up to three exact descr
 
 Reading caches now match the complete extraction inputs, model/runtime and extraction prompt rather than depending on the entire corpus. Adding unrelated literature therefore does not force unchanged sections to be read again. Cache reuse is displayed beside elapsed time. One transient local timeout/connection failure is retried; computer sleep or persistent runtime failures can still interrupt a job.
 
-[October 21 checks and development-query comparison](checks/audit-gap-repair.json). The original implementation measurements below are historical.
-
 ---
 
 # Local answers from retrieved papers
 
-Implemented October 21, 2026. Search first, then click **Summarize top 10 papers**. This is an optional reading step; ordinary search, MiniLM embeddings and reranking are unchanged.
+Implemented October 21, 2026. Search first, choose the paper count, then click **Summarize**. This is an optional reading step; ordinary search, MiniLM embeddings and reranking are unchanged.
 
 ## What the model reads
 
@@ -42,7 +40,7 @@ The requested paper IDs and corpus fingerprint are checked against the local col
 
 Each group can yield up to three findings with exact quotations. Fabricated quotations are rejected. Up to six notes per paper are retained, with a round-robin selection across papers for the bounded answer input. Reading all passages does not mean all findings survive this compression. The model selects up to four findings, writes each answer paragraph from one exact excerpt, and checks the draft against that source. Adjacent table rows are deliberately excluded from this final step after a development run confused a duration with a dose. Missing details are omitted rather than inferred.
 
-Exact offsets, source links, some quantities and species/outcome terms are checked in code. A second model pass checks support. Both extraction and verification can still miss errors, limitations or counterevidence. Citation correctness is not equivalent to interpretation accuracy. No independent human validation or summary-accuracy benchmark is claimed.
+Exact offsets, source links, some quantities and species/outcome terms are checked in code. A second model pass checks support. Both extraction and verification can still miss errors, limitations or counterevidence. Citation correctness is not equivalent to interpretation accuracy. The checks measure quotation matching and source support. The retrieval benchmark grades paper relevance.
 
 ## Runtime and storage
 

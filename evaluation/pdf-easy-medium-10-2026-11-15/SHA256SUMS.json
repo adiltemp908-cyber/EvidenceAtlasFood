@@ -1,0 +1,19 @@
+{
+  "RESULTS.md": "fae179b195425b02b36f98a5d6b473e2ac3ebb648708551345d7e174c3bb44a6",
+  "REVIEWED_PAPERS.md": "b3e3d1377c1568b1a84248e3d71c784785be6258bb8b0063e804e32f4593744f",
+  "precision-recall.png": "b99e89a8a7d0e13f3bb38c71c44cb5752db34fc5a93ea4e9ecb4ef88f54165a4",
+  "protocol.json": "3e0fac524d316516f5ff43c22730c5d5e6fc7f36aa0dfa04cb706d75bbcce2dc",
+  "runs.json": "ce5d74ba4963af217c422da2e58560469fbffcd8531e3be8008279dfb4dd3576",
+  "pool.json": "aef699f276c9fa9b1fe70d71ea33134b0b1a7ce51f056e7fbdeba5b4207fda7e",
+  "judgments.json": "4604c43a2f0cb5569fa78e217593fed04c8c3cdbfbcc9a9bb996879f5ddedab2",
+  "metrics.json": "f740b8bbd656d243d2a337ed5645e6d60e25ccd2e2038c71e1eb6d9ecbec9b12",
+  "validation.json": "7b4ed79af549454e3d16d98a940bf2afca0ed560456bee4c63c2dd8a6754aa3e",
+  "collection-checks.json": "955bc90eb8c0196534b068bff656b9593a9d4df4550bb2e7b06d7e83ce9d0076",
+  "reranker-input-check.json": "83feafd1dbab1fe1d1e74a253df330f2fd6d17ced1a827bc7dcff31ca23b7001",
+  "collect.py": "2358c9e089aaba408f8047737c13de2a07e279bf9e52d8c433053b23d8dfa5eb",
+  "evaluate.py": "b9987ec01cb41d84c639b0279bcc0278da187e6ebaffa721bf2958f87b4b283b",
+  "build_judgments.py": "b8c89ba57dfc592ff85635e9d4f79b1caf0b5c85e0506653be6e86951da51614",
+  "review_notes.txt": "c81cf8e68b36ec16622f340b7128e845628af2dae454a366e28386643667fb50",
+  "show_review.py": "4f167eb646d0e9e78528b90972a6cdb057cc41cf403f5918a3782b484a0fcd9a",
+  "check_passages.py": "0a873d491cec537e362e0e426db3d8d3a57b21533b26c14ae5ded53fc605e9c3"
+}

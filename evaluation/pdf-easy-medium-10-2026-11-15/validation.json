@@ -1,0 +1,7 @@
+{
+  "formula_examples_passed": true,
+  "pool_complete": true,
+  "rankings_complete": true,
+  "judged_fraction": 1.0,
+  "source_excerpt_checks": "Every evidence item exactly matches its corresponding abstract or passage in pool.json."
+}

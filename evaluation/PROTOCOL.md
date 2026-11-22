@@ -1,8 +1,10 @@
-# Evaluation protocol v1
+# Claim-family benchmark protocol v1
+
+The November 15 ten-question evaluation uses its own top-ten pool and linear nDCG gains. All 310 pooled pairs were reviewed. [November results and scoring method](pdf-easy-medium-10-2026-11-15/RESULTS.md)
 
 Use a versioned food claim set stratified by topic, everyday/technical wording, ambiguity, qualified doses/timing/populations, null findings, substitution, animal-human extrapolation and missing evidence. Split by claim family, not individual paraphrase. Freeze corpus, parser, tokenizer, index, model revisions, query config and random seeds before held-out evaluation.
 
-Pool the union of top 20 unique papers from flat TF-IDF, BM25, structure-aware lexical, dense, hybrid, reranked hybrid and full-system ablations. Blind reviewers to run identity. Record reviewer ID/qualification, independent decisions, exact evidence offsets, disagreements and adjudication. Do not treat AI suggestions as human gold. Expert review and comprehension participants are currently unavailable.
+Pool the union of top 20 unique papers from flat TF-IDF, BM25, structure-aware lexical, dense, hybrid, reranked hybrid and full-system ablations. Blind reviewers to run identity. Record reviewer ID/qualification, independent decisions, exact evidence offsets, disagreements and adjudication. Do not treat AI suggestions as human gold.
 
 Relevance grades: 0 unrelated, 1 related/background, 2 direct but materially different/unclear applicability, 3 direct applicable evidence. Relevance is distinct from supports/contradicts/insufficient stance. Annotate applicability per population/exposure/dose/timing/preparation/comparator/outcome, with unknown retained.
 

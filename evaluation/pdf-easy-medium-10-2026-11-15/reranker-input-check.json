@@ -1,0 +1,7 @@
+{
+  "checked_returned_reranker_inputs": 100,
+  "maximum_pair_tokens": 359,
+  "limit": 384,
+  "passed": true,
+  "note": "The collection warning came from measuring a candidate text before the existing shortening logic; all saved final rerank inputs fit."
+}

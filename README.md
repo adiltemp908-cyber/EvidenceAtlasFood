@@ -127,7 +127,7 @@ The rankings are combined using **Reciprocal Rank Fusion**.
 
 ### 6. Hybrid + Relevance Ranking
 
-This is the strongest retrieval pipeline currently implemented.
+This pipeline had the highest mean Precision@10 and nDCG@10 on the ten reviewed questions.
 
 First, hybrid retrieval creates a candidate set using lexical and semantic search. A MiniLM cross-encoder then examines up to 30 candidates using:
 
@@ -184,7 +184,7 @@ Inspect retrieval traces, ranking behaviour, summary source quotations and exper
 
 ## Evaluation
 
-On 15 November 2026, six search methods ran the same ten questions against a collection of 3,493 searchable papers. Query expansion was enabled and the recency preference was disabled. The top ten results from each search yielded 600 ranked positions and 310 distinct question–paper pairs.
+On 15 November 2026, six search methods ran the same ten questions against a collection of 3,493 searchable papers. Query expansion was enabled and the recency preference was disabled. The top ten results from each search yielded 600 ranked positions. All 310 distinct question–paper pairs were reviewed for relevance using titles, abstracts and, where needed, retrieved passages. The scores measure the relevance of the papers returned. [Benchmark results and scoring method](evaluation/pdf-easy-medium-10-2026-11-15/RESULTS.md)
 
 ### Hybrid + reranker results by question
 
@@ -506,7 +506,7 @@ The local model currently supports:
 
 Keeping the model local preserves the project's current local-first architecture and avoids requiring a paid inference API.
 
-Generated answers remain linked to inspectable source passages. The current pipeline checks quotation support and direct applicability, and abstains when it cannot identify a direct answer in the selected papers. These checks can still miss errors or relevant findings; independent summary-accuracy validation remains outstanding. Abstract-only papers supply only their available text, and reading all stored sections does not guarantee that every finding survives the summary. First uncached readings can take several minutes.
+Generated answers remain linked to inspectable source passages. The current pipeline checks quotation support and direct applicability, and abstains when it cannot identify a direct answer in the selected papers. The retrieval benchmark measures paper relevance. The summary checks cover quotation matching and answer applicability, and can miss errors or relevant findings. Abstract-only papers supply only their available text, and reading all stored sections does not guarantee that every finding survives the summary. First uncached readings can take several minutes.
 
 ---
 
@@ -557,10 +557,10 @@ The main next steps are:
 |---|---|
 | `evidenceatlas/` | Python retrieval, ingestion, local LLM summaries and local API |
 | `web/` | HTML/CSS and TypeScript interface; compiled JavaScript included |
-| `scripts/` | Launch, evaluation, packaging and report utilities |
+| `scripts/` | Launch, collection, evaluation and packaging utilities |
 | `tests/` | Retrieval, summary evidence, caching and interface checks |
 | `evaluation/` | Protocols, queries, saved rankings and review materials |
-| `docs/` | Project documentation, report and demonstration material |
+| `docs/` | Architecture, setup, collection notes and demonstration guide |
 | `docs/checks/` | Development and verification results |
 | `docs/screenshots/` | Application screenshots |
 
@@ -612,50 +612,13 @@ The packaging process is intended to create the source distribution without incl
 
 ---
 
-# Project report
+## Project documentation
 
-[Read the eight-page project report (PDF)](report.pdf).
+- [Project report (PDF)](report.pdf)
+- [Architecture and data flow](docs/ARCHITECTURE.md)
+- [Setup and reproduction](docs/SETUP_REFERENCE.md)
+- [Reviewed retrieval results](evaluation/pdf-easy-medium-10-2026-11-15/RESULTS.md)
+- [Demo walkthrough](docs/DEMO_SCRIPT.md)
+- [Known limitations](docs/OPEN_ISSUES.md)
 
----
-
-# Course materials
-
-Project documentation is available under `docs/`.
-
-Important files include:
-
-- [Project report](report.pdf)
-- [Demo script](docs/DEMO_SCRIPT.md)
-- [Setup and reproduction reference](docs/SETUP_REFERENCE.md)
-- [Course requirements](docs/COURSE_REQUIREMENTS.md)
-- [Original specification](docs/SPECIFICATION.md)
-- [Agreed delivery scope](docs/DELIVERY_SCOPE.md)
-- [Project status](docs/STATUS.md)
-- [Open issues](docs/OPEN_ISSUES.md)
-- [Local summaries and limitations](docs/LOCAL_SUMMARIES.md)
-- [Evaluation protocol](evaluation/PROTOCOL.md)
-
----
-
-
-Rather than indexing unrestricted web pages, it operates specifically on food and nutrition research literature and makes use of scientific-document structure including:
-
-- sections
-- passages
-- metadata
-- source identifiers
-- citations
-- full-text availability
-
-The system can support professional users such as dietitians and researchers while remaining accessible to people asking everyday food questions.
-
-The project also incorporates elements associated with retrieval and machine-learning systems, including embeddings, vector similarity, hybrid ranking, neural relevance reranking and source-grounded summaries generated by a local LLM.
-
----
-
-## Project
-
-**EvidenceAtlas Food**  
-*From food questions to scientific evidence.*
-
-**Adil Muhammed**  
+**Adil Muhammed**

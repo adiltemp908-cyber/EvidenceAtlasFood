@@ -1,6 +1,6 @@
 # Preliminary AI retrieval audit - 7 October 2026
 
-**I can measure provisional relevance using AI labels. I cannot turn self-assessment into independent validation.** This audit reads real source material and preserves every label, rationale and source offset.
+This October audit covers the original paper-level index. Each grade retains its rationale and source offset. The [November retrieval evaluation](pdf-easy-medium-10-2026-11-15/RESULTS.md) covers the expanded collection.
 
 The fixed sample contains the top three reranked-hybrid papers for each of four declarative development claims: caffeine/sleep timing, protein/CKD safety, sodium/BP-response variation and TRE/glucose independent of weight loss. There are 12 pairs: nine full-text records and three abstract-only records. Review consisted of abstracts, selected passages and targeted context checks, not exhaustive appraisal of each full text.
 
@@ -19,4 +19,4 @@ The most useful failure is context mismatch. PMID 42289790 concerns high-protein
 
 Limitations: 12 nonrandom results, four development families, one method, one AI annotator who also built the system, no independent adjudication, and partial source reading. The records were shuffled and ranking scores hidden during reading, but method identity was known. No held-out generalization, recall, stance F1, citation entailment accuracy or overall system accuracy is established. No parameter tuning followed this audit.
 
-Artifacts: `delivery/ai-judgments.jsonl`, `delivery/ai-audit-notes.json`, `delivery/ai-audit-summary.json`; selection/rubric: `AI_AUDIT_PROTOCOL.md`. Human labels remain separate and absent. The PDF report and application evaluation page now include this limited AI audit. Reproduce it with `python -m evidenceatlas.audit E:\EvidenceAtlasFood\experiments\delivery-v1`; this validates the fixed sample and all saved source spans without new inference.
+Artifacts: `delivery/ai-judgments.jsonl`, `delivery/ai-audit-notes.json`, `delivery/ai-audit-summary.json`; selection/rubric: `AI_AUDIT_PROTOCOL.md`. The application displays this historical sample alongside the November benchmark. Reproduce it with `python -m evidenceatlas.audit E:\EvidenceAtlasFood\experiments\delivery-v1`; this validates the fixed sample and all saved source spans without new inference.

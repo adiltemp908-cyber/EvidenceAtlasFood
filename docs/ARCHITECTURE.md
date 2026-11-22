@@ -10,15 +10,18 @@ flowchart LR
   E --> G[Sections, tables, paragraphs, sentence offsets]
   F --> G
   G --> H[SQLite positional postings]
-  F --> I[Title + abstract CPU embeddings / memory-mapped vectors]
+  G --> I[Token-bounded passage embeddings / memory-mapped vectors]
   H --> J[TF-IDF, BM25, weighted zones]
   I --> K[Dense ranking]
   J --> L[Rank fusion and bounded reranking]
   K --> L
   L --> M[Source-linked candidate context + experimental stance]
+  G --> R[Local reading and quotation checks]
+  L --> R
+  R --> N
   M --> N[Public / dietitian / research views]
   G --> O[Frozen evaluation snapshot]
-  O --> P[Blinded pools and independent judgments]
+  O --> P[Pooled papers and relevance judgments]
   P --> Q[Metrics and failure analysis]
 ```
 
@@ -31,7 +34,7 @@ All bulk state lives under the configurable E: root. Source code and lightweight
 Raw metadata/XML are SHA-256-addressed gzip blobs. Requests retain URL, time and response hash. Normalized passages identify parents, sections, paragraph offsets and sentence boundaries. Index configuration records corpus fingerprint and weights. Model IDs/revisions are pinned. Benchmark snapshots remove private sessions and keep judgments out of the article index. User notes and queries are not written to HTTP access logs.
 
 ## Current limitations to retain visibly
-Regex-derived source mentions can come from background, another study, or another arm. Context matching cannot be established from a shared keyword. The local NLI model may truncate long inputs and is trained outside the food benchmark. The embedding model also truncates inputs; manifests report how often. Paper identity deduplication does not resolve shared cohorts or primary studies within reviews. Retraction/correction metadata are preserved but coverage is incomplete. These are scientific limitations, not UI states to hide.
+Regex-derived source mentions can come from background, another study, or another arm. Context matching cannot be established from a shared keyword. The local NLI model may truncate long inputs and is trained outside the food benchmark. The passage index uses overlapping token-bounded chunks. The November 4 index recorded zero truncated embedding inputs. Paper identity deduplication does not resolve shared cohorts or primary studies within reviews. Retraction/correction metadata are preserved but coverage is incomplete. These are scientific limitations, not UI states to hide.
 
 ## Scaling decisions
 Explicit SQL postings are intentionally inspectable for the course. Positional JSON and duplicated context cost storage; pilot and expanded runs quantify it. Dense vectors are memory mapped and scanned in bounded batches. At larger measured scale, compact postings and approximate nearest-neighbor retrieval should be evaluated before growing without bound. Full-text expansion remains subject to screening quality, API politeness, RAM and disk reserves.

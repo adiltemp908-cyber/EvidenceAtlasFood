@@ -1,0 +1,696 @@
+{
+  "date": "2026-11-15",
+  "source_pdf": "08eval (1).pdf",
+  "source_pdf_sha256": "3117b863bed79cbf615a7781cef67102b1b4fd9c60df0944f09d2983bc9ff2b5",
+  "questions": [
+    {
+      "id": "Q01",
+      "difficulty": "Easy",
+      "query": "Does drinking coffee affect sleep?",
+      "information_need": "Human coffee/caffeine consumption and sleep quality, duration or onset; caffeine trials qualify as constituent evidence."
+    },
+    {
+      "id": "Q02",
+      "difficulty": "Easy",
+      "query": "Does reducing salt intake lower blood pressure?",
+      "information_need": "Human dietary salt/sodium reduction and measured blood pressure; potassium-only interventions are partial background."
+    },
+    {
+      "id": "Q03",
+      "difficulty": "Easy",
+      "query": "Does eating more fiber help with constipation?",
+      "information_need": "Human dietary fiber or fiber supplementation and constipation, stool frequency or consistency; other digestive outcomes alone are background."
+    },
+    {
+      "id": "Q04",
+      "difficulty": "Easy",
+      "query": "Does drinking milk help keep bones strong?",
+      "information_need": "Human milk/dairy intake and bone density, bone mineral content, fractures or bone turnover; dairy mixtures can be directly useful but are less specific than milk."
+    },
+    {
+      "id": "Q05",
+      "difficulty": "Easy",
+      "query": "Does boiling vegetables reduce their vitamin C content?",
+      "information_need": "Measured vitamin C/ascorbic acid retention after boiling vegetables; food laboratory studies are directly applicable, unlike human-health queries."
+    },
+    {
+      "id": "Q06",
+      "difficulty": "Medium",
+      "query": "Does eating oats lower LDL cholesterol?",
+      "information_need": "Human oat/oat beta-glucan consumption and LDL cholesterol; other cereal fibers or other lipid outcomes alone are partial evidence."
+    },
+    {
+      "id": "Q07",
+      "difficulty": "Medium",
+      "query": "Does eating nuts cause weight gain in adults?",
+      "information_need": "Adult human nut consumption and body weight/adiposity; includes null findings and energy compensation, not only weight gain."
+    },
+    {
+      "id": "Q08",
+      "difficulty": "Medium",
+      "query": "Is yogurt easier to digest than milk for people with lactose intolerance?",
+      "information_need": "Human yogurt/fermented milk versus ordinary milk or lactose digestion in lactose malabsorbers; generic probiotic/gut health studies without lactose outcomes are background."
+    },
+    {
+      "id": "Q09",
+      "difficulty": "Medium",
+      "query": "Are sugary drinks linked to type 2 diabetes?",
+      "information_need": "Human sugar-sweetened beverage intake and type 2 diabetes incidence/risk; association is sufficient, causality is not required; glucose/weight alone is partial evidence."
+    },
+    {
+      "id": "Q10",
+      "difficulty": "Medium",
+      "query": "Does extra protein help build muscle during resistance training?",
+      "information_need": "Human dietary protein supplementation/intake during resistance training and muscle mass or hypertrophy; strength alone or exercise without protein comparison is partial evidence."
+    }
+  ],
+  "methods": [
+    "tfidf",
+    "bm25",
+    "structure",
+    "dense",
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "depth": 10,
+  "expand": true,
+  "recency": false,
+  "filters": {},
+  "configuration_note": "Existing implementations, shared query expansion enabled, relevance-only ranking (recency preference disabled). No tuning or query rewrites after collection.",
+  "pool": "Union of the top 10 unique parent papers from all six methods, separately for each query.",
+  "grades": {
+    "0": "Not relevant to the information need",
+    "1": "Related/background only; indirect exposure/outcome or species mismatch",
+    "2": "Directly useful but partial or materially limited applicability",
+    "3": "Directly addresses the information need with applicable population/exposure/outcome"
+  },
+  "binary_relevance_threshold": 2,
+  "reviewer_kind": "AI",
+  "reviewer": "Codex assistant; not independent human or expert judgments",
+  "judgment_basis": "Titles and query-focused abstract excerpts used for initial screening; complete abstracts and retrieved source passages inspected for ambiguous cases. Full stored abstracts and retrieved text retained. No exhaustive full-paper review.",
+  "dcg_gain": "linear grade, as PDF pages 42-50; logarithm base 2",
+  "idcg": "Common ideal top-k from all judged pooled papers for that query, shared across methods.",
+  "recall_and_ap_scope": "Relevant documents in judged pool only. AP@10 denominator is all relevant pooled documents, not min(R,10). Unretrieved relevant pool documents contribute zero. Not full-corpus recall or untruncated MAP.",
+  "interpolation": "11 levels 0.0 to 1.0; max observed P@r with pool Recall@r >= level; zero beyond observed recall at depth 10.",
+  "query_selection": "Ten AI-authored easy/medium questions fixed before viewing rankings; convenience diagnostic set, with topics overlapping previous development evaluations; not held-out.",
+  "corpus": "a524efa0f09a93ac6aba5c4d4f7608d6b01e9e410b6b98fad2453e2d72998216",
+  "counts": {
+    "papers": 3723,
+    "searchable_papers": 3493,
+    "passages": 102752,
+    "availability": {
+      "abstract-only": 2222,
+      "full-text": 1475,
+      "metadata-only": 26
+    },
+    "screening": {
+      "accepted": 4540,
+      "excluded": 47,
+      "needs_review": 233
+    },
+    "topics": [
+      {
+        "topic": "added_sugar_intake",
+        "decision": "accepted",
+        "papers": 14
+      },
+      {
+        "topic": "added_sugar_intake",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "audit-gap-repair",
+        "decision": "accepted",
+        "papers": 4
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "breakfast_cereal",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "breakfast_habits",
+        "decision": "accepted",
+        "papers": 18
+      },
+      {
+        "topic": "breakfast_habits",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "accepted",
+        "papers": 117
+      },
+      {
+        "topic": "caffeine_sleep",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "coffee_intake",
+        "decision": "accepted",
+        "papers": 15
+      },
+      {
+        "topic": "coffee_intake",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "accepted",
+        "papers": 76
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "collagen_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "accepted",
+        "papers": 59
+      },
+      {
+        "topic": "creatine_supplements",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_bone",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "dairy_tolerance",
+        "decision": "accepted",
+        "papers": 13
+      },
+      {
+        "topic": "dairy_tolerance",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "accepted",
+        "papers": 119
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "dietary_fats",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "dietary_patterns",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "accepted",
+        "papers": 114
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "egg_cholesterol",
+        "decision": "needs_review",
+        "papers": 27
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "accepted",
+        "papers": 75
+      },
+      {
+        "topic": "electrolyte_hydration",
+        "decision": "needs_review",
+        "papers": 7
+      },
+      {
+        "topic": "fermented_products",
+        "decision": "accepted",
+        "papers": 62
+      },
+      {
+        "topic": "fiber_gut",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fiber_requirements",
+        "decision": "accepted",
+        "papers": 11
+      },
+      {
+        "topic": "fiber_requirements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "flax_chia",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "food_safety",
+        "decision": "accepted",
+        "papers": 74
+      },
+      {
+        "topic": "food_safety",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "accepted",
+        "papers": 91
+      },
+      {
+        "topic": "fruit_juice",
+        "decision": "excluded",
+        "papers": 2
+      },
+      {
+        "topic": "fruit_vegetable_servings",
+        "decision": "accepted",
+        "papers": 23
+      },
+      {
+        "topic": "fruit_vegetable_servings",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "green_tea",
+        "decision": "accepted",
+        "papers": 68
+      },
+      {
+        "topic": "green_tea",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "green_tea",
+        "decision": "needs_review",
+        "papers": 5
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "accepted",
+        "papers": 72
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "legumes_health",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "accepted",
+        "papers": 110
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "magnesium_supplements",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "accepted",
+        "papers": 225
+      },
+      {
+        "topic": "meal_timing",
+        "decision": "needs_review",
+        "papers": 3
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "accepted",
+        "papers": 84
+      },
+      {
+        "topic": "micronutrients",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "nuts_seeds",
+        "decision": "accepted",
+        "papers": 60
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "accepted",
+        "papers": 45
+      },
+      {
+        "topic": "oat_almond_milk",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "accepted",
+        "papers": 106
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "excluded",
+        "papers": 4
+      },
+      {
+        "topic": "omega3_supplements",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "plain_water_health",
+        "decision": "accepted",
+        "papers": 13
+      },
+      {
+        "topic": "plain_water_health",
+        "decision": "needs_review",
+        "papers": 17
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "accepted",
+        "papers": 46
+      },
+      {
+        "topic": "plant_milks",
+        "decision": "needs_review",
+        "papers": 12
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "accepted",
+        "papers": 92
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "excluded",
+        "papers": 1
+      },
+      {
+        "topic": "preparation_vitamins",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "accepted",
+        "papers": 110
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "probiotic_supplements",
+        "decision": "needs_review",
+        "papers": 6
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "accepted",
+        "papers": 54
+      },
+      {
+        "topic": "protein_bars",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "accepted",
+        "papers": 120
+      },
+      {
+        "topic": "protein_kidney",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "protein_muscle",
+        "decision": "accepted",
+        "papers": 109
+      },
+      {
+        "topic": "protein_requirements",
+        "decision": "accepted",
+        "papers": 16
+      },
+      {
+        "topic": "protein_requirements",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "accepted",
+        "papers": 125
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "excluded",
+        "papers": 3
+      },
+      {
+        "topic": "psyllium_products",
+        "decision": "needs_review",
+        "papers": 9
+      },
+      {
+        "topic": "red_meat_cancer",
+        "decision": "accepted",
+        "papers": 99
+      },
+      {
+        "topic": "salt_intake",
+        "decision": "accepted",
+        "papers": 17
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "accepted",
+        "papers": 101
+      },
+      {
+        "topic": "sodium_pressure",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "accepted",
+        "papers": 112
+      },
+      {
+        "topic": "sports_drinks",
+        "decision": "needs_review",
+        "papers": 4
+      },
+      {
+        "topic": "staple_grains",
+        "decision": "accepted",
+        "papers": 15
+      },
+      {
+        "topic": "staple_grains",
+        "decision": "needs_review",
+        "papers": 2
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "accepted",
+        "papers": 127
+      },
+      {
+        "topic": "sweeteners",
+        "decision": "needs_review",
+        "papers": 1
+      },
+      {
+        "topic": "water_requirements",
+        "decision": "accepted",
+        "papers": 18
+      },
+      {
+        "topic": "water_requirements",
+        "decision": "needs_review",
+        "papers": 8
+      },
+      {
+        "topic": "whey_products",
+        "decision": "accepted",
+        "papers": 143
+      },
+      {
+        "topic": "whey_products",
+        "decision": "excluded",
+        "papers": 5
+      },
+      {
+        "topic": "whey_products",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "accepted",
+        "papers": 89
+      },
+      {
+        "topic": "wholegrain_metabolic",
+        "decision": "needs_review",
+        "papers": 10
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "accepted",
+        "papers": 96
+      },
+      {
+        "topic": "yogurt_digestion",
+        "decision": "needs_review",
+        "papers": 1
+      }
+    ],
+    "failures": 2
+  },
+  "models": {
+    "embedding": [
+      "sentence-transformers/all-MiniLM-L6-v2",
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "reranker": [
+      "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+    ],
+    "nli": [
+      "cross-encoder/nli-MiniLM2-L6-H768",
+      "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d"
+    ]
+  },
+  "dense_index": {
+    "corpus": "a524efa0f09a93ac6aba5c4d4f7608d6b01e9e410b6b98fad2453e2d72998216",
+    "model": [
+      "sentence-transformers/all-MiniLM-L6-v2",
+      "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    ],
+    "max_tokens": 256,
+    "chunking": "token-windows-v1",
+    "overlap_tokens": 32,
+    "source_corpus": "dc431830ad305cb66ba4e2513507e9bd093790dcf138bea283304f7ed32444ce",
+    "level": "passage",
+    "input": "overlapping token-bounded source spans; exact character offsets",
+    "dimensions": 384,
+    "passages": 115883,
+    "source_passages": 102752,
+    "split_passages": 8204,
+    "truncated_passages": 0,
+    "reused_vectors": 109628,
+    "new_vectors": 6255,
+    "elapsed_seconds": 208.19844239996746,
+    "validation": {
+      "vectors": 115883,
+      "dimensions": 384,
+      "finite": true,
+      "unit_norm_tolerance": 0.0001
+    }
+  },
+  "git_commit": "28aec6e96aa82955d0ff4c33ad8c5ca7087e0d2a",
+  "code_sha256": {
+    "acquisition.py": "7d0267d8a75776444eba862448e7acfb4215b5a28f644d84651c744f152ac752",
+    "advanced.py": "64b01465e573217a2ada96cd3825a2232ef83d5fc00b0654ca3ef18dcdb33982",
+    "audit.py": "75e5e46105bdc0926c3762576713eb5c5cae1b8fe0b4ec991fff30a0e81bf71d",
+    "benchmark.py": "6be3203e16236ea663cbed9e72d69a1592acc8311df518efe09593fbe618d96c",
+    "chunking.py": "780ed2837a2ba103aa713b9798697b463b8f7e7ac5729baf254192887b7f0c61",
+    "cli.py": "ce9d54223d99574e0b785aed9fa5e738e21632896eb802387cb4efa3634e1cb5",
+    "compare_runs.py": "1bf38b051c89aac2942c923012703f5eb4c7fa2b7ffc894cb80f555682861941",
+    "config.py": "47a359e9555e90b0f786e2b547f28587a19069017f55dfd6023a8264c9ec7386",
+    "contracts.py": "d791bc72123168ac97edd7d685478c61877cb12e77d9226fc3909b01f627e307",
+    "dense.py": "888f7cabb75bdf4846a3021277d4b1a92187923a58bef4a373590c6b3fe401a1",
+    "evaluation.py": "2de914bd94ee3b8e44bd68b66045360ff0a2aa770fed03263d3267b358caf582",
+    "evidence.py": "cb3eadd8ab3538037b99fd9567a7923e697583c9f7ffc737843a8b26502f33fb",
+    "incremental.py": "c66da0e015a11b0d9a19f77def2ea495313b668f6de25c4d5979910f3b8ad3da",
+    "intent.py": "6f4303e526984471666d438a02dcfd4df2be8bfa0a08a240a42f2ffbc2fbb949",
+    "judgments.py": "f80a5f2d8ab6ad712dbb6fa03f3efc9a58a27cfc59ec0e05092a01569379a41d",
+    "local_llm.py": "b408aef38c95afede8127fb262619aff98aa9100b7eb4e2c646c3cd5add5eb4a",
+    "models.py": "bf943c42ec9a8ea72a7062d5142a8d19c9101e7999e9b01b158c12cbdf29131f",
+    "onnx_embedding.py": "8deff374087ac79f2a0e02701198fa5c427fe5c72248debc59bb11b241b45ebb",
+    "parsing.py": "a24b3d6ad88d1b2379a232e9262b38daa172106f8cbc454d97277dcb6b867c01",
+    "ranking.py": "f35a7243aec2f227faae766a5d556c03a5fdafe89b8f6a8bcb3f0aa38e284325",
+    "reparse.py": "215549e54a224b86b3df77b91682c624bb539ca0c3f62842512688d644af4d52",
+    "retrieval.py": "019432a5db5448d169d067af05e79472fdc73fa6d2bc32bfc7bbd0030be2e0c8",
+    "review_packet.py": "32f9ea5e786f6459982ed26ca6b057bbf9dc1e33b0a8ba584ad835211f2f6013",
+    "server.py": "208e762c00499b4e52b00e996bcfaa04eada8f2747388b1258ee4c3e5a05822c",
+    "store.py": "f57e050cb7ff30530e55144a56670391799cba9ecd01df3a7e6e0c384636e37d",
+    "summarization.py": "d8b1ff1b6380274948ae6568b225b21d66b3291701c9766dafa276b7626bf993",
+    "summary_evidence.py": "843a9b032f8988808cdd58eb0b0880feb29ff6e9fb3f595fdfea153ee0203bd8",
+    "taxonomy.py": "a55a9c8ae98936ed7424255a5572319547cf552a9ae434f5a1d27b41ac17a5cf",
+    "topic_screening.py": "d73a7a23923e223575f4189fed4ef21706b3a1df19e907d617cf651507414df5",
+    "__init__.py": "43cf5e8a13bd6aca01aa57758a4656ff2d3914e28a48a94dda395fe2e62acdda"
+  },
+  "warmup_seconds": 21.203982699999983,
+  "primary_study_vs_review_rule": "Primary-study background references alone count as background; directly useful source-study outcomes qualify. Review syntheses can qualify even when the relevant material is in a subsection."
+}

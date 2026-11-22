@@ -1,15 +1,17 @@
 """Integration against an explicitly running local app; no synthetic effectiveness claim."""
+import os
 import requests
 
 def test_api_workflow():
-    base='http://127.0.0.1:8765'
+    base=os.environ.get('EAF_TEST_BASE_URL', 'http://127.0.0.1:8765')
     assert requests.get(base+'/api/health').status_code==200
     evaluation=requests.get(base+'/api/evaluation').json()
     assert evaluation['ai_audit']['sample_pairs']==12
-    assert evaluation['ai_audit']['matches_current_corpus'] is True
+    assert evaluation['benchmark']['judged_pairs']==310
+    assert evaluation['benchmark']['precision_at_10']==0.74
     assert evaluation['ai_audit']['status'].startswith('Preliminary AI')
     coverage=requests.get(base+'/api/coverage').json()
-    assert evaluation['ai_audit']['matches_current_dense_index']==(coverage['dense_index']['level']=='paper')
+    assert evaluation['ai_audit']['matches_current_dense_index']==bool(evaluation['ai_audit']['matches_current_corpus'] and coverage['dense_index'] and coverage['dense_index']['level']=='paper')
     run=requests.get(base+'/api/search',params={'q':'dietary sodium blood pressure','method':'bm25'}).json()
     assert run['results'] and run['trace']['index']['corpus']
     p=run['results'][0]

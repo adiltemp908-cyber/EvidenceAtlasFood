@@ -45,7 +45,7 @@ def serve(settings,port=8765):
                     return self.send({'counts':store.counts(),'storage':settings.report(),'index':json.loads(idx[0]) if idx else None,
                         'capabilities':{'dense':(settings.root/'indexes/dense-active.json').exists(),'reranker':(settings.root/'models/reranker/config.json').exists(),'experimental_nli':(settings.root/'models/nli/config.json').exists()},'dense_index':index_metadata(settings),
                         'jobs':[json.loads(r[0]) for r in store.db.execute('SELECT payload FROM jobs')],
-                        'limitations':['Provisional metadata screening; not independently validated','Pilot/development collection, not comprehensive nutrition coverage','Model stance and claim synthesis are not yet validated']})
+                        'limitations':['Metadata screening uses provisional topic rules','Search covers the locally indexed nutrition literature','The benchmark measures paper relevance. Study interpretation requires reading the cited evidence']})
                 if path.startswith('/api/summaries/'):
                     return self.send(summary_manager.status(path.removeprefix('/api/summaries/')))
                 if path=='/api/search':
@@ -96,13 +96,24 @@ def serve(settings,port=8765):
                         audit['matches_current_corpus']=audit['corpus']==store.fingerprint()
                         audit['retrieval_variant']='paper-level title/abstract embeddings'
                         audit['matches_current_dense_index']=bool(active and active.get('level')=='paper' and audit['matches_current_corpus'])
+                    benchmark = None
+                    folder = WEB.parent / 'evaluation/pdf-easy-medium-10-2026-11-15'
+                    if (folder / 'metrics.json').is_file() and (folder / 'protocol.json').is_file():
+                        metrics = json.loads((folder / 'metrics.json').read_text(encoding='utf-8'))
+                        protocol = json.loads((folder / 'protocol.json').read_text(encoding='utf-8'))
+                        reranked = metrics['aggregate']['hybrid_rerank']
+                        benchmark = {
+                            'date': protocol['date'], 'searchable_papers': protocol['counts']['searchable_papers'],
+                            'queries': metrics['queries'], 'judged_pairs': metrics['judged_pairs'],
+                            'precision_at_10': reranked['p10'], 'ndcg_at_10': reranked['ndcg10'],
+                        }
                     summaries=[]
                     for summary in sorted((settings.root/'experiments').glob('*/summary.json')):
                         value=json.loads(summary.read_text(encoding='utf-8'));value['name']=summary.parent.name;summaries.append(value)
                     reviewed=[]
                     for metrics in sorted((settings.root/'experiments').glob('*/metrics-human.json')):
                         value=json.loads(metrics.read_text(encoding='utf-8'));value['name']=metrics.parent.name;reviewed.append(value)
-                    return self.send({'protocol':'evaluation/PROTOCOL.md','human_judgments':sum(v['judged_pairs'] for v in reviewed),'metrics_status':'Reviewed snapshot reports available; inspect coverage and qualifications' if reviewed else 'Not available without reviewed qrels','experiments':summaries,'reviewed_reports':reviewed,'ai_audit':audit})
+                    return self.send({'protocol':'evaluation/PROTOCOL.md','benchmark':benchmark,'human_judgments':sum(v['judged_pairs'] for v in reviewed),'metrics_status':'Reviewed retrieval results available' if benchmark or reviewed else 'No reviewed results loaded','experiments':summaries,'reviewed_reports':reviewed,'ai_audit':audit})
                 assets={'/':'index.html','/app.js':'app.js','/styles.css':'styles.css','/favicon.svg':'favicon.svg'}
                 if path in assets:
                     f=WEB/assets[path];return self.send(f.read_bytes(),kind=mimetypes.guess_type(f.name)[0] or 'text/plain')

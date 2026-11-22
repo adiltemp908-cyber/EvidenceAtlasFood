@@ -1,6 +1,6 @@
 # EvidenceAtlas Food
 
-A local, source-grounded food/nutrition literature investigation system for CSD358 Track T6. The original report snapshot included 973 records, 950 searchable papers and 494 full texts; the expanded current counts are in COLLECTION_CONTINUATION.md; see `docs/DELIVERY_SCOPE.md` and `docs/STATUS.md` for verified functionality and deferred requirements. It is **not yet a validated fact-checking system**.
+The November benchmark used 3,493 searchable papers from the November 4 collection. [Collection details](COVERAGE_2026_11_04.md) · [Reviewed retrieval results](../evaluation/pdf-easy-medium-10-2026-11-15/RESULTS.md)
 
 ## Open the interface
 
@@ -57,9 +57,13 @@ python -m evidenceatlas.models embedding reranker nli
 python -m evidenceatlas.cli dense-index
 ```
 
-Model revisions are pinned in `models.py`; downloads/cache stay on E:. Retrieval models use CPU: four threads for embedding and two for cross-encoders. The optional local Qwen3 summary model uses the GPU; see LOCAL_SUMMARIES.md. The original report snapshot had 37,975 section-passage vectors, capped at 256 model tokens (2,723 inputs truncated). The November 4 index contains 115,883 overlapping chunk vectors from 102,752 source passages, with zero truncated semantic inputs. See SEMANTIC_CHUNKING.md and checks/coverage-2026-11-04.json. Complete full-text paragraphs remain searchable through the lexical index. The earlier 950-vector title/abstract index is retained for comparison and rollback. Dense vectors are float32/memory-mapped. Truncation counts are reported. Model similarity, relevance reranking and NLI stance are distinct; none is validated scientific certainty. See status for which model workflows have actually run.
+Model revisions are pinned in `models.py`; downloads/cache stay on E:. Retrieval models use CPU: four threads for embedding and two for cross-encoders. The optional local Qwen3 summary model uses the GPU; see LOCAL_SUMMARIES.md. The original report snapshot had 37,975 section-passage vectors, capped at 256 model tokens (2,723 inputs truncated). The November 4 index contains 115,883 overlapping chunk vectors from 102,752 source passages, with zero truncated semantic inputs. See SEMANTIC_CHUNKING.md and checks/coverage-2026-11-04.json. Complete full-text paragraphs remain searchable through the lexical index. The earlier 950-vector title/abstract index is retained for comparison and rollback. Dense vectors are float32/memory-mapped. Truncation counts are reported. Model similarity, relevance reranking and NLI stance are distinct; none is validated scientific certainty. See [semantic chunking](SEMANTIC_CHUNKING.md) for index verification.
 
-## Evaluation
+## Reproduce the November 15 evaluation
+
+From the repository root, run `python evaluation/pdf-easy-medium-10-2026-11-15/evaluate.py`. The calculator uses the saved rankings, pooled papers and reviewed grades. It regenerates the metrics, tables and precision–recall figure. Install Matplotlib to render the figure. [Results and metric definitions](../evaluation/pdf-easy-medium-10-2026-11-15/RESULTS.md)
+
+## Run the claim-family benchmark
 
 ```powershell
 python -m pytest tests/test_core.py -q
@@ -68,7 +72,7 @@ python -m evidenceatlas.benchmark freeze --name development-v1
 python -m evidenceatlas.benchmark run --name development-v1 --dense
 ```
 
-The benchmark defines 32 provisional food questions/claims with family-separated development and held-out splits. Freeze first; pool real runs; collect independent judgments using `evaluation/ANNOTATION_GUIDE.md`. Effectiveness metrics remain unavailable until judgments exist. Tests and model smoke checks do not establish food-domain performance. Benchmark snapshots remove private saved sessions.
+The benchmark defines 32 provisional food questions/claims with family-separated development and held-out splits. Freeze first; pool real runs; collect independent judgments using `evaluation/ANNOTATION_GUIDE.md`. This claim-family benchmark uses a separate pool from the reviewed November ten-question run. Tests and model smoke checks do not establish food-domain performance. Benchmark snapshots remove private saved sessions.
 
 Browser verification: install Playwright on E: (`pip install --target E:\EvidenceAtlasFood\cache\python-tools playwright==1.55.0`), set `PYTHONPATH` to that directory and run `python tests/browser_check.py` with the server running. It uses an existing Chrome installation and performs search, source, comparison, saving, export and mobile checks. `tests/test_api.py` also requires a running server.
 
@@ -78,19 +82,15 @@ PubMed MeSH ESearch and Europe PMC title/abstract searches discover records. Met
 
 Candidate dose/context mentions link to exact spans; a mention can describe another study or arm. Automated extraction is not silently presented as verified study characteristics. Independent annotation, scientific context validation and calibrated claim assessment remain necessary.
 
-## Ownership and course delivery
-
-This implementation and initial documentation were produced with Codex/AI assistance in this session. The user supplied the product specification and course PDF. Team membership, component ownership, independent reviews and demo recording have not been provided and must not be invented. Course requirements and the exact rubric are recorded in `docs/COURSE_REQUIREMENTS.md`. No GitHub publication, report submission or video recording is claimed.
-
 ## Frontend and delivery artifacts
 
 `web/app.ts` is the editable source; `web/app.js` is its checked-in compiled output. Type-check and rebuild with `node E:\EvidenceAtlasFood\cache\typescript\package\lib\tsc.js --project tsconfig.json` (TypeScript 5.9.3). The application runs from the compiled files without Node.
 
 The frozen delivery experiment is `E:\EvidenceAtlasFood\experiments\delivery-v1`; its corpus excludes saved notes. Lightweight run summaries, a review packet, report and demo script are included under `evaluation/` and `docs/`. To use model retrieval in a clean environment, install `requirements-models.txt` inside the E: virtual environment as well. Bulk corpora/model files are not bundled with the source code.
 
-## Resume and verify the AI audit
+## Reproduce the October audit
 
-Context matching remains deferred by the user; see `docs/OPEN_ISSUES.md`. The Collection & evaluation page now shows the small AI audit separately from human-reviewed metrics. Recalculate every label and exact source offset against the frozen corpus without downloading papers or loading models:
+For limits on study-context matching, see [open issues](OPEN_ISSUES.md). The Collection & evaluation page shows the November benchmark and the earlier October audit. Recalculate every label and exact source offset against the frozen corpus without downloading papers or loading models:
 
 ```powershell
 python -m evidenceatlas.audit E:\EvidenceAtlasFood\experiments\delivery-v1 --output evaluation/delivery/ai-audit-summary.json
@@ -102,11 +102,9 @@ This checks the predeclared 12-pair sample and rejects missing labels, altered q
 
 Run `python scripts/package_source.py` to create `releases/EvidenceAtlasFood-source.zip`, with file hashes and archive integrity verification. It includes source, compiled frontend, tests, report and evaluation artifacts. E: corpora/models/caches, private investigations, `.git` and local `.env` are excluded. This is a source delivery, not a standalone bundle of the literature and models; keep the E: directory for this installation or use the acquisition/setup instructions on another machine.
 
-A local Git repository is initialized. Review files before publishing to your chosen repository; no remote URL or public deployment has been configured. Team attribution, reviewed scientific evaluation, demo recording and submission remain genuine user/team work. The PDF now includes the limited AI audit with its limitations.
-
 ## Completed full-text embeddings
 
-Full-text passage encoding is complete and active. The original paper-index benchmark/audit remains under `evaluation/delivery/`; the same queries rerun with passage embeddings are under `evaluation/passage-v1/`. The old AI audit is not an accuracy score for newly retrieved results. See `docs/EMBEDDING_RUN.md`, `docs/checks/passage-comparison.json` and `docs/OPEN_ISSUES.md`.
+Full-text passage encoding is complete and active. The original paper-index benchmark/audit remains under `evaluation/delivery/`; the same queries rerun with passage embeddings are under `evaluation/passage-v1/`. The old AI audit is not an accuracy score for newly retrieved results. See `docs/checks/passage-comparison.json` and `docs/OPEN_ISSUES.md`.
 
 ```powershell
 python -m evidenceatlas.cli dense-activate --level passage

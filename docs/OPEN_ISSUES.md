@@ -1,20 +1,13 @@
-# Open issues and continuation order
+# Known limitations
 
-The user authorized continuing independent work while deferring the newly identified context-matching issue. The reduced resource scope remains in force. These issues are unresolved, not silently waived.
+## Retrieval evaluation
 
-## Context matching - partially addressed, validation outstanding
-The November 4 summary pipeline adds direct-applicability selection and verification with abstention, but these are model-assessed checks, not validated study-context matching. The historical 12-pair AI audit found retrieved papers with different populations, timing, exposures and outcomes. Relevance scores are not applicability or certainty. Current behavior keeps compatibility unknown, extraction marked as candidate mentions, and claim-level assessment pending. Continue implementation/evaluation tooling; do not promote this build as an authoritative automatic food fact checker.
+On November 15, all 310 distinct question–paper pairs pooled from six methods were reviewed. Hybrid + reranker averaged 74% Precision@10 and 0.871 nDCG@10. The ten questions cover a small set of topics. Pool-relative recall measures coverage of relevant papers returned by the participating methods. [Results, grades and scope](../evaluation/pdf-easy-medium-10-2026-11-15/RESULTS.md)
 
-When resumed: freeze the current baseline, define population/exposure/timing/comparator constraints, and compare changes against identical queries and evidence budgets. Separate explicit mismatch from missing context, retain counterevidence, and validate study-arm attribution before using it for exclusion. Do not simply remove all papers that lack a context term. Use new reviewed data for evaluation; the 12 audited pairs are now development examples, not an independent final test.
+## Study context and summaries
 
-## Scientific evaluation - external review needed
-AI labels can support provisional diagnostics. They cannot establish independent domain validity. Obtain real relevance/stance/context judgments and adjudication; then compute supported metrics. Held-out claim families remain unused for tuning. Screening validation, citation support, overlapping cohorts and comprehension studies remain outstanding.
+A relevant passage can describe another population, intervention or study arm. Extracted doses and timing remain candidate mentions until the reader verifies their attribution. The summary model checks quotations and may abstain when it finds no directly applicable evidence. The retrieval scores do not measure summary accuracy. [Summary behavior and checks](LOCAL_SUMMARIES.md)
 
-## Resource-intensive scope - deferred
-The user subsequently authorized further acquisition: the October 13 collection expansion and incremental embeddings are complete; see COLLECTION_CONTINUATION.md. Further batches remain possible. Training/tuning, exhaustive ablations, complete refresh and public deployment remain deferred. The user subsequently authorized resuming full-text dense encoding; it has completed from the retained checkpoint, with 115,883 chunk vectors active as of November 4. The original 37,975-vector snapshot remains historical. Context matching remains a separate open issue.
+## Collection coverage
 
-## Submission - real user/team inputs
-The published repository identifies Adil Muhammed (2410110018) and links an existing demo. The November 5 update preserves both. Review the updated report and confirm that the linked recording meets the required 5-8 minute live-demo format and current feature scope before course submission. The recording content and submission status were not verified in this update.
-
-## Resumed work completed
-The audit now has a repeatable validation command; application evaluation separates AI diagnostics from human judgments; the report includes the actual limited audit; source packaging excludes models, corpus, private sessions and caches.
+Open-access availability determines whether the reader sees a full text or an abstract. Shared cohorts, primary studies included in reviews, and incomplete correction or retraction metadata can affect interpretation. [Collection and screening](COVERAGE_2026_11_04.md)

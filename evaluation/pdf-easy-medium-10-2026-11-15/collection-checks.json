@@ -1,0 +1,18 @@
+{
+  "runs": 60,
+  "ranked_positions": 600,
+  "pooled_query_paper_pairs": 310,
+  "pool_per_query": {
+    "Q01": 28,
+    "Q02": 28,
+    "Q03": 31,
+    "Q04": 37,
+    "Q05": 26,
+    "Q06": 34,
+    "Q07": 34,
+    "Q08": 25,
+    "Q09": 37,
+    "Q10": 30
+  },
+  "snapshot_unchanged": true
+}

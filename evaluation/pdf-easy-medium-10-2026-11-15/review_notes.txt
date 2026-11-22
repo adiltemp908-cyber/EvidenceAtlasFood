@@ -1,0 +1,320 @@
+Q01
+1|2|Mixed adolescent caffeine users report sleepiness and early waking; coffee-specific effect is not isolated.
+2|0|Cardiovascular mortality study does not examine sleep outcomes.
+3|3|Human dietary caffeine, including coffee/tea, is directly examined against sleep disruption.
+4|1|Sleep and beverage intake predict alcohol use; this is not a direct estimate of coffee's effect on sleep.
+5|1|Sleep problems are adjustment variables for suicidal ideation, not the target coffee-sleep outcome.
+6|2|Coffee is tested against daytime sleepiness and OSA risk in diabetes; relevant but a limited clinical sleep context.
+7|3|Large human cohort directly relates coffee consumption to objective sleep duration.
+8|3|Coffee intervention directly measures sleep duration and subjective sleep quality, including null findings.
+9|2|Broad coffee review includes sleep disturbance as an effect, but sleep-specific evidence is limited in the abstract.
+10|3|Human caffeine consumption patterns are directly compared with sleep quality and duration.
+11|2|Sleep-onset timing mediates coffee-semen associations; direct but secondary sleep relationship.
+12|3|Human genetic analysis directly examines coffee intake and insomnia/sleep duration, including null results.
+13|2|Mixed animal and human review includes coffee-related insomnia, but applicability varies across the synthesis.
+14|3|Human habitual caffeine consumption is directly related to objective sleep duration and architecture.
+15|3|Adult coffee intake is directly tested against sleep quality; a null association remains relevant.
+16|3|Human coffee intake and sleep quality are directly examined, with no significant coffee-sleep link reported.
+17|2|Coffee use disorder correlates with insomnia, but disorder severity is not the same exposure as ordinary intake.
+18|3|Higher coffee intake is directly compared with sleep disturbance and insomnia in adults.
+19|1|Energy drinks and sleep are analyzed; coffee is an accompanying dietary behavior rather than the tested exposure.
+20|3|Large human study directly compares habitual coffee intake with sleep habits and sleepiness.
+21|1|Main outcome is academic performance; sleep disturbance is contextual rather than a direct coffee-sleep estimate.
+22|2|Human narrative review discusses caffeine-related sleep disruption within depression; useful but condition-specific.
+23|2|Retrieved own-study bivariate analysis relates caffeine to sleep efficiency and wakefulness; unadjusted association limits applicability.
+24|3|Coffee timing directly predicts human sleep duration, bedtime and awakenings.
+25|1|Coffee and sleep are separate predictors of academic performance; target relationship is not established.
+26|0|Coffee-body-composition study has no sleep outcome.
+27|1|Abstract reports coffee-anxiety findings, while sleep findings concern other lifestyle factors.
+28|1|Mouse coffee intervention addresses consequences of imposed sleep deprivation, not human sleep effects.
+Q02
+1|3|Review directly synthesizes clinical and epidemiological evidence on sodium reduction and blood pressure.
+2|2|Review includes human salt-reduction programs and blood-pressure reductions despite its broader atherosclerosis focus.
+3|3|Randomized-trial meta-analysis directly evaluates salt changes and blood pressure.
+4|1|Describes CKD dietary patterns without evaluating a salt-reduction blood-pressure effect.
+5|2|Human salt intake differs by hypertension status; relevant observational association but no reduction intervention.
+6|3|Dose-response meta-analysis quantifies sodium reduction and systolic/diastolic blood pressure.
+7|1|Assesses knowledge and salt-consumption practices rather than blood-pressure response.
+8|2|Human salt consumption is associated with ambulatory blood pressure; reduction itself is not tested.
+9|1|Exposure is salt taste sensitivity rather than measured dietary salt reduction.
+10|1|Population salt-intake surveillance without a target blood-pressure outcome analysis.
+11|3|Review directly evaluates sodium reduction and salt substitution effects on blood pressure.
+12|1|Models cardiovascular events and cost savings; blood-pressure effects are assumed background inputs.
+13|3|Review explicitly summarizes meta-analyses linking sodium reduction to lower blood pressure.
+14|1|Rat salt-sensitive hypertension does not directly establish human dietary effects.
+15|3|Human salt-reduction campaign reports measured salt reduction and blood-pressure change.
+16|2|Mechanistic review includes human salt-pressure evidence, but intervention effects remain uncertain.
+17|1|Health beliefs and salt-reduction behavior are studied rather than blood-pressure outcomes.
+18|3|Evidence review directly addresses sodium reduction and blood-pressure response.
+19|1|Renin-deficient rat experiment is indirect evidence for the human question.
+20|1|Salt and blood pressure are risk factors for stroke/dementia, not the target exposure-outcome pair.
+21|3|Longitudinal human data directly relate salt reduction to systolic blood-pressure changes.
+22|1|Validates a salt-intake questionnaire rather than testing its effect on blood pressure.
+23|3|Retrieved review passage directly summarizes a human crossover sodium-reduction trial and blood-pressure reductions.
+24|2|Own-study results show blood-pressure differences by salt restriction; treatment differences confound the association.
+25|2|Contains human salt-loading/depletion and blood-pressure observations within a mixed mechanistic study.
+26|3|Randomized-trial meta-analysis directly evaluates sodium reduction and home blood pressure.
+27|2|Retrieved review subsection directly addresses sodium reduction and blood-pressure control within CKD.
+28|3|Review explicitly describes human trials of salt reduction and lower blood pressure in CKD.
+Q03
+1|3|Clinical nutrition review directly discusses fiber and constipation/stool consistency.
+2|3|Direct review of fiber in constipation; negative conclusions remain relevant.
+3|3|Reviews constipation treatment evidence, including psyllium and other fiber supplements.
+4|3|Randomized pediatric trial directly compares a fiber mixture with lactulose for constipation.
+5|1|Primarily probiotics; fiber statement concerns abdominal pain/IBS rather than fiber-specific constipation outcomes.
+6|2|Comparative constipation report includes psyllium, although the abstract does not report its specific results.
+7|3|Randomized human trial directly compares fiber regimens for constipation symptoms.
+8|3|Reviews effective and adverse effects of fiber in functional bowel disorders including constipation.
+9|3|Review directly distinguishes laxative effects of fermentable and non-fermented fibers.
+10|3|Clinical review directly describes fiber types that soften/bulk stool and produce laxative effects.
+11|1|Kefir intervention is not an increase in dietary fiber.
+12|3|Human population study directly relates dietary fiber intake to constipation.
+13|3|Human fiber supplementation trial directly assesses functional constipation symptoms.
+14|3|Clinical review directly evaluates psyllium for constipation and bowel regulation.
+15|3|Review directly addresses fiber-rich diets and constipation mechanisms/effects.
+16|2|Broad fiber review includes bowel habits and symptom response, with limited constipation-specific detail.
+17|2|Broad psyllium review includes bowel regularity; direct but less specific outcome evidence.
+18|2|Pediatric prevention review discusses fiber and limitations of evidence, rather than treatment efficacy.
+19|2|Retrieved systematic-review discussion specifically reports a dietary-fiber/constipation association; broader dietary exposures limit specificity.
+20|1|Pine-pollen fiber study is in mice, not human constipation.
+21|2|Cereal-fiber review directly discusses stool bulking and bowel function within broader outcomes.
+22|1|Proposes fiber alongside GLP-1 therapy; target constipation benefit remains a suggested strategy.
+23|3|Pediatric review directly reports fiber-associated improvements in stool frequency and consistency.
+24|1|Trial protocol has no completed results establishing the dietary intervention effect.
+25|2|Review identifies clinical support for psyllium stool normalization within a broader mechanistic scope.
+26|3|Human fiber-rich snack intervention reports improved stool frequency and form.
+27|3|Human fiber administration and constipation are directly studied; null findings remain relevant.
+28|2|Retrieved review subsection describes fiber-related stool water/bulk and bowel regularity in CKD; clinically restricted context.
+29|1|Rat experiment tests a capsule in low-fiber constipation, not increasing fiber in people.
+30|2|Retrieved clinical review provides fiber-increase guidance for GLP-1-related constipation; treatment-specific rather than general efficacy evidence.
+31|1|Anorexia refeeding review discusses fiber tolerability but not a demonstrated constipation response.
+Q04
+1|3|Review directly addresses milk/dairy consumption and osteoporosis or fracture prevention.
+2|0|Soy/dairy milk comparison measures blood lipids, not bone health.
+3|2|Direct dairy-bone growth evidence, but milk is not isolated from other dairy products.
+4|3|Review directly questions milk/dairy fracture benefits; unfavorable evidence remains relevant.
+5|0|Fermented milk intervention concerns constipation, not bone outcomes.
+6|0|Egg consumption and cardiovascular outcomes are unrelated to milk and bone health.
+7|0|Almond milk allergy treatment does not assess milk consumption and bone strength.
+8|1|Milk tolerance and calcium intake are discussed without bone outcome evidence.
+9|1|Nutritional composition of milk alternatives is not evidence of bone outcomes.
+10|2|Critical review directly assesses dairy and bone/fracture outcomes across mixed dairy exposures.
+11|0|Sugary beverage policy acceptability does not address milk and bone health.
+12|1|Bone mineralization experiment is in rats rather than people.
+13|2|Dairy-matrix review includes bone outcomes, especially fermented dairy rather than milk alone.
+14|1|Osteoporosis knowledge/practices study reports calcium supplements, not milk-specific bone effects.
+15|3|Human cohort directly evaluates milk intake and osteoporotic fractures.
+16|0|Lactating dairy cow calcium metabolism is not human milk-consumption evidence.
+17|3|Review directly considers milk varieties and osteoporosis/bone-loss outcomes.
+18|0|Breastfeeding water balance does not evaluate bone health.
+19|1|Collagen supplements are a different exposure from drinking milk.
+20|1|CKD protein/nutrition review lacks milk-specific bone evidence in the abstract.
+21|1|Rat dairy transcriptomics is indirect and does not establish human bone strength.
+22|0|Breakfast cereal and chronic-disease review does not address milk-bone outcomes.
+23|1|Total dietary protein and athlete bone properties do not isolate milk intake.
+24|3|Review explicitly addresses milk consumption and osteoporosis risk in Asians.
+25|0|Oral rehydration preparation and childhood diarrhea are off-topic.
+26|2|Trial compares high-calcium milk with regular milk; fortification benefit is not ordinary milk versus no milk.
+27|0|Tuna-bone collagen and fatty liver study is unrelated to drinking milk and skeletal outcomes.
+28|3|Umbrella review directly includes milk intake, bone density and fractures.
+29|1|Caffeine-bone review studies a different exposure.
+30|0|Coffee addiction scale and insomnia/anxiety are off-topic.
+31|1|Milk-bone trial protocol has no completed results.
+32|1|Plant-milk composition and sustainability review is background without bone outcomes.
+33|0|Energy drinks, cognition and sleep do not address milk and bones.
+34|3|Human pediatric review directly assesses milk intake and bone accrual, including uncertainty.
+35|2|Osteoporosis guideline includes dairy recommendations but not a milk-isolated effect.
+36|3|Human milk intervention directly measures bone-status indices after exercise.
+37|1|Milk-derived components are predominantly cell/animal mechanisms with human validation outstanding.
+Q05
+1|3|Vegetable boiling experiment explicitly measures vitamin C losses.
+2|1|Relevant-sounding title only; no abstract or outcome text is available to substantiate the effect.
+3|1|Cooking-related vitamin retention concerns B1/B2 rather than vitamin C.
+4|2|Measures vegetable vitamin C losses during handling/preparation, but boiling is not isolated.
+5|1|Vitamin C is an assay comparator, not measured vitamin C retention in boiled vegetables.
+6|1|Measures human blood vitamin C after cookware intervention, not vitamin C content after boiling.
+7|1|Boiling effects concern glucosinolates, not vitamin C.
+8|0|Plant-food antioxidant biomarkers and disease risk do not address cooking loss.
+9|1|Cooking study measures vitamin K rather than vitamin C.
+10|1|Boiled broccoli bioavailability concerns carotenoids, isothiocyanates and vitamin K, not vitamin C.
+11|1|Grain cooking and fiber fermentation are different food and nutrient outcomes.
+12|1|Boiling-related vitamin C loss is in fruit juice rather than vegetables.
+13|2|Cooking methods include boiling and vitamin C measurement, but reported loss is after simulated digestion.
+14|3|Review explicitly covers boiling and retention/degradation of ascorbic acid in vegetables.
+15|1|Tomato vitamin C retention is during storage treatment rather than boiling.
+16|0|Cancer-preventive diet acceptability does not address vitamin retention during cooking.
+17|3|Pumpkin cooking experiment directly reports vitamin C changes after boiling, including increases.
+18|1|Cherry vitamin C storage stability is a different food/process.
+19|1|Lettuce vitamin C is measured during cold storage rather than boiling.
+20|1|Artichoke ascorbic acid retention concerns coatings and cold storage, not boiling.
+21|0|Osteoporosis prevention guideline is unrelated to boiling and vitamin C.
+22|1|Vegetable/legume CKD diet review does not establish boiling-related vitamin C changes.
+23|1|Boiling outcomes concern phytochemicals and antinutrients; examined text provides no vitamin C result.
+24|0|Dietary patterns and iron metabolism do not address vegetable vitamin C retention.
+25|1|Review and retrieved evidence distinguish boiling phenolic/fiber findings from unsupported vitamin C estimates.
+26|2|Micronutrient cooking review is directly useful but available abstract lacks boiling-specific vitamin C detail.
+Q06
+1|3|Human crossover trial includes an oats arm with measured LDL reduction.
+2|1|Oat/barley study measures glucose and hormone responses, not LDL.
+3|3|Systematic review directly pools oatmeal effects on LDL cholesterol.
+4|1|Intervention is barley beta-glucan; oats are background rather than the tested exposure.
+5|2|Clinical soluble-fiber review quantifies beta-glucan/LDL effects but does not isolate oat source in available text.
+6|1|Mixed high-fiber dietary intervention does not isolate oats or the target LDL effect.
+7|1|Oat lipid experiment is in mice rather than people.
+8|1|Examined cereal review passages do not isolate an oat-LDL effect; oat passage concerns other outcomes.
+9|3|Human whole-grain oat granola intervention directly measures LDL reduction.
+10|3|Human egg-versus-oatmeal crossover trial reports LDL differences by breakfast.
+11|1|Psyllium/PGX supplements are not oat exposure.
+12|3|Retrieved review passage directly contrasts processed and unprocessed oat bran effects on human LDL.
+13|1|Rat chia-oil/enriched-pork lipid study has the wrong exposure and species.
+14|1|General diet/soluble-fiber LDL review does not isolate oat effects in examined text.
+15|3|Retrieved review passage describes a human oat-fiber trial and LDL reduction.
+16|1|Dietary lipid/cholesterol intake is a different exposure from oats.
+17|1|Broad LDL dietary guidance lacks oat-specific evidence in examined text.
+18|2|Retrieved review discussion explicitly summarizes oat beta-glucan and LDL reduction, outside the main pooled endpoints.
+19|2|Oat review includes cholesterol/lipid effects but does not specify LDL in its abstract.
+20|1|Oat polar-lipid intervention concerns glucose, triglycerides and hormones rather than LDL.
+21|2|Review synthesizes oats and blood cholesterol but abstract does not distinguish LDL.
+22|1|Studies determinants of oat consumption, not its LDL effect.
+23|3|Retrieved review passage reports oat and oat-beta-glucan trial meta-analyses with LDL reduction.
+24|3|Randomized oats-versus-rice trial directly reports LDL change.
+25|1|Egg/saturated-fat trial studies a different exposure.
+26|1|Oat-containing mechanistic substudy reports gene expression, not an oat-specific LDL change.
+27|3|Retrieved systematic-review passage explicitly summarizes oat cereal and LDL-lowering evidence.
+28|0|Egg intake and electrocardiographic ischemia are not oat/LDL evidence.
+29|1|Oat/probiotic lipid and weight findings are from a mouse experiment, not human LDL evidence.
+30|1|Broad obesity nutrition guidance does not establish an oat-specific LDL result in examined text.
+31|3|Retrieved human oat-trial results directly report significant LDL reduction.
+32|1|Oat gluten-free labeling regulation does not assess LDL outcomes.
+33|3|Human randomized oat feeding trial directly reports LDL cholesterol and particle outcomes.
+34|1|Meal timing rather than oats is evaluated against lipid outcomes.
+Q07
+1|3|Human randomized walnut trial directly measures body weight and composition.
+2|1|Breakfast cereal and weight gain concern a different food exposure.
+3|1|Nut review focuses on blood lipids rather than weight outcomes in examined abstract.
+4|1|Fruit/vegetable delivery intervention addresses weight but not nuts.
+5|3|Human almond-snack trial directly reports absence of weight gain and energy compensation.
+6|1|Nocturnal eating disorders concern weight gain without nut exposure.
+7|3|Adult walnut trial reports no significant anthropometric changes as secondary outcomes.
+8|1|Antipsychotic treatment and sweetener satiety are different exposures.
+9|1|Ready-to-eat cereal review does not address nut consumption and weight.
+10|1|Walnut-body-weight findings are from mice rather than adults.
+11|3|Adult peanut/almond trial reports BMI effects within a low-carbohydrate diet.
+12|1|Fruit juice review concerns a different food exposure.
+13|1|Dairy and weight gain concern a different exposure.
+14|1|Dietary-pattern obesity study does not isolate nut intake.
+15|1|Nut mortality/cardiovascular evidence does not evaluate weight gain in the abstract.
+16|1|Food-processing effects on weight are not nut-specific evidence.
+17|1|Walnut CKD trial abstract reports biochemical safety and cardiovascular markers, not weight outcomes.
+18|1|Cereal-body-weight review concerns a different exposure.
+19|1|Bread/whole-grain weight change concerns a different exposure.
+20|1|Nut review addresses gut microbiome/function rather than body weight.
+21|1|Sweetener review addresses different exposures.
+22|1|Broad cancer/weight prevention recommendations do not isolate nut-weight effects.
+23|3|Adult almond randomized trial explicitly reports no change in body weight.
+24|1|Mixed-nut trial secondary analysis reports inflammatory outcomes, not weight change.
+25|1|Time-restricted eating intervention lacks nut-specific exposure.
+26|1|Nut cohort studies evaluate dementia rather than body weight.
+27|1|Time-restricted eating and weight maintenance do not evaluate nut intake.
+28|3|Review directly summarizes human nut consumption and obesity evidence.
+29|1|Weight-loss dietary patterns and emotional distress do not isolate nuts.
+30|2|Retrieved review directly compares whole nuts and nut oils for dietary energy compensation, an allowed secondary outcome.
+31|1|Sorghum knowledge and prediabetes risk are not nut-weight evidence.
+32|1|Chia/quinoa rat experiment has different food exposure and species.
+33|1|Adolescent plant-based patterns do not isolate nuts or match the adult population.
+34|1|Anorexia refeeding review does not assess nut-induced adult weight gain.
+Q08
+1|3|Human lactose-malabsorption crossover study directly compares yogurt and milk digestion/tolerance.
+2|3|Review explicitly reports yogurt improving lactose digestion in lactose-intolerant people.
+3|1|Lactose biotechnology and fermentation are background, not human yogurt-versus-milk tolerance evidence.
+4|2|Human review identifies yogurt as a tolerance strategy but comparison details are limited.
+5|2|Yogurt plus probiotic capsules reduces lactose symptoms; yogurt effect and milk comparator are not isolated.
+6|3|Human lactose-intolerant children receive milk/yogurt with directly compared intolerance incidence.
+7|2|Yogurt plus bifidobacteria alleviates lactose symptoms, but co-intervention and comparator limit attribution.
+8|2|Review directly discusses yogurt for managing lactose intolerance, without a quantified milk comparison.
+9|2|Review discusses yogurt as a lower-lactose alternative within human intolerance management.
+10|3|Review directly addresses yogurt tolerance and dietary management in lactose malabsorption.
+11|2|Fermented-food review reports improved lactose malabsorption but does not isolate the milk comparator.
+12|1|Milk-substitute composition/allergy review is not yogurt digestion in lactose-intolerant people.
+13|1|Rice-based yogurt alternative in vitro digestion does not match the human lactose question.
+14|1|Dairy consumption survey does not compare digestion or tolerance outcomes.
+15|2|Retrieved review specifically discusses yogurt as a tolerated alternative to milk in lactose-intolerant Asian populations.
+16|1|Tiger-nut yogurt composition is not a human lactose-tolerance study.
+17|1|Yogurt review measures bone outcomes, not lactose digestion.
+18|1|Healthy exercising participants and nonspecific GI symptoms do not establish lactose-intolerant digestion.
+19|1|Lactose-intolerance associations with calcium and bone density do not compare yogurt and milk digestion.
+20|1|Milk/lactase review focuses on colorectal cancer rather than yogurt tolerance.
+21|1|Low-lactose processed milk is the intervention, not yogurt.
+22|2|Greek-yogurt review discusses improved lactose tolerance but acknowledges product-specific evidence gaps.
+23|1|Protein digestion is a different mechanism from lactose digestion.
+24|1|Dairy consumption patterns and avoidance reasons do not measure comparative tolerance.
+25|1|General lactose physiology/dairy tolerance review lacks yogurt-specific evidence in examined text.
+Q09
+1|3|Human prospective cohort directly evaluates sugary beverage intake and type 2 diabetes incidence.
+2|1|Outcome is gestational diabetes rather than type 2 diabetes.
+3|1|Soy-yogurt second-meal glycemia is a different exposure and outcome.
+4|1|Beverage consumption/water survey does not examine diabetes risk.
+5|1|Sugar preload study measures appetite/snacking rather than diabetes.
+6|1|Sugary kefir fermentation review does not evaluate human type 2 diabetes risk.
+7|1|SSB-free policy acceptability does not measure diabetes risk.
+8|1|Sugary-beverage cohort examines mortality rather than diabetes incidence.
+9|1|Whole grains/fiber rather than sugary drinks are the exposure.
+10|0|Title-only energy-drink mental-health record does not address type 2 diabetes.
+11|1|Diabetes nutrition formulas and satiety hormones do not assess sugary-drink diabetes risk.
+12|1|Nonnutritive sweeteners are a different exposure from sugar-sweetened beverages.
+13|1|Artificial sweeteners and gestational diabetes mismatch both exposure and target diabetes type.
+14|2|Juice-type meta-analysis directly measures diabetes incidence; non-100% juice is an imperfect SSB proxy.
+15|2|Human SSB comparator measures acute glycemia in existing diabetes rather than disease incidence.
+16|2|Human juice-diabetes association is relevant but added-sugar beverage status is unspecified.
+17|1|Artificial-sweetener glycemic management is a different exposure and outcome.
+18|1|Food-voucher trial changes diet in existing diabetes rather than testing SSB-related risk.
+19|1|Oat/barley beta-glucan glucose response concerns a different exposure.
+20|1|Social support predicts beverage behavior in existing diabetes; diabetes risk is not the measured effect.
+21|1|Ketogenic-fat trial protocol has a different exposure and no completed outcomes.
+22|1|Nonnutritive sweetener glycemic review does not establish SSB-diabetes incidence.
+23|1|Whole-grain processing rather than sugary drinks is the exposure.
+24|2|HFCS review includes SSBs and diabetes mechanisms but mixes food sources and study types.
+25|1|Transplant nutrition survey does not isolate sugary-drink diabetes risk.
+26|1|Cell-model artificial-sweetener/juice experiments do not establish human SSB-diabetes risk.
+27|1|Aspartame safety review is a different sweetener exposure.
+28|1|Carbohydrate-quality study measures cardiovascular disease rather than SSB-related diabetes.
+29|2|Models diabetes cases prevented by SSB reduction; projections are not direct observed incidence evidence.
+30|1|Synthetic sweeteners are a different exposure.
+31|3|Human prospective study directly tests SSB intake and type 2 diabetes, including null/subgroup findings.
+32|1|Hydration/water-security policy review does not directly evaluate the target diabetes association.
+33|1|Energy-drink diabetes-related biomarkers are measured in mice rather than humans.
+34|2|Policy review explicitly links SSBs and diabetes, but reported intervention effects are model projections.
+35|0|Whey protein and type 1 diabetes mismatch both exposure and disease type.
+36|1|Magnesium supplementation is a different exposure in diabetes management.
+37|1|High-sugar foods are evaluated for breast cancer rather than diabetes.
+Q10
+1|2|Protein timing during resistance training affects hypertrophy; no extra-protein versus no-extra comparison.
+2|2|Supplement timing includes protein/carbohydrate/creatine, limiting attribution to extra protein alone.
+3|3|Human resistance-training study directly examines protein intake and muscle gain, including null associations.
+4|3|Review directly addresses whey supplementation, resistance training and hypertrophy.
+5|3|Review directly assesses added protein during training and muscle size in older people, including null results.
+6|2|Review mixes protein/creatine timing; muscle-mass outcomes are relevant but intervention attribution is limited.
+7|2|Mechanistic review directly links dietary protein and training to contractile proteins, with limited outcome evidence.
+8|3|Human resistance-training trial directly compares protein ingestion and muscle cross-sectional growth.
+9|3|Review explicitly reports greater hypertrophy/lean mass with milk plus resistance training.
+10|3|Human controlled trial directly tests additional protein and training-induced hypertrophy; null result is relevant.
+11|3|Human increased-protein trial directly evaluates training-induced muscle fiber and body-composition changes.
+12|1|Creatine supplementation is distinct from additional dietary protein.
+13|3|Human randomized-trial meta-analysis directly evaluates protein supplementation during resistance training.
+14|3|Human study directly relates dietary protein/amino acids to resistance-training hypertrophy.
+15|2|Retrieved review summarizes protein supplementation and training-induced muscle gain, although energy surplus is its main focus.
+16|1|Whey/resistance-training experiment is in rats rather than humans.
+17|2|Human whey/training study measures strength rather than muscle mass or hypertrophy.
+18|1|Creatine-trial meta-analysis does not evaluate extra dietary protein.
+19|1|High-protein/training muscle experiment is in rats.
+20|3|Human protein-placebo trial directly measures hypertrophy during resistance training with blood-flow restriction.
+21|1|Cross-sectional protein-handgrip study lacks resistance-training and muscle-growth outcomes.
+22|2|Compares two supplemental protein sources during training; no no-supplement comparator isolates added protein.
+23|2|Meta-analysis measures hypertrophy but multi-ingredient supplements limit protein-specific attribution.
+24|3|Review directly synthesizes supplemental protein effects on fat-free mass during resistance training and baseline intake dependence.
+25|2|Human mechanistic synthesis directly links protein and resistance exercise to hypertrophy but is not an effect trial.
+26|2|Protein meta-analysis evaluates strength/performance/recovery rather than muscle growth itself.
+27|2|Clinical high-protein review discusses muscle anabolism, with limited training-specific comparative evidence.
+28|1|Creatine rather than extra protein is the intervention.
+29|1|Creatine/training meta-analysis is a different supplement exposure.
+30|1|Review addresses creatine mechanisms; protein intake is nutritional context rather than the tested intervention.
