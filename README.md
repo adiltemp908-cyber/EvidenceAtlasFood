@@ -3,7 +3,7 @@
 **Scientific literature retrieval and source-grounded summaries for everyday food and nutrition questions**
 
 **[Video Link](https://drive.google.com/drive/folders/1J2qyEUmowNZrV7AOvcICCEFa07_YCeAx?usp=drive_link)**  
-**[Read Final Report](https://github.com/adiltemp908-cyber/EvidenceAtlasFood/blob/main/docs/EvidenceAtlas_Food_Report.pdf)**
+**[Read Final Report](report.pdf)**
 
 EvidenceAtlas Food is a local information-retrieval and study-comparison system with source-grounded summaries, developed to answer nutrition-related questions using evidence from research papers, helping users distinguish scientifically supported findings from common misconceptions and misinformation circulated online. This can be used by students and researchers studying nutrition, healthcare professionals and dieticians seeking research-backed insights, and members of the public looking to make informed dietary choices.
 
@@ -57,7 +57,7 @@ EvidenceAtlas Food was designed around a simple workflow:
 
 7. **Evaluate retrieval quality**
    - Review ranked papers.
-   - Measure Precision@3, Precision@5 and Precision@10.
+   - Compare precision, recall, F1, MAP and nDCG at rank 10.
 
 ---
 
@@ -184,83 +184,40 @@ Inspect retrieval traces, ranking behaviour, summary source quotations and exper
 
 ## Evaluation
 
-The report evaluates retrieval using **Precision@k**.
+On 15 November 2026, six search methods ran the same ten questions against a collection of 3,493 searchable papers. Query expansion was enabled and the recency preference was disabled. The top ten results from each search yielded 600 ranked positions and 310 distinct question–paper pairs.
 
-The scores below are from the original frozen 973-record collection and AI-assisted judgments. They remain historical results, not an accuracy evaluation of the expanded November collection or the local summaries.
+### Hybrid + reranker results by question
 
-```text
-Precision@k = relevant papers in the first k results / k
-```
+The first five questions were graded easy and the last five medium. Precision@10 counts the share of the first ten papers that directly address the question, including useful partial matches (grades 2 and 3). nDCG@10 gives more weight to highly relevant papers near the top.
 
-Only papers judged directly useful for addressing the question are counted as relevant.
+| # | Question | Precision@10 | nDCG@10 |
+|---:|---|---:|---:|
+| 1 | Does drinking coffee affect sleep? | 100% | 0.868 |
+| 2 | Does reducing salt intake lower blood pressure? | 80% | 0.862 |
+| 3 | Does eating more fiber help with constipation? | 90% | 0.934 |
+| 4 | Does drinking milk help keep bones strong? | 90% | 0.903 |
+| 5 | Does boiling vegetables reduce their vitamin C content? | 50% | 0.886 |
+| 6 | Does eating oats lower LDL cholesterol? | 60% | 0.754 |
+| 7 | Does eating nuts cause weight gain in adults? | 50% | 0.855 |
+| 8 | Is yogurt easier to digest than milk for people with lactose intolerance? | 70% | 0.850 |
+| 9 | Are sugary drinks linked to type 2 diabetes? | 50% | 0.868 |
+| 10 | Does extra protein help build muscle during resistance training? | 100% | 0.927 |
+| | **Mean** | **74%** | **0.871** |
 
-The evaluation uses three grades:
+Counting only fully applicable papers (grade 3) gives a mean Precision@10 of **50%** for hybrid + reranker.
 
-| Grade | Meaning |
-|---|---|
-| 2 | Relevant — directly useful for answering part of the question |
-| 1 | Related — useful background or partial mismatch |
-| 0 | Off-topic |
+### Search method comparison
 
-Only **grade 2** contributes to reported precision.
+Each score is the mean across all ten questions. Recall, F1 and MAP use the pool of papers returned by the six methods for each question.
 
-The judgments measure **retrieval relevance**, not the scientific validity, certainty or quality of the underlying study.
-
-### Selected report examples
-
-| Query | P@3 | P@5 | P@10 |
-|---|---:|---:|---:|
-| Does coffee affect sleep? | 100.0% | 100.0% | 90.0% |
-| Is eating a late night meal bad? | 100.0% | 80.0% | 80.0% |
-| Does boiling vegetables remove vitamins? | 66.7% | 60.0% | 80.0% |
-| Dietary sodium reduction blood pressure clinical trials | 66.7% | 80.0% | 80.0% |
-| Does drinking milk help keep bones strong? | 100.0% | 80.0% | 50.0% |
-| **Selected-example mean** | **86.7%** | **80.0%** | **76.0%** |
-
-These examples were selected after inspection and are included as a demonstration rather than as a general accuracy estimate.
-
-Across the original six-question set, including the weaker egg query, the reported averages were:
-
-- **P@3: 88.9%**
-- **P@5: 76.7%**
-- **P@10: 63.3%**
-
----
-
-## Query refinement
-
-The project also demonstrates that better queries can materially change retrieval behaviour.
-
-For example:
-
-```text
-Does eating salt raise blood pressure?
-```
-
-was rewritten as:
-
-```text
-Dietary sodium reduction blood pressure clinical trials
-```
-
-For this example, Precision@10 increased from **60% to 80%**, although Precision@3 decreased from **100% to 66.7%**.
-
-This demonstrates that adding scientific specificity can retrieve more useful papers overall without necessarily improving every ranking position.
-
----
-
-## Baseline comparison
-
-A small paired comparison was performed using the coffee/sleep query and the refined sodium query.
-
-| Method | P@3 | P@5 | P@10 |
-|---|---:|---:|---:|
-| Flat BM25 | 100.0% | 70.0% | 75.0% |
-| Hybrid + relevance ranking | 83.3% | 90.0% | 85.0% |
-
-Hybrid + relevance ranking performed better at ranks 5 and 10, while BM25 performed better at rank 3.
-
-Because this comparison contains only two queries, it should not be interpreted as evidence that one method is universally superior.
+| Search method | Precision@10 | Recall@10 | F1@10 | MAP@10 | nDCG@10 |
+|---|---:|---:|---:|---:|---:|
+| TF-IDF cosine | 50% | 36.5% | 40.0% | 0.268 | 0.680 |
+| Flat BM25 | 52% | 37.1% | 41.3% | 0.264 | 0.661 |
+| Section-aware BM25 | 45% | 30.3% | 34.6% | 0.213 | 0.618 |
+| Semantic search | 73% | 55.0% | 59.7% | 0.484 | 0.829 |
+| Hybrid | 64% | 46.2% | 51.2% | 0.382 | 0.776 |
+| Hybrid + reranker | 74% | 56.5% | 60.8% | 0.490 | 0.871 |
 
 ---
 
@@ -465,70 +422,6 @@ If using a custom Python environment rather than the original project environmen
 
 ---
 
-# Reproducing the report evaluation
-
-Run:
-
-```powershell
-python scripts/evaluate_report.py
-```
-
-The current report evaluation is stored under:
-
-```text
-evaluation/report-v2/
-```
-
-It contains:
-
-- six original questions
-- four query rewrites
-- two matched BM25 baseline searches
-
-A total of **12 searches** were saved.
-
-Ten runs were graded, covering:
-
-- 100 ranked result positions
-- 79 unique topic-paper pairs
-
-The other two rewritten searches were screened but do not have claimed precision scores.
-
-The five examples shown in the project report were selected after inspection.
-
-Their mean performance is:
-
-```text
-P@3  = 86.7%
-P@5  = 80.0%
-P@10 = 76.0%
-```
-
-These values are an exploratory demonstration.
-
-They should not be interpreted as:
-
-- a held-out benchmark
-- an independent human gold standard
-- a measure of scientific truth
-- a clinical accuracy score
-
-The older ten-question, six-method evaluation remains available under:
-
-```text
-evaluation/everyday-10/
-```
-
-It can be reproduced using:
-
-```powershell
-python scripts/evaluate_everyday.py
-```
-
-Its labels and scores belong to a separate earlier evaluation and should not be mixed with the report-v2 results.
-
----
-
 # Current limitations
 
 EvidenceAtlas Food is a working retrieval prototype, but several limitations remain.
@@ -719,25 +612,9 @@ The packaging process is intended to create the source distribution without incl
 
 ---
 
-# Rebuilding the project report
+# Project report
 
-The updated eight-page November 5 report is included in the repository, with its source in `docs/REPORT_2026_11_05.md`. The original published report is retained as `EvidenceAtlasFood-Report-Final.pdf`.
-
-To rebuild it, install:
-
-```text
-reportlab==4.4.9
-```
-
-Then run:
-
-```powershell
-python scripts/build_report.py
-```
-
-The report uses the EvidenceAtlas website palette and local Georgia/Segoe UI fonts when available, with bundled PDF fonts as fallback.
-
-ReportLab is not required to run EvidenceAtlas Food itself.
+[Read the eight-page project report (PDF)](report.pdf).
 
 ---
 
@@ -747,7 +624,7 @@ Project documentation is available under `docs/`.
 
 Important files include:
 
-- [Project report](docs/EvidenceAtlas_Food_Report.pdf)
+- [Project report](report.pdf)
 - [Demo script](docs/DEMO_SCRIPT.md)
 - [Setup and reproduction reference](docs/SETUP_REFERENCE.md)
 - [Course requirements](docs/COURSE_REQUIREMENTS.md)
